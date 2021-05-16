@@ -154,8 +154,9 @@ class CfgPatches
 			
 			
 			/*
-			//Tembelan National Army
-			"
+			//Reiburian Armed Forces
+			"Reiburia_Rifleman",
+			"Reiburia_SquadLeader"
 			
 			
 			//Shadow Company

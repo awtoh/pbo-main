@@ -156,8 +156,16 @@ class CfgPatches
 			
 			/*
 			//Reiburian Armed Forces
+			"Reiburia_AntiTank",
+			"Reiburia_Autorifleman",
+			"Reiburia_Crewman",
+			"Reiburia_Machinegunner",
+			"Reiburia_Officer",
+			"Reiburia_Radioman",
 			"Reiburia_Rifleman",
-			"Reiburia_SquadLeader"
+			"Reiburia_Signaller",
+			"Reiburia_SquadLeader",
+			"Reiburia_TeamLeader"
 			
 			
 			//Shadow Company

@@ -166,7 +166,16 @@ class CfgPatches
 			"LCP_Vehicle_URAL_Covered",
 			"LCP_Vehicle_V3S",
 			"LCP_Vehicle_V3S_Covered",
-			"LCP_Vehicle_ZSU_23_4"
+			"LCP_Vehicle_ZSU_23_4",
+			
+			
+			//Fulguda Army
+			"FulgudaNormal_AntiTank",
+			"FulgudaCamo_AntiTank",
+			"FulgudaSF_AntiTank",
+			"FulgudaSFRecee_JTAC",
+			"FulgudaSpecialPurpose_Operator",
+			"FulgudaSpecialPurposeCBRN_Operator",
 			
 			
 			/*

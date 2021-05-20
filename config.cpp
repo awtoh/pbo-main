@@ -147,9 +147,9 @@ class CfgPatches
 			"LCP_Rebel_SectionLeader",
 			"LCP_Veteran_AntiTank",
 			"LCP_Veteran_Grenadier",
+			"LCP_Veteran_Machinegunner",
 			"LCP_Veteran_Marksman",
 			"LCP_Veteran_Rifleman",
-			"LCP_Veteran_Machinegunner",
 			"LCP_Veteran_TeamLeader",
 			"LCP_Veteran_SectionLeader",
 			
@@ -7767,7 +7767,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_AntiTank: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -7777,9 +7777,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_AntiTank";
 		scope=2;
-		displayName="";
+		displayName="Veteran (AT)";
 		weapons[]=
 		{
 			"",
@@ -7821,7 +7821,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_Grenadier: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -7831,9 +7831,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_Grenadier";
 		scope=2;
-		displayName="";
+		displayName="Veteran (Grenadier)";
 		weapons[]=
 		{
 			"",
@@ -7875,7 +7875,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_Machinegunner: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -7885,9 +7885,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_Machinegunner";
 		scope=2;
-		displayName="";
+		displayName="Veteran (Machinegunner)";
 		weapons[]=
 		{
 			"",
@@ -7929,7 +7929,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_Marksman: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -7939,9 +7939,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_Marksman";
 		scope=2;
-		displayName="";
+		displayName="Veteran (Marksman)";
 		weapons[]=
 		{
 			"",
@@ -7983,7 +7983,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_Rifleman: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -7993,9 +7993,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_Rifleman";
 		scope=2;
-		displayName="";
+		displayName="Veteran (Rifleman)";
 		weapons[]=
 		{
 			"",
@@ -8037,7 +8037,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_TeamLeader: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -8047,9 +8047,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_TeamLeader";
 		scope=2;
-		displayName="";
+		displayName="Veteran (Team Leader)";
 		weapons[]=
 		{
 			"",
@@ -8091,7 +8091,7 @@ class CfgVehicles
 		uniformClass="";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Veteran_SectionLeader: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets Communist Party";
@@ -8101,117 +8101,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="";
+		_generalMacro="LCP_Veteran_SectionLeader";
 		scope=2;
-		displayName="";
-		weapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-            "",
-			""
-		};
-		respawnMagazines[]=
-		{
-            "",
-			""
-		};
-		linkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass="";
-		camouflage=1.6;
-	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
-	{
-		side=2;
-		faction="Leskovets Communist Party";
-		vehicleclass="LCP_Infantry";
-		identityTypes[]=
-		{
-			"NoGlasses",
-		};
-		author="Ashton";
-		_generalMacro="";
-		scope=2;
-		displayName="";
-		weapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-            "",
-			""
-		};
-		respawnMagazines[]=
-		{
-            "",
-			""
-		};
-		linkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass="";
-		camouflage=1.6;
-	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
-	{
-		side=2;
-		faction="Leskovets Communist Party";
-		vehicleclass="LCP_Infantry";
-		identityTypes[]=
-		{
-			"NoGlasses",
-		};
-		author="Ashton";
-		_generalMacro="";
-		scope=2;
-		displayName="";
+		displayName="Veteran (Section Leader)";
 		weapons[]=
 		{
 			"",

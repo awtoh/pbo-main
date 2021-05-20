@@ -170,8 +170,9 @@ class CfgPatches
 			
 			
 			//Fulguda Army
-			"FulgudaNormal_AntiTank",
 			"FulgudaCamo_AntiTank",
+			"FulgudaHQ_Bodyguard",
+			"FulgudaNormal_AntiTank",
 			"FulgudaSF_AntiTank",
 			"FulgudaSFRecee_JTAC",
 			"FulgudaSpecialPurpose_Operator",

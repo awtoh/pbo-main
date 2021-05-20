@@ -10,7 +10,7 @@ class LCP_Rebel_SectionLeader: I_Soldier_F
 		author="Ashton";
 		_generalMacro="LCP_Rebel_SectionLeader";
 		scope=2;
-		displayName="";
+		displayName="Rebel (Section Leader)";
 		weapons[]=
 		{
 			"",

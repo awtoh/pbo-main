@@ -152,6 +152,21 @@ class CfgPatches
 			"LCP_Veteran_Rifleman",
 			"LCP_Veteran_TeamLeader",
 			"LCP_Veteran_SectionLeader",
+			"LCP_Static_AGS_17",
+			"LCP_Static_DhSKM",
+			"LCP_Static_Mortar",			
+			"LCP_Static_SAM",
+			"LCP_Static_ZU_23_2",
+			"LCP_Vehicle_BMP_1",
+			"LCP_Vehicle_BMP_2",
+			"LCP_Vehicle_BTR_60",
+			"LCP_Vehicle_UAZ",
+			"LCP_Vehicle_UAZ_Covered",
+			"LCP_Vehicle_URAL",
+			"LCP_Vehicle_URAL_Covered",
+			"LCP_Vehicle_V3S",
+			"LCP_Vehicle_V3S_Covered",
+			"LCP_Vehicle_ZSU_23_4"
 			
 			
 			/*

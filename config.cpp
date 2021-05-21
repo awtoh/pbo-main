@@ -124,8 +124,8 @@ class CfgPatches
 			"LCP_HQ_Commander",
 			"LCP_HQ_Coordinator",
 			"LCP_HQ_Officer",
-			"LCP_HQ_Radioman",
 			"LCP_HQ_Quartermaster",
+			"LCP_HQ_Radioman",
 			"LCP_Insurgent_AntiTank",
 			"LCP_Insurgent_Fighter",
 			"LCP_Insurgent_GroupLeader",
@@ -550,6 +550,7 @@ class CfgVehicles
 	class B_TacticalPack_blk;
 	class B_Kitbag_rgr;
 	class B_AssualtPack_rgr;
+	class B_RadioBag_01_black_F;
 	//Vehicles
 	class CUP_O_BMP1_TKA;
 	class CUP_O_BMP2_TKA;
@@ -826,6 +827,34 @@ class CfgVehicles
 			{
 				magazine="CUP_OG7_M";
 				count=1;
+			};
+		};
+	};
+	class LCP_Radiopack: B_RadioBag_01_black_F
+	{
+		scope=1;
+		displayName="LCP Radiopack";
+		class TransportMagazines
+		{
+			class SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellPurple";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellBlue";
+				count=2;
 			};
 		};
 	};
@@ -6709,60 +6738,6 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
-	class LCP_HQ_Radioman: I_Soldier_F
-	{
-		side=2;
-		faction="Leskovets_Communist_Party";
-		vehicleclass="LCP_Infantry";
-		identityTypes[]=
-		{
-			"NoGlasses",
-		};
-		author="Ashton";
-		_generalMacro="LCP_HQ_Radioman";
-		scope=2;
-		displayName="HQ Unit (Radioman)";
-		weapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-            "",
-			""
-		};
-		respawnMagazines[]=
-		{
-            "",
-			""
-		};
-		linkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass="";
-		camouflage=1.6;
-	};
 	class LCP_HQ_Quartermaster: I_Soldier_F
 	{
 		side=2;
@@ -6778,29 +6753,34 @@ class CfgVehicles
 		displayName="HQ Unit (Quartermaster)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_PASGT",
+			"CUP_H_US_patrol_cap_WDL",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -6808,13 +6788,83 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_PASGT",
+			"CUP_H_US_patrol_cap_WDL",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_HQ_Radioman: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Radiopack";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Radioman";
+		scope=2;
+		displayName="HQ Unit (Radioman)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74U",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74U",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_TacChestrig_grn_F",
+			"CFP_PatrolCap_M81",
+			"VSM_Peltor_m81_glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_TacChestrig_grn_F",
+			"CFP_PatrolCap_M81",
+			"VSM_Peltor_m81_glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_GUER_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_AntiTank: I_Soldier_F

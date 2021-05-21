@@ -536,21 +536,22 @@ class CfgVehicles
 	class I_Officer_F;
 	class I_Helipilot_F;
 	// Backpacks
-	class CUP_B_SLA_Medicbag;
+	class CFP_AssaultPack_M81;
+	class CFP_RPGPack_Grey;
 	class CFP_RPGPack_Khaki;
 	class CFP_RPGPack_TropicGreen;
-	class CFP_RPGPack_Grey;
-	class B_TacticalPack_oli;
+	class CUP_B_SLA_Medicbag;
+	class B_AssualtPack_rgr;
 	class B_FieldPack_khk;
 	class B_FieldPack_oli;
-	class milgp_bp_Tomahawk_rgr;
+	class B_Kitbag_rgr;
 	class B_LegStrapBag_coyote_F;
 	class B_LegStrapBag_black_F;
+	class B_RadioBag_01_black_F;
 	class B_TacticalPack;
 	class B_TacticalPack_blk;
-	class B_Kitbag_rgr;
-	class B_AssualtPack_rgr;
-	class B_RadioBag_01_black_F;
+	class B_TacticalPack_oli;
+	class milgp_bp_Tomahawk_rgr;
 	//Vehicles
 	class CUP_O_BMP1_TKA;
 	class CUP_O_BMP2_TKA;
@@ -824,7 +825,8 @@ class CfgVehicles
 				count=2;
 			};
 		};
-	};class LCP_Fighterpack: CUP_B_AlicePack_Bedroll
+	};
+	class LCP_Fighterpack: CUP_B_AlicePack_Bedroll
 	{
 		scope=1;
 		displayName="Fighter's Pack";
@@ -854,6 +856,19 @@ class CfgVehicles
 			{
 				magazine="ACE_WaterBottle";
 				count=5;
+			};
+		};
+	};
+	class LCP_Gunnerpack: CFP_AssaultPack_M81
+	{
+		scope=1;
+		displayName="Gunner's Pack";
+		class TransportMagazines
+		{
+			class CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=3;
 			};
 		};
 	};
@@ -6571,7 +6586,7 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};	
-	class LCP_HQ_Commander: I_Soldier_F
+	class LCP_HQ_Commander: I_Officer_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -6635,7 +6650,7 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};		
-	class LCP_HQ_Coordinator: I_Soldier_F
+	class LCP_HQ_Coordinator: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -6773,7 +6788,7 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
-	class LCP_HQ_Quartermaster: I_Soldier_F
+	class LCP_HQ_Quartermaster: I_Officer_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -6833,7 +6848,7 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
-	class LCP_HQ_Radioman: I_Soldier_F
+	class LCP_HQ_Radioman: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -6902,7 +6917,7 @@ class CfgVehicles
 		uniformClass="CFP_GUER_M81";
 		camouflage=1.6;
 	};
-	class LCP_Insurgent_AntiTank: I_Soldier_F
+	class LCP_Insurgent_AntiTank: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -7047,7 +7062,7 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_05";
 		camouflage=1.6;
 	};
-	class LCP_Insurgent_GroupLeader: I_Soldier_F
+	class LCP_Insurgent_GroupLeader: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -7062,29 +7077,59 @@ class CfgVehicles
 		displayName="Insurgent (Group Leader)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKM_GL_Early",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKM_GL_Early",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"SmokeShell",
+			"CUP_HandGrenade_RGO"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"SmokeShell",
+			"CUP_HandGrenade_RGO"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_ALICE",
+			"CFP_Headband_wdl",
+			"G_Balaclava_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -7092,19 +7137,22 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_ALICE",
+			"CFP_Headband_wdl",
+			"G_Balaclava_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Gunner: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
+		backpack="LCP_Gunnerpack";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7116,29 +7164,31 @@ class CfgVehicles
 		displayName="Insurgent (Gunner)";
 		weapons[]=
 		{
-			"",
+			"CUP_lmg_PKM",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_lmg_PKM",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"SP_SSh68NetHelmet_Green1",
+			"CUP_V_OI_TKI_Jacket3_01",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -7146,13 +7196,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"SP_SSh68NetHelmet_Green1",
+			"CUP_V_OI_TKI_Jacket3_01",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CFP_GUER_M81Tee";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_AKM: I_Soldier_F
@@ -7170,29 +7222,37 @@ class CfgVehicles
 		displayName="Insurgent (Skirmisher AKM)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKM_Early",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKM_Early",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_RUS_Smersh_1",
+			"SP_SSh68NetHelmet_Green1",
+			"G_Balaclava_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -7200,13 +7260,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_RUS_Smersh_1",
+			"SP_SSh68NetHelmet_Green1",
+			"G_Balaclava_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_02";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_Romat: I_Soldier_F

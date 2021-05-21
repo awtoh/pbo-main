@@ -794,6 +794,64 @@ class CfgVehicles
             };
 		};
 	};
+	
+	////////// Leskovets Communist Party Backpacks //////////
+	
+	class LCP_Radiopack: B_RadioBag_01_black_F
+	{
+		scope=1;
+		displayName="LCP Radiopack";
+		class TransportMagazines
+		{
+			class SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellPurple";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellBlue";
+				count=2;
+			};
+		};
+	};class LCP_Fighterpack: CUP_B_AlicePack_Bedroll
+	{
+		scope=1;
+		displayName="Fighter's Pack";
+		class TransportMagazines
+		{
+			class SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellPurple";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellBlue";
+				count=2;
+			};
+		};
+	};
 	class LCP_Rebel_RPG: CFP_RPGPack_Khaki
 	{
 		scope=1;
@@ -827,34 +885,6 @@ class CfgVehicles
 			{
 				magazine="CUP_OG7_M";
 				count=1;
-			};
-		};
-	};
-	class LCP_Radiopack: B_RadioBag_01_black_F
-	{
-		scope=1;
-		displayName="LCP Radiopack";
-		class TransportMagazines
-		{
-			class SmokeShellGreen
-			{
-				magazine="SmokeShellGreen";
-				count=2;
-			};
-			class SmokeShellPurple
-			{
-				magazine="SmokeShellPurple";
-				count=2;
-			};
-			class SmokeShellPurple
-			{
-				magazine="SmokeShellRed";
-				count=2;
-			};
-			class SmokeShellPurple
-			{
-				magazine="SmokeShellBlue";
-				count=2;
 			};
 		};
 	};

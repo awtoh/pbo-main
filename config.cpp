@@ -6882,29 +6882,43 @@ class CfgVehicles
 		displayName="Insurgent (AT)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_IMI_Romat",
+			"CUP_RPG18_M",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_IMI_Romat",
+			"CUP_RPG18_M",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"CUP_H_FR_BandanaWdl",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -6912,13 +6926,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"CUP_H_FR_BandanaWdl",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CFP_GUER_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Fighter: I_Soldier_F

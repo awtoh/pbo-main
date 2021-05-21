@@ -7286,29 +7286,43 @@ class CfgVehicles
 		displayName="Insurgent (Skirmisher Romat)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_IMI_Romat",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_IMI_Romat",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_ALICE",
+			"CUP_H_C_Ushanka_02",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -7316,13 +7330,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_ALICE",
+			"CUP_H_C_Ushanka_02",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_05";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_SKS: I_Soldier_F
@@ -7340,29 +7356,47 @@ class CfgVehicles
 		displayName="Insurgent (Skirmisher SKS)";
 		weapons[]=
 		{
-			"",
+			"CUP_SKS",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_SKS",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_02",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -7370,13 +7404,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_02",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Sniper: I_Soldier_F
@@ -7394,29 +7430,44 @@ class CfgVehicles
 		displayName="Insurgent (Sniper)";
 		weapons[]=
 		{
-			"",
+			"CUP_srifle_Mosin_Nagant",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_srifle_Mosin_Nagant",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -7424,13 +7475,14 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CFP_GUER_M81";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Assaulter: I_Soldier_F

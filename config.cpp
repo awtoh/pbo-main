@@ -121,6 +121,7 @@ class CfgPatches
 			
 			//Leskovets Communist Party
 			"LCP_HQ_Bodyguard",
+			"LCP_HQ_Commander",
 			"LCP_HQ_Coordinator",
 			"LCP_HQ_Officer",
 			"LCP_HQ_Radioman",
@@ -6445,7 +6446,7 @@ class CfgVehicles
 	class LCP_HQ_Bodyguard: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6457,29 +6458,38 @@ class CfgVehicles
 		displayName="HQ Unit (Bodyguard)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_C_Ushanka_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -6487,19 +6497,84 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_C_Ushanka_02",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};	
+	class LCP_HQ_Commander: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Commander";
+		scope=2;
+		displayName="HQ Unit (Commander)";
+		weapons[]=
+		{
+			"CUP_hgun_Makarov",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_hgun_Makarov",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_01",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_01",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};		
 	class LCP_HQ_Coordinator: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6511,29 +6586,47 @@ class CfgVehicles
 		displayName="HQ Unit (Coordinator)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKS",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKS",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_OI_TKI_Jacket2_01",
+			"SP_PatrolCap_Green",
+			"VSM_Peltor_m81_glasses",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -6541,19 +6634,21 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_OI_TKI_Jacket2_01",
+			"SP_PatrolCap_Green",
+			"VSM_Peltor_m81_glasses",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CFP_U_FieldUniform_M81_SS";
 		camouflage=1.6;
 	};	
 	class LCP_HQ_Officer: I_Officer_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6565,29 +6660,38 @@ class CfgVehicles
 		displayName="HQ Unit (Officer)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_PASGT_no_bags_OD",
+			"SP_Beret_Red",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -6595,19 +6699,20 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_PASGT_no_bags_OD",
+			"SP_Beret_Red",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_HQ_Radioman: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6661,7 +6766,7 @@ class CfgVehicles
 	class LCP_HQ_Quartermaster: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6715,7 +6820,7 @@ class CfgVehicles
 	class LCP_Insurgent_AntiTank: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6769,7 +6874,7 @@ class CfgVehicles
 	class LCP_Insurgent_Fighter: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6823,7 +6928,7 @@ class CfgVehicles
 	class LCP_Insurgent_GroupLeader: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6877,7 +6982,7 @@ class CfgVehicles
 	class LCP_Insurgent_Gunner: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6931,7 +7036,7 @@ class CfgVehicles
 	class LCP_Insurgent_Skirmisher_AKM: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -6985,7 +7090,7 @@ class CfgVehicles
 	class LCP_Insurgent_Skirmisher_Romat: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7039,7 +7144,7 @@ class CfgVehicles
 	class LCP_Insurgent_Skirmisher_SKS: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7093,7 +7198,7 @@ class CfgVehicles
 	class LCP_Insurgent_Sniper: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7147,7 +7252,7 @@ class CfgVehicles
 	class LCP_Raider_Assaulter: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7201,7 +7306,7 @@ class CfgVehicles
 	class LCP_Raider_Autorifleman: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7255,7 +7360,7 @@ class CfgVehicles
 	class LCP_Raider_Rocketeer: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7309,7 +7414,7 @@ class CfgVehicles
 	class LCP_Raider_Sniper: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7363,7 +7468,7 @@ class CfgVehicles
 	class LCP_Raider_RaidLeader: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7417,7 +7522,7 @@ class CfgVehicles
 	class LCP_Rebel_AntiTank: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7471,7 +7576,7 @@ class CfgVehicles
 	class LCP_Rebel_Grenadier: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7525,7 +7630,7 @@ class CfgVehicles
 	class LCP_Rebel_Machinegunner: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7579,7 +7684,7 @@ class CfgVehicles
 	class LCP_Rebel_Marksman: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7633,7 +7738,7 @@ class CfgVehicles
 	class LCP_Rebel_Rifleman: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7687,7 +7792,7 @@ class CfgVehicles
 	class LCP_Rebel_TeamLeader: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7741,7 +7846,7 @@ class CfgVehicles
 	class LCP_Rebel_SectionLeader: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7795,7 +7900,7 @@ class CfgVehicles
 	class LCP_Veteran_AntiTank: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7849,7 +7954,7 @@ class CfgVehicles
 	class LCP_Veteran_Grenadier: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7903,7 +8008,7 @@ class CfgVehicles
 	class LCP_Veteran_Machinegunner: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -7957,7 +8062,7 @@ class CfgVehicles
 	class LCP_Veteran_Marksman: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -8011,7 +8116,7 @@ class CfgVehicles
 	class LCP_Veteran_Rifleman: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -8065,7 +8170,7 @@ class CfgVehicles
 	class LCP_Veteran_TeamLeader: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -8119,7 +8224,7 @@ class CfgVehicles
 	class LCP_Veteran_SectionLeader: I_Soldier_F
 	{
 		side=2;
-		faction="Leskovets Communist Party";
+		faction="Leskovets_Communist_Party";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{

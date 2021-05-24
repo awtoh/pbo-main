@@ -6792,7 +6792,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_A7CORSAIR: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6817,7 +6817,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_AH64: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6842,7 +6842,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_C130: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6867,7 +6867,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_CH47: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6892,7 +6892,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_F16C: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6917,7 +6917,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_F4PHANTOM: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6942,7 +6942,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_HUMVEEDESERT: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6967,7 +6967,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_HUMVEEDESERTM2: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -6992,7 +6992,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_HUMVEEWOODLAND: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7017,7 +7017,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_HUMVEEWOODLANDM2: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7042,7 +7042,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_KA50: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7067,7 +7067,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_KA52: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7092,7 +7092,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_KAMAZ: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7117,7 +7117,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_KAMAZCOVERED: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7142,7 +7142,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_MIRAGE2000: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7167,7 +7167,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_MI24: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7192,7 +7192,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_MI8: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7217,7 +7217,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_MTVRDESERT: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7242,7 +7242,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_MTVRWOODLAND: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7267,7 +7267,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_SHIKRA: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7292,7 +7292,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_SUV: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7317,7 +7317,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_UAZ: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7342,7 +7342,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_UAZCOVERED: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7367,7 +7367,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_UH1Y: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7392,7 +7392,7 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_UH60M: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7417,7 +7417,57 @@ class CfgVehicles
             };
         };
     };
-	class ADFX02: O_Plane_Fighter_02_F
+	class JAMMED_UH60MEWSS: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_URAL: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_URALCOVERED: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;

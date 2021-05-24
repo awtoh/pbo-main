@@ -172,12 +172,58 @@ class CfgPatches
 			
 			//Fulguda Army
 			"FulgudaCamo_AntiTank",
+			"FulgudaCamo_Autorifleman",
+			"FulgudaCamo_Machinegunner",
+			"FulgudaCamo_Marksman",
+			"FulgudaCamo_Rifleman",
+			"FulgudaCamo_SquadLeader",
+			"FulgudaCamo_TeamLeader",
+			"FulgudaCamo_",
 			"FulgudaHQ_Bodyguard",
+			"FulgudaHQ_Commander",
+			"FulgudaHQ_CommanderCompany",
+			"FulgudaHQ_CommanderPlatoon",
+			"FulgudaHQ_Lieutenant",
+			"FulgudaHQ_Major",,
+			"FulgudaHQ_Radioman",
+			"FulgudaHQ_Security",
+			"FulgudaHQ_Sergeant",
+			"FulgudaHQ_",
 			"FulgudaNormal_AntiTank",
+			"FulgudaNormal_Autorifleman",
+			"FulgudaNormal_Crewman",
+			"FulgudaNormal_HeliCrew",
+			"FulgudaNormal_HeliPilot",
+			"FulgudaNormal_Machinegunner",
+			"FulgudaNormal_Marksman",
+			"FulgudaNormal_Pilot",
+			"FulgudaNormal_Rifleman",
+			"FulgudaNormal_SquadLeader",
+			"FulgudaNormal_TeamLeader",
+			"FulgudaNormal_",
 			"FulgudaSF_AntiTank",
+			"FulgudaSF_AntiAir",
+			"FulgudaSF_Breacher1",
+			"FulgudaSF_Breacher2",
+			"FulgudaSF_CQC",
+			"FulgudaSF_CQCGrenadier",
+			"FulgudaSF_Gunner",
+			"FulgudaSF_Operator",
+			"FulgudaSF_SquadLeader",
+			"FulgudaSFRecee_FireCoordinator",
 			"FulgudaSFRecee_JTAC",
+			"FulgudaSFRecee_Spotter",
+			"FulgudaSFRecee_Sniper",
+			"FulgudaSpecialPurpose_Advisor",
+			"FulgudaSpecialPurpose_Overseer",
+			"FulgudaSpecialPurpose_Overseer",
 			"FulgudaSpecialPurpose_Operator",
+			"FulgudaSpecialPurpose_SectionLeader",
+			"FulgudaSpecialPurposeCBRN_Advisor",
+			"FulgudaSpecialPurposeCBRN_Overseer",
+			"FulgudaSpecialPurposeCBRN_Overseer",
 			"FulgudaSpecialPurposeCBRN_Operator",
+			"FulgudaSpecialPurposeCBRN_SectionLeader",
 			
 			
 			/*
@@ -261,7 +307,36 @@ class CfgPatches
 			
 			//Ashton's Misc.
 			"ADFX01",
-			"ADFX02"
+			"ADFX02",
+			"ACE_BLACKWASP",
+			"ACE_F16C",
+			"ACE_F4PHANTOM",
+			"ACE_HARRIER",
+			"ACE_MIRAGE2000",
+			"ACE_SHIKRA",
+			"JAMMED_A7CORSAIR",
+			"JAMMED_AH64",
+			"JAMMED_C130",
+			"JAMMED_CH47",
+			"JAMMED_F16C",
+			"JAMMED_F4PHANTOM",
+			"JAMMED_KA50",
+			"JAMMED_KA52",
+			"JAMMED_KAMAZ",
+			"JAMMED_KAMAZCOVERED",
+			"JAMMED_MIRAGE2000",
+			"JAMMED_MI24",
+			"JAMMED_MI8",
+			"JAMMED_SHIKRA",
+			"JAMMED_SUV",
+			"JAMMED_UAZ",
+			"JAMMED_UAZCOVERED",
+			"JAMMED_UH1Y",
+			"JAMMED_UH60M",
+			"JAMMED_UH60MEWSS"
+			"JAMMED_URAL",
+			"JAMMED_URALCOVERED"
+			"JAMMED_"
 			
 		};
 		weapons[] = {};
@@ -305,6 +380,12 @@ class CfgFactionClasses
 	class Leskovets_Communist_Party
 	{
 		displayName="Leskovets Communist Party";
+		priority=2;
+		side=2;
+	};
+	class Fulguda_Army
+	{
+		displayName="Fulguda Army";
 		priority=2;
 		side=2;
 	};

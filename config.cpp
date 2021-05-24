@@ -172,7 +172,6 @@ class CfgPatches
 			
 			//Fulguda Army
 			"FulgudaCamo_AntiTank",
-			"FulgudaCamo_Autorifleman",
 			"FulgudaCamo_Machinegunner",
 			"FulgudaCamo_Marksman",
 			"FulgudaCamo_Rifleman",
@@ -184,13 +183,15 @@ class CfgPatches
 			"FulgudaHQ_CommanderCompany",
 			"FulgudaHQ_CommanderPlatoon",
 			"FulgudaHQ_Lieutenant",
-			"FulgudaHQ_Major",,
+			"FulgudaHQ_Major",
+			"FulgudaHQ_Officer",
 			"FulgudaHQ_Radioman",
-			"FulgudaHQ_Security",
+			"FulgudaHQ_SecurityRifle",
+			"FulgudaHQ_SecurityShotgunner",
+			"FulgudaHQ_SecuritySMG",
 			"FulgudaHQ_Sergeant",
 			"FulgudaHQ_",
 			"FulgudaNormal_AntiTank",
-			"FulgudaNormal_Autorifleman",
 			"FulgudaNormal_Crewman",
 			"FulgudaNormal_HeliCrew",
 			"FulgudaNormal_HeliPilot",
@@ -201,8 +202,10 @@ class CfgPatches
 			"FulgudaNormal_SquadLeader",
 			"FulgudaNormal_TeamLeader",
 			"FulgudaNormal_",
-			"FulgudaSF_AntiTank",
 			"FulgudaSF_AntiAir",
+			"FulgudaSF_AntiTank",
+			"FulgudaSF_AntiTankHeavy",
+			"FulgudaSF_Autorifleman",
 			"FulgudaSF_Breacher1",
 			"FulgudaSF_Breacher2",
 			"FulgudaSF_CQC",
@@ -212,8 +215,9 @@ class CfgPatches
 			"FulgudaSF_SquadLeader",
 			"FulgudaSFRecee_FireCoordinator",
 			"FulgudaSFRecee_JTAC",
+			"FulgudaSFRecee_RTO",
+			"FulgudaSFRecee_Shooter",
 			"FulgudaSFRecee_Spotter",
-			"FulgudaSFRecee_Sniper",
 			"FulgudaSpecialPurpose_Advisor",
 			"FulgudaSpecialPurpose_Overseer",
 			"FulgudaSpecialPurpose_Overseer",
@@ -310,6 +314,7 @@ class CfgPatches
 			"ADFX02",
 			"ACE_BLACKWASP",
 			"ACE_F16C",
+			"ACE_F35B",
 			"ACE_F4PHANTOM",
 			"ACE_HARRIER",
 			"ACE_MIRAGE2000",
@@ -668,6 +673,12 @@ class CfgVehicles
 	class CUP_O_Kornet_RU;
 	class CFP_O_HAMAS_Metis_01;
 	class O_Plane_Fighter_02_F;
+	class B_Plane_Fighter_01_F
+	class F16C_BLU
+	class CUP_B_F35B_BAF
+	class F4E_BLU
+	class CUP_B_GR9_DYN_GB
+	class M2000C_BLU
 	
 	////////// Buhriz Militia Backpacks //////////
 	
@@ -6581,7 +6592,831 @@ class CfgVehicles
             };
         };
     };
-	
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_BLACKWASP: B_Plane_Fighter_01_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F/A-181 Black Wasp II ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_F16C: F16C_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-16C ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_F35B: CUP_B_F35B_BAF
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-35B Lightning II ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_F4PHANTOM: F4E_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-4E Phantom II ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_HARRIER: CUP_B_GR9_DYN_GB
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "Harrier GR.9 ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_MIRAGE2000: M2000C_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "Mirage 2000EG ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_SHIKRA: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "To-201 Shikra ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ADFX02: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "ADFX-02 Morgan"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
 	class ADFX02: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction

@@ -136,9 +136,9 @@ class CfgPatches
 			"LCP_Insurgent_Sniper",
 			"LCP_Raider_Assaulter",
 			"LCP_Raider_Autorifleman",
+			"LCP_Raider_RaidLeader",
 			"LCP_Raider_Rocketeer",
 			"LCP_Raider_Sniper",
-			"LCP_Raider_RaidLeader",
 			"LCP_Rebel_AntiTank",
 			"LCP_Rebel_Grenadier",
 			"LCP_Rebel_Machinegunner",
@@ -609,6 +609,18 @@ class CfgWeapons
 			};
 		};
 	};
+	class SVD_ScopedMagnified: CUP_srifle_SVD
+	{
+		displayName = "SVD Magnified Scoped";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_pso_3_open";
+			};
+		};
+	};
 };
 class CfgVehicles
 {
@@ -632,6 +644,7 @@ class CfgVehicles
 	class CFP_RPGPack_Grey;
 	class CFP_RPGPack_Khaki;
 	class CFP_RPGPack_TropicGreen;
+	class CUP_B_CivPack_WDL;
 	class CUP_B_SLA_Medicbag;
 	class B_AssualtPack_rgr;
 	class B_FieldPack_khk;
@@ -967,6 +980,19 @@ class CfgVehicles
 			{
 				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
 				count=3;
+			};
+		};
+	};
+	class LCP_RaiderRocketeerPack: CUP_B_CivPack_WDL
+	{
+		scope=1;
+		displayName="Rocketeer Bag";
+		class TransportMagazines
+		{
+			class RPG7_F
+			{
+				magazine="RPG7_F";
+				count=4;
 			};
 		};
 	};
@@ -8120,7 +8146,7 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
-	class LCP_Insurgent_Gunner: I_Soldier_F
+	class LCP_Insurgent_Gunner: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -8472,29 +8498,46 @@ class CfgVehicles
 		displayName="Raider (Assaulter)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_TYPE_56_2_Early",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_TYPE_56_2_Early",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -8502,16 +8545,17 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
 		camouflage=1.6;
 	};
-	class LCP_Raider_Autorifleman: I_Soldier_F
+	class LCP_Raider_Autorifleman: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -8526,29 +8570,48 @@ class CfgVehicles
 		displayName="Raider (Autorifleman)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_RPK74_45",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_RPK74_45",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -8556,19 +8619,109 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
 		camouflage=1.6;
 	};
-	class LCP_Raider_Rocketeer: I_Soldier_F
+	class LCP_Raider_RaidLeader: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Raider_RaidLeader";
+		scope=2;
+		displayName="Raider (Raid Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AKMS_GL",
+			"CUP_hgun_Makarov",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKMS_GL",
+			"CUP_hgun_Makarov",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Grenadier_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Grenadier_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		camouflage=1.6;
+	};
+	class LCP_Raider_Rocketeer: I_Soldier_LAT_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_RaiderRocketeerPack";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -8580,29 +8733,48 @@ class CfgVehicles
 		displayName="Raider (Rocketeer)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_TYPE_56_2_Early",
+			"launch_RPG7_F",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_TYPE_56_2_Early",
+			"launch_RPG7_F",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -8610,13 +8782,14 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Sniper: I_Soldier_F
@@ -8634,29 +8807,50 @@ class CfgVehicles
 		displayName="Raider (Sniper)";
 		weapons[]=
 		{
-			"",
+			"SVD_ScopedMagnified",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"SVD_ScopedMagnified",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -8664,67 +8858,14 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_RUS_SSH68_olive",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
-		camouflage=1.6;
-	};
-	class LCP_Raider_RaidLeader: I_Soldier_F
-	{
-		side=2;
-		faction="Leskovets_Communist_Party";
-		vehicleclass="LCP_Infantry";
-		identityTypes[]=
-		{
-			"NoGlasses",
-		};
-		author="Ashton";
-		_generalMacro="LCP_Raider_RaidLeader";
-		scope=2;
-		displayName="Raider (Raid Leader)";
-		weapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-            "",
-			""
-		};
-		respawnMagazines[]=
-		{
-            "",
-			""
-		};
-		linkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass="";
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_AntiTank: I_Soldier_F

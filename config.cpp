@@ -10873,14 +10873,553 @@ class CfgGroups
 					}
 				};
 			};
-		};
-		
+		};		
 		class Jofren_Faithful
 		{
 			name="Free Nevara Organisation";
 			class JF_Henchmen
 			{
 				name="Henchmen";
+				class Gunmen_Team
+				{
+					name="Gunmen Team";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Gunman_AKS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Gunman_CPW";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Gunman_MP5";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+				};
+				class Gunmen_Gang
+				{
+					name="Gunmen Gang";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Gunman_AKS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Gunman_CPW";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Gunman_MP5";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Gunman_AKS";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="Gunman_CPW";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="Gunman_MP5";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+				};
+				class Henchman_Group
+				{
+					name="Henchmen Group";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="HenchmanGroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Henchman_1";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Henchman_2";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Henchman_3";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="HenchmanGroupLeader";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="Henchman_1";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="Henchman_2";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="Henchman_3";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+				};
+				class Henchman_Garrison
+				{
+					name="Henchmen Garrison";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="HenchmanGroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Henchman_1";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Henchman_2";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Henchman_3";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="HenchmanGroupLeader";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="Henchman_1";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="Henchman_2";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="Henchman_3";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="HenchmanGroupLeader";
+						rank="CORPORAL";
+						position[]={17,0,0};
+					};
+					class Unit9
+					{
+						side=2;
+						vehicle="Henchman_1";
+						rank="PRIVATE";
+						position[]={19,0,0};
+					};
+					class Unit10
+					{
+						side=2;
+						vehicle="Henchman_2";
+						rank="PRIVATE";
+						position[]={21,0,0};
+					};
+					class Unit11
+					{
+						side=2;
+						vehicle="Henchman_3";
+						rank="PRIVATE";
+						position[]={23,0,0};
+					};
+					class Unit12
+					{
+						side=2;
+						vehicle="HenchmanGroupLeader";
+						rank="CORPORAL";
+						position[]={25,0,0};
+					};
+					class Unit13
+					{
+						side=2;
+						vehicle="Henchman_1";
+						rank="PRIVATE";
+						position[]={27,0,0};
+					};
+					class Unit14
+					{
+						side=2;
+						vehicle="Henchman_2";
+						rank="PRIVATE";
+						position[]={29,0,0};
+					};
+					class Unit15
+					{
+						side=2;
+						vehicle="Henchman_3";
+						rank="PRIVATE";
+						position[]={31,0,0};
+					};
+				};
+				class Hitman_Team
+				{
+					name="Hitman Team";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Hitman";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Hitman_Assistant";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+				};
+			};
+
+			name2="Militants";
+			class Militants
+			{
+				name="Militants"
+				class Militant_Cell
+				{
+					name="Militant Cell";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="MilitantGroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Militant_1";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Militant_3";
+						rank="PRIVATE";
+						position[]={0,5,0};
+					};
+				};
+				class Militant_Squad
+				{
+					name="Militant Squad";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="MilitantGroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Militant_1";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Militant_2";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Militant_3";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="Militant_4";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="Militant_5";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="Militant_Marksman";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+			};
+			name3="Armed Terrorists";
+			class Armed_Terrorists
+			{
+				name="Terrorists"
+				class Terrorist_ATTeam
+				{
+					name="Terrorist AT Team";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Grenadier";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Anti_Tank_Operator";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Rifleman_2";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Anti_Tank_Operator";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class Terrorist_MGTeam
+				{
+					name="Terrorist MG Team";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Grenadier";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Machinegunner";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Rifleman_2";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Machinegunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class Terrorist_Team
+				{
+					name="Terrorist Team";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Grenadier";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Rifleman_1";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Rifleman_2";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Rifleman_3";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class Terrorist_Squad
+				{
+					name="Terrorist Squad";
+					faction="Jofren_Faithful";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="Grenadier";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="Rifleman_1";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="Rifleman_2";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="Anti_Tank_Operator";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="Grenadier";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="Machinegunner";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="Anti_Infantry_Operator";
+						rank="CORPORAL";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="Rifleman_3";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+				};
+			};
+		};
+			class Leskovets_Communist_Party
+		{
+			name="Leskovets Communist Party";
+			class JF_Henchmen
+			{
+				name="HQ/Logistics";
 				class Gunmen_Team
 				{
 					name="Gunmen Team";

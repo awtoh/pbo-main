@@ -9252,12 +9252,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
 			"Throw",
 			"Put"
 		};
@@ -9268,6 +9270,7 @@ class CfgVehicles
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_HandGrenade_RGD5",
 			"SmokeShell"
 		};
@@ -9278,6 +9281,7 @@ class CfgVehicles
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
 			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
 			"CUP_HandGrenade_RGD5",
 			"SmokeShell"
 		};
@@ -9306,6 +9310,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
+		backpack="LCP_Veteran_RPG";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -9317,29 +9322,48 @@ class CfgVehicles
 		displayName="Veteran (AT)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AK74_Early",
+			"CUP_launch_RPG7V",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AK74_Early",
+			"CUP_launch_RPG7V",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -9347,13 +9371,14 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Grenadier: I_Soldier_F
@@ -9371,29 +9396,66 @@ class CfgVehicles
 		displayName="Veteran (Grenadier)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AK74_GL_Early",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AK74_GL_Early",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Grenadier_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -9401,19 +9463,21 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Grenadier_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Machinegunner: I_Soldier_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
+		backpack="LCP_Veteran_Machinegun";
 		vehicleclass="LCP_Infantry";
 		identityTypes[]=
 		{
@@ -9425,29 +9489,38 @@ class CfgVehicles
 		displayName="Veteran (Machinegunner)";
 		weapons[]=
 		{
-			"",
+			"CUP_lmg_PKM",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_lmg_PKM",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -9455,67 +9528,14 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
-		camouflage=1.6;
-	};
-	class LCP_Veteran_Marksman: I_Soldier_F
-	{
-		side=2;
-		faction="Leskovets_Communist_Party";
-		vehicleclass="LCP_Infantry";
-		identityTypes[]=
-		{
-			"NoGlasses",
-		};
-		author="Ashton";
-		_generalMacro="LCP_Veteran_Marksman";
-		scope=2;
-		displayName="Veteran (Marksman)";
-		weapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-            "",
-			""
-		};
-		respawnMagazines[]=
-		{
-            "",
-			""
-		};
-		linkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Rifleman: I_Soldier_F
@@ -9533,29 +9553,46 @@ class CfgVehicles
 		displayName="Veteran (Rifleman)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_IMI_Romat",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_IMI_Romat",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -9563,67 +9600,14 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
-		camouflage=1.6;
-	};
-	class LCP_Veteran_TeamLeader: I_Soldier_F
-	{
-		side=2;
-		faction="Leskovets_Communist_Party";
-		vehicleclass="LCP_Infantry";
-		identityTypes[]=
-		{
-			"NoGlasses",
-		};
-		author="Ashton";
-		_generalMacro="LCP_Veteran_TeamLeader";
-		scope=2;
-		displayName="Veteran (Team Leader)";
-		weapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		respawnWeapons[]=
-		{
-			"",
-			"Throw",
-			"Put"
-		};
-		magazines[]=
-		{
-            "",
-			""
-		};
-		respawnMagazines[]=
-		{
-            "",
-			""
-		};
-		linkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		respawnLinkedItems[]=
-		{
-			"",
-			"ItemMap",
-			"ItemCompass",
-			"ItemWatch",
-			"ItemRadio"
-		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_SectionLeader: I_Soldier_F
@@ -9641,29 +9625,46 @@ class CfgVehicles
 		displayName="Veteran (Section Leader)";
 		weapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74_Early",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"",
+			"CUP_arifle_AKS74_Early",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "",
-			""
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -9671,13 +9672,94 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"",
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="";
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_TeamLeader: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_TeamLeader";
+		scope=2;
+		displayName="Veteran (Team Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
 };

@@ -11156,7 +11156,6 @@ class CfgGroups
 					};
 				};
 			};
-
 			name2="Militants";
 			class Militants
 			{
@@ -11414,37 +11413,51 @@ class CfgGroups
 				};
 			};
 		};
-			class Leskovets_Communist_Party
+		class Leskovets_Communist_Party
 		{
 			name="Leskovets Communist Party";
-			class JF_Henchmen
+			class LCP_HQ
 			{
 				name="HQ/Logistics";
-				class Gunmen_Team
+				class Command_Team_1
 				{
-					name="Gunmen Team";
-					faction="Jofren_Faithful";
+					name="Command Team 1";
+					faction="Leskovets_Communist_Party";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="Gunman_AKS";
-						rank="SERGEANT";
+						vehicle="LCP_HQ_Officer";
+						rank="LIEUTENANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Gunman_CPW";
-						rank="PRIVATE";
+						vehicle="LCP_HQ_Coordinator";
+						rank="SERGEANT";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Gunman_MP5";
+						vehicle="LCP_HQ_Radioman";
 						rank="PRIVATE";
 						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={9,0,0};
 					};
 				};
 				class Gunmen_Gang

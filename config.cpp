@@ -11419,7 +11419,7 @@ class CfgGroups
 			class LCP_HQ
 			{
 				name="HQ/Logistics";
-				class Command_Team_1
+				class LCP_Command_Team_1
 				{
 					name="Command Team 1";
 					faction="Leskovets_Communist_Party";
@@ -11460,256 +11460,185 @@ class CfgGroups
 						position[]={9,0,0};
 					};
 				};
-				class Gunmen_Gang
+				class LCP_Command_Team_2
 				{
-					name="Gunmen Gang";
-					faction="Jofren_Faithful";
+					name="Command Team 2";
+					faction="Leskovets_Communist_Party";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="Gunman_AKS";
-						rank="SERGEANT";
+						vehicle="LCP_HQ_Commander";
+						rank="LIEUTENANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Gunman_CPW";
-						rank="PRIVATE";
+						vehicle="LCP_HQ_Quartermaster";
+						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Gunman_MP5";
+						vehicle="LCP_HQ_Radioman";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Gunman_AKS";
-						rank="CORPORAL";
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Gunman_CPW";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
-					class Unit5
-					{
-						side=2;
-						vehicle="Gunman_MP5";
-						rank="PRIVATE";
-						position[]={11,0,0};
-					};
 				};
-				class Henchman_Group
+				class LCP_Command_Team_3
 				{
 					name="Henchmen Group";
-					faction="Jofren_Faithful";
+					faction="Leskovets_Communist_Party";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="HenchmanGroupLeader";
-						rank="SERGEANT";
+						vehicle="LCP_HQ_Commander";
+						rank="LIEUTENANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Henchman_1";
-						rank="PRIVATE";
+						vehicle="LCP_HQ_Officer";
+						rank="LIEUTENANT";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Henchman_2";
+						vehicle="LCP_HQ_Radioman";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Henchman_3";
-						rank="PRIVATE";
+						vehicle="LCP_HQ_Quartermaster";
+						rank="CORPORAL";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="HenchmanGroupLeader";
-						rank="CORPORAL";
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Henchman_1";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="Henchman_2";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
-					class Unit7
-					{
-						side=2;
-						vehicle="Henchman_3";
-						rank="PRIVATE";
-						position[]={15,0,0};
-					};
 				};
-				class Henchman_Garrison
+				class LCP_Bodyguard_Group
 				{
-					name="Henchmen Garrison";
-					faction="Jofren_Faithful";
+					name="Bodyguard Group";
+					faction="Leskovets_Communist_Party";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="HenchmanGroupLeader";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Henchman_1";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Henchman_2";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Henchman_3";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="HenchmanGroupLeader";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="CORPORAL";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Henchman_1";
+						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="Henchman_2";
+						vehicle="LCP_HQ_Radioman";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
-					class Unit7
-					{
-						side=2;
-						vehicle="Henchman_3";
-						rank="PRIVATE";
-						position[]={15,0,0};
-					};
-					class Unit8
-					{
-						side=2;
-						vehicle="HenchmanGroupLeader";
-						rank="CORPORAL";
-						position[]={17,0,0};
-					};
-					class Unit9
-					{
-						side=2;
-						vehicle="Henchman_1";
-						rank="PRIVATE";
-						position[]={19,0,0};
-					};
-					class Unit10
-					{
-						side=2;
-						vehicle="Henchman_2";
-						rank="PRIVATE";
-						position[]={21,0,0};
-					};
-					class Unit11
-					{
-						side=2;
-						vehicle="Henchman_3";
-						rank="PRIVATE";
-						position[]={23,0,0};
-					};
-					class Unit12
-					{
-						side=2;
-						vehicle="HenchmanGroupLeader";
-						rank="CORPORAL";
-						position[]={25,0,0};
-					};
-					class Unit13
-					{
-						side=2;
-						vehicle="Henchman_1";
-						rank="PRIVATE";
-						position[]={27,0,0};
-					};
-					class Unit14
-					{
-						side=2;
-						vehicle="Henchman_2";
-						rank="PRIVATE";
-						position[]={29,0,0};
-					};
-					class Unit15
-					{
-						side=2;
-						vehicle="Henchman_3";
-						rank="PRIVATE";
-						position[]={31,0,0};
-					};
 				};
-				class Hitman_Team
+				class LCP_Fire_Support_Team
 				{
-					name="Hitman Team";
-					faction="Jofren_Faithful";
+					name="Fire Support Team";
+					faction="Leskovets_Communist_Party";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="Hitman";
+						vehicle="LCP_HQ_Coordinator";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Hitman_Assistant";
+						vehicle="LCP_HQ_Radioman";
 						rank="CORPORAL";
 						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={5,0,0};
 					};
 				};
 			};
-
 			name2="Militants";
 			class Militants
 			{

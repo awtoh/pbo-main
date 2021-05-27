@@ -319,6 +319,8 @@ class CfgPatches
 			"ACE_SHIKRA",
 			"JAMMED_A7CORSAIR",
 			"JAMMED_AH64",
+			"JAMMED_BMP1",
+			"JAMMED_BMP2",
 			"JAMMED_C130",
 			"JAMMED_CH47",
 			"JAMMED_F16C",
@@ -331,6 +333,9 @@ class CfgPatches
 			"JAMMED_KA52",
 			"JAMMED_KAMAZ",
 			"JAMMED_KAMAZCOVERED",
+			"JAMMED_M1A1",
+			"JAMMED_M1A2",
+			"JAMMED_M2A3",
 			"JAMMED_MIRAGE2000",
 			"JAMMED_MI24",
 			"JAMMED_MI8",
@@ -338,6 +343,13 @@ class CfgPatches
 			"JAMMED_MTVRWOODLAND",
 			"JAMMED_SHIKRA",
 			"JAMMED_SUV",
+			"JAMMED_T72",
+			"JAMMED_T90A",
+			"JAMMED_VODNIK",
+			"JAMMED_VODNIKPKM",
+			"JAMMED_VODNIKAGS",
+			"JAMMED_VODNIKBMP",
+			"JAMMED_VODNIKBTR",
 			"JAMMED_UAZ",
 			"JAMMED_UAZCOVERED",
 			"JAMMED_UH1Y",
@@ -622,6 +634,7 @@ class CfgWeapons
 };
 class CfgVehicles
 {
+	class B_Pilot_F;
 	class I_Soldier_TL_F;
 	class I_Soldier_SL_F;
 	class I_Soldier_AR_F;
@@ -6846,7 +6859,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -6871,7 +6884,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -6896,7 +6909,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -6921,7 +6934,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -6946,7 +6959,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -6971,7 +6984,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -6996,7 +7009,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7021,7 +7034,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7046,7 +7059,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7071,7 +7084,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7096,7 +7109,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7121,7 +7134,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7146,7 +7159,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7171,7 +7184,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7196,7 +7209,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7221,7 +7234,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7246,7 +7259,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7271,7 +7284,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7296,7 +7309,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7321,7 +7334,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7346,7 +7359,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7371,7 +7384,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7396,7 +7409,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7421,7 +7434,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7446,7 +7459,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7471,7 +7484,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7496,7 +7509,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
@@ -7521,7 +7534,7 @@ class CfgVehicles
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
-        displayName = "ADFX-02 Morgan"; //Ingame name
+        displayName = "JAMMED"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";

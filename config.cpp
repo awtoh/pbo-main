@@ -9775,6 +9775,81 @@ class CfgVehicles
 		uniformClass="CUP_U_O_CHDKZ_Kam_06";
 		camouflage=1.6;
 	};
+	class LCP_Static_AGS_17: O_Plane_Fighter_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "AGS-17"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_DhSKM: O_Plane_Fighter_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "DhSKM"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_Mortar: O_Plane_Fighter_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "Mortar"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
 };
 class CfgGroups
 {

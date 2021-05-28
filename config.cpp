@@ -341,6 +341,7 @@ class CfgPatches
 			"JAMMED_MI8",
 			"JAMMED_MTVRDESERT",
 			"JAMMED_MTVRWOODLAND",
+			"JAMMED_SAMSITE",
 			"JAMMED_SHIKRA",
 			"JAMMED_SUV",
 			"JAMMED_T72",
@@ -356,7 +357,9 @@ class CfgPatches
 			"JAMMED_UH60M",
 			"JAMMED_UH60MEWSS"
 			"JAMMED_URAL",
-			"JAMMED_URALCOVERED"
+			"JAMMED_URALCOVERED",
+			"JAMMED_ZSU_23_4",
+			"JAMMED_ZU_23_2"
 			"JAMMED_"
 			
 		};
@@ -634,6 +637,7 @@ class CfgWeapons
 };
 class CfgVehicles
 {
+	// Soldiers
 	class B_Pilot_F;
 	class I_Soldier_TL_F;
 	class I_Soldier_SL_F;
@@ -668,7 +672,17 @@ class CfgVehicles
 	class B_TacticalPack_blk;
 	class B_TacticalPack_oli;
 	class milgp_bp_Tomahawk_rgr;
-	//Vehicles
+	// Static Weapons
+	class CUP_O_DSHKM_ChDKZ;
+	class CUP_O_DSHkM_MiniTriPod_ChDKZ;
+	class CUP_O_2b14_82mm_ChDKZ;
+	class CUP_B_MK19_TriPod_US;
+	class CUP_B_AGS_ACR;
+	class CUP_B_Igla_AA_pod_CDF;
+	class CUP_O_Kornet_RU;
+	class CUP_O_Metis_RU;
+	class B_SAM_System_02_F;
+	// Vehicles
 	class CUP_O_BMP1_TKA;
 	class CUP_O_BMP2_TKA;
 	class CUP_C_LR_Transport_CTK;
@@ -688,21 +702,13 @@ class CfgVehicles
 	class CUP_B_BRDM2_CDF;
 	class CUP_B_BRDM2_ATGM_CDF;
 	class CUP_O_Ural_ZU23_RU;
-	class CFP_I_SDRebelsrf_DShKM_01;
-	class CFP_I_SDRebelsrf_DShKM_Low_01;
-	class CFP_I_SDRebelsrf_Mortar_01;
-	class CUP_B_MK19_TriPod_US;
-	class CUP_B_AGS_ACR;
-	class CUP_B_Igla_AA_pod_CDF;
-	class CUP_O_Kornet_RU;
-	class CFP_O_HAMAS_Metis_01;
 	class O_Plane_Fighter_02_F;
-	class B_Plane_Fighter_01_F
-	class F16C_BLU
-	class CUP_B_F35B_BAF
-	class F4E_BLU
-	class CUP_B_GR9_DYN_GB
-	class M2000C_BLU
+	class B_Plane_Fighter_01_F;
+	class F16C_BLU;
+	class CUP_B_F35B_BAF;
+	class F4E_BLU;
+	class CUP_B_GR9_DYN_GB;
+	class M2000C_BLU;
 	
 	////////// Buhriz Militia Backpacks //////////
 	
@@ -4224,7 +4230,7 @@ class CfgVehicles
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_DShKM: CFP_I_SDRebelsrf_DShKM_01
+	class Static_DShKM: CUP_O_DSHKM_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4235,7 +4241,7 @@ class CfgVehicles
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_DhSKM_Minitripod: CFP_I_SDRebelsrf_DShKM_Low_01
+	class Static_DhSKM_Minitripod: CUP_O_DSHkM_MiniTriPod_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4268,7 +4274,7 @@ class CfgVehicles
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
 	};
-	class Static_Metis: CFP_O_HAMAS_Metis_01
+	class Static_Metis: CUP_O_Metis_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4290,7 +4296,7 @@ class CfgVehicles
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_Mortar: CFP_I_SDRebelsrf_Mortar_01
+	class Static_Mortar: CUP_O_2b14_82mm_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;

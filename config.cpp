@@ -319,6 +319,7 @@ class CfgPatches
 			"ACE_SHIKRA",
 			"JAMMED_A7CORSAIR",
 			"JAMMED_AH64",
+			"JAMMED_BM21",
 			"JAMMED_BMP1",
 			"JAMMED_BMP2",
 			"JAMMED_C130",
@@ -683,8 +684,11 @@ class CfgVehicles
 	class CUP_O_Metis_RU;
 	class B_SAM_System_02_F;
 	// Vehicles
-	class CUP_O_BMP1_TKA;
-	class CUP_O_BMP2_TKA;
+	//// Wheeled
+	class CUP_O_BM21_RU;
+	class CUP_O_BM21_SLA;
+	class CFP_O_TBAN_BMP_1_01;
+	class CFP_O_TBAN_BMP_2_01;
 	class CUP_C_LR_Transport_CTK;
 	class CUP_B_LR_MG_GB_W;
 	class CUP_O_LR_SPG9_TKA;
@@ -693,9 +697,9 @@ class CfgVehicles
 	class I_G_Offroad_01_AT_F;
 	class I_G_Offroad_01_armed_F;
 	class CUP_O_Ural_RU;
-	class CUP_B_BTR60_CDF;
-	class CUP_O_T55_TK;
-	class CUP_B_T72_CDF;
+	class CFP_O_NKARMY_BTR_60_01;
+	class CFP_O_TBAN_T55_01;
+	class CFP_O_HEZBOLLAH_T72_01;
 	class CUP_O_Datsun_PK_Random;
 	class CUP_O_Mi8_CHDKZ;
 	class CUP_B_ZSU23_Afghan_CDF;
@@ -4480,7 +4484,7 @@ class CfgVehicles
             };
         };
     };
-	class BTR60BM: CUP_B_BTR60_CDF
+	class BTR60BM: CFP_O_NKARMY_BTR_60_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4488,7 +4492,7 @@ class CfgVehicles
         crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"Crewman"};
 		gunnerType="Crewman";
-        hiddenSelections[] = {"LGreen"};
+        //hiddenSelections[] = {"LGreen"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
         {
@@ -4505,7 +4509,7 @@ class CfgVehicles
             };
         };
     };
-	class BMP_1: CUP_O_BMP1_TKA
+	class BMP_1: CFP_O_TBAN_BMP_1_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4530,7 +4534,7 @@ class CfgVehicles
             };
         };
     };
-	class BMP_2: CUP_O_BMP2_TKA
+	class BMP_2: CFP_O_TBAN_BMP_2_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4580,7 +4584,7 @@ class CfgVehicles
             };
         };
     };
-	class T_55A: CUP_O_T55_TK
+	class T_55A: CFP_O_TBAN_T55_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -4605,7 +4609,7 @@ class CfgVehicles
             };
         };
     };
-	class T_72: CUP_B_T72_CDF
+	class T_72: CFP_O_HEZBOLLAH_T72_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;

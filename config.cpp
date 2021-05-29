@@ -167,6 +167,15 @@ class CfgPatches
 			"LCP_Vehicle_V3S",
 			"LCP_Vehicle_V3S_Covered",
 			"LCP_Vehicle_ZSU_23_4",
+			//Leskovets Communist Party Non-units
+			"LCP_Radiopack",
+			"LCP_Fighterpack",
+			"LCP_Gunnerpack",
+			"LCP_RaiderRocketeerPack",
+			"LCP_Rebel_Machinegun",
+			"LCP_Rebel_RPG",
+			"LCP_Veteran_Machinegun",
+			"LCP_Veteran_RPG",
 			
 			
 			//Fulguda Army
@@ -357,7 +366,7 @@ class CfgPatches
 			"JAMMED_UAZCOVERED",
 			"JAMMED_UH1Y",
 			"JAMMED_UH60M",
-			"JAMMED_UH60MEWSS"
+			"JAMMED_UH60MEWSS",
 			"JAMMED_URAL",
 			"JAMMED_URALCOVERED",
 			"JAMMED_ZSU_23_4",
@@ -482,8 +491,8 @@ class CfgVehicleClasses
 		displayName="Armour";
 		priority=3;
 	};
-	};
 };
+
 
  ///// Weapon Attachments /////
 class CfgWeapons
@@ -660,6 +669,7 @@ class CfgVehicles
 	class CFP_RPGPack_Grey;
 	class CFP_RPGPack_Khaki;
 	class CFP_RPGPack_TropicGreen;
+	class CUP_B_AlicePack_Bedroll;
 	class CUP_B_CivPack_WDL;
 	class CUP_B_SLA_Medicbag;
 	class B_AssualtPack_rgr;
@@ -7784,7 +7794,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="LCP_HQ_Officer";
 		scope=2;
-		displayName="HQ Unit (BM_Officer)";
+		displayName="HQ Unit (BM Officer)";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74",
@@ -10971,7 +10981,7 @@ class CfgGroups
 						vehicle="BM_Medic";
 						rank="PRIVATE";
 						position[]={9,0,0};
-					}
+					};
 				};
 			};
 		};		
@@ -11737,262 +11747,6 @@ class CfgGroups
 						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={5,0,0};
-					};
-				};
-			};
-			name2="Militants";
-			class Militants
-			{
-				name="Militants"
-				class Militant_Cell
-				{
-					name="Militant Cell";
-					faction="Jofren_Faithful";
-					side=2;
-					class Unit0
-					{
-						side=2;
-						vehicle="MilitantGroupLeader";
-						rank="SERGEANT";
-						position[]={0,5,0};
-					};
-					class Unit1
-					{
-						side=2;
-						vehicle="Militant_1";
-						rank="PRIVATE";
-						position[]={3,0,0};
-					};
-					class Unit2
-					{
-						side=2;
-						vehicle="Militant_3";
-						rank="PRIVATE";
-						position[]={0,5,0};
-					};
-				};
-				class Militant_Squad
-				{
-					name="Militant Squad";
-					faction="Jofren_Faithful";
-					side=2;
-					class Unit0
-					{
-						side=2;
-						vehicle="MilitantGroupLeader";
-						rank="SERGEANT";
-						position[]={0,5,0};
-					};
-					class Unit1
-					{
-						side=2;
-						vehicle="Militant_1";
-						rank="PRIVATE";
-						position[]={3,0,0};
-					};
-					class Unit2
-					{
-						side=2;
-						vehicle="Militant_2";
-						rank="PRIVATE";
-						position[]={5,0,0};
-					};
-					class Unit3
-					{
-						side=2;
-						vehicle="Militant_3";
-						rank="CORPORAL";
-						position[]={7,0,0};
-					};
-					class Unit4
-					{
-						side=2;
-						vehicle="Militant_4";
-						rank="PRIVATE";
-						position[]={9,0,0};
-					};
-					class Unit5
-					{
-						side=2;
-						vehicle="Militant_5";
-						rank="PRIVATE";
-						position[]={11,0,0};
-					};
-					class Unit6
-					{
-						side=2;
-						vehicle="Militant_Marksman";
-						rank="PRIVATE";
-						position[]={13,0,0};
-					};
-				};
-			};
-			name3="Armed Terrorists";
-			class Armed_Terrorists
-			{
-				name="Terrorists"
-				class Terrorist_ATTeam
-				{
-					name="Terrorist AT Team";
-					faction="Jofren_Faithful";
-					side=2;
-					class Unit0
-					{
-						side=2;
-						vehicle="Grenadier";
-						rank="SERGEANT";
-						position[]={0,5,0};
-					};
-					class Unit1
-					{
-						side=2;
-						vehicle="Anti_Tank_Operator";
-						rank="PRIVATE";
-						position[]={3,0,0};
-					};
-					class Unit2
-					{
-						side=2;
-						vehicle="Rifleman_2";
-						rank="CORPORAL";
-						position[]={5,0,0};
-					};
-					class Unit3
-					{
-						side=2;
-						vehicle="Anti_Tank_Operator";
-						rank="PRIVATE";
-						position[]={7,0,0};
-					};
-				};
-				class Terrorist_MGTeam
-				{
-					name="Terrorist MG Team";
-					faction="Jofren_Faithful";
-					side=2;
-					class Unit0
-					{
-						side=2;
-						vehicle="Grenadier";
-						rank="SERGEANT";
-						position[]={0,5,0};
-					};
-					class Unit1
-					{
-						side=2;
-						vehicle="Machinegunner";
-						rank="PRIVATE";
-						position[]={3,0,0};
-					};
-					class Unit2
-					{
-						side=2;
-						vehicle="Rifleman_2";
-						rank="CORPORAL";
-						position[]={5,0,0};
-					};
-					class Unit3
-					{
-						side=2;
-						vehicle="Machinegunner";
-						rank="PRIVATE";
-						position[]={7,0,0};
-					};
-				};
-				class Terrorist_Team
-				{
-					name="Terrorist Team";
-					faction="Jofren_Faithful";
-					side=2;
-					class Unit0
-					{
-						side=2;
-						vehicle="Grenadier";
-						rank="SERGEANT";
-						position[]={0,5,0};
-					};
-					class Unit1
-					{
-						side=2;
-						vehicle="Rifleman_1";
-						rank="PRIVATE";
-						position[]={3,0,0};
-					};
-					class Unit2
-					{
-						side=2;
-						vehicle="Rifleman_2";
-						rank="CORPORAL";
-						position[]={5,0,0};
-					};
-					class Unit3
-					{
-						side=2;
-						vehicle="Rifleman_3";
-						rank="PRIVATE";
-						position[]={7,0,0};
-					};
-				};
-				class Terrorist_Squad
-				{
-					name="Terrorist Squad";
-					faction="Jofren_Faithful";
-					side=2;
-					class Unit0
-					{
-						side=2;
-						vehicle="Grenadier";
-						rank="SERGEANT";
-						position[]={0,5,0};
-					};
-					class Unit1
-					{
-						side=2;
-						vehicle="Rifleman_1";
-						rank="PRIVATE";
-						position[]={3,0,0};
-					};
-					class Unit2
-					{
-						side=2;
-						vehicle="Rifleman_2";
-						rank="CORPORAL";
-						position[]={5,0,0};
-					};
-					class Unit3
-					{
-						side=2;
-						vehicle="Anti_Tank_Operator";
-						rank="PRIVATE";
-						position[]={7,0,0};
-					};
-					class Unit4
-					{
-						side=2;
-						vehicle="Grenadier";
-						rank="SERGEANT";
-						position[]={9,0,0};
-					};
-					class Unit5
-					{
-						side=2;
-						vehicle="Machinegunner";
-						rank="PRIVATE";
-						position[]={11,0,0};
-					};
-					class Unit6
-					{
-						side=2;
-						vehicle="Anti_Infantry_Operator";
-						rank="CORPORAL";
-						position[]={13,0,0};
-					};
-					class Unit7
-					{
-						side=2;
-						vehicle="Rifleman_3";
-						rank="PRIVATE";
-						position[]={15,0,0};
 					};
 				};
 			};

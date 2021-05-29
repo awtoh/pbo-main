@@ -6,8 +6,74 @@ class CfgPatches
 	{
 		units[] =
 		{	//Buhriz Movement
-			"Insurgent_Affiliate_Backpack",
-			"Insurgent_Associate_Backpack",
+			"BM_Auto_Rifleman_Heavy",
+			"BM_Auto_Rifleman_Standard",
+			"BM_Auto_Rifleman_Light",
+			"BM_AntiArmor_Heavy",
+			"BM_AntiArmor_Standard",
+			"BM_AntiArmor_Light",								
+			"BM_AntiArmor_Disposable",
+			"BM_AntiAir_Standard",
+			"BM_AntiAir_Light",
+			"BM_Bonesetter",
+			"BM_Bomber",
+			"BM_Crewman",
+			"BM_Driver",
+			"BM_Grenadier_Standard",
+			"BM_Grenadier_Light",
+			"BM_Insurgent_1",
+			"BM_Insurgent_2",
+			"BM_Insurgent_3",
+			"BM_Insurgent_4",
+			"BM_Insurgent_Affiliate",
+			"BM_Insurgent_Associate",
+			"BM_Iskandar_AntiArmor",
+			"BM_Iskandar_Rifleman",
+			"BM_Iskandar_Grenadier",
+			"BM_Iskandar_Autorifleman",
+			"BM_Iskandar_Sharpshooter",
+			"BM_Marksman_Standard",
+			"BM_Marksman_Light",
+			"BM_Medic",
+			"BM_Officer",
+			"BM_Officer_Armed",
+			"BM_Pilot",
+			"BM_Rifleman_AKMS_Standard",
+			"BM_Rifleman_AKMS_Light",
+			"BM_Rifleman_AK74_Standard",
+			"BM_Rifleman_AK74_Light",
+			"BM_Sharpshooter",
+			"BM_Sniper_Standard",
+			"BM_Sniper_Light",
+			"BM_Warlord_Heavy",
+			"BM_Warlord_Standard",
+			"BM_Warlord_Light",
+			"BM_Offroad",
+			"BM_Offroad_AT",
+			"BM_Offroad_HMG",
+			"BM_Static_AGS",
+			"BM_Static_DShKM",
+			"BM_Static_DShKM_Minitripod",
+			"BM_Static_Igla",
+			"BM_Static_Kornet",
+			"BM_Static_Metis",
+			"BM_Static_Mortar",
+			"BM_Static_Mk19",
+			"BM_Pickup",
+			"BM_Pickup_AT",
+			"BM_Pickup_HMG",
+			"BM_Truck",
+			"BM_Ural",
+			"BM_Ural_Covered",
+			"BM_Ural_AA",
+			"BM_BTR60BM",
+			"BM_BMP_1",
+			"BM_BMP_2",
+			"BM_ZSU_23_4",
+			"BM_T_55A",
+			"BM_T_72",
+			"BM_Mi_8",
+			//Buhriz Movement Non-units
 			"AR_Heavy",
 			"AR_Standard",
 			"AR_Light",
@@ -18,74 +84,9 @@ class CfgPatches
 			"AA_Light",
 			"Bonesetter_Bag",
 			"Bomber_Bag",
+			"Insurgent_Affiliate_Backpack",
+			"Insurgent_Associate_Backpack",
 			"Medic_Bag",
-			"Auto_Rifleman_Heavy",
-			"Auto_Rifleman_Standard",
-			"Auto_Rifleman_Light",
-			"AntiArmor_Heavy",
-			"AntiArmor_Standard",
-			"AntiArmor_Light",								
-			"AntiArmor_Disposable",
-			"AntiAir_Standard",
-			"AntiAir_Light",
-			"Bonesetter",
-			"Bomber",
-			"Crewman",
-			"Driver",
-			"Grenadier_Standard",
-			"Grenadier_Light",
-			"Insurgent_1",
-			"Insurgent_2",
-			"Insurgent_3",
-			"Insurgent_4",
-			"Insurgent_Affiliate",
-			"Insurgent_Associate",
-			"Iskandar_AntiArmor",
-			"Iskandar_Rifleman",
-			"Iskandar_Grenadier",
-			"Iskandar_Autorifleman",
-			"Iskandar_Sharpshooter",
-			"Marksman_Standard",
-			"Marksman_Light",
-			"Medic",
-			"Officer",
-			"Officer_Armed",
-			"Pilot",
-			"Rifleman_AKMS_Standard",
-			"Rifleman_AKMS_Light",
-			"Rifleman_AK74_Standard",
-			"Rifleman_AK74_Light",
-			"Sharpshooter",
-			"Sniper_Standard",
-			"Sniper_Light",
-			"Warlord_Heavy",
-			"Warlord_Standard",
-			"Warlord_Light",
-			"Offroad",
-			"Offroad_AT",
-			"Offroad_HMG",
-			"Static_AGS",
-			"Static_DShKM",
-			"Static_DShKM_Minitripod",
-			"Static_Igla",
-			"Static_Kornet",
-			"Static_Metis",
-			"Static_Mortar",
-			"Static_Mk19",
-			"Pickup",
-			"Pickup_AT",
-			"Pickup_HMG",
-			"Truck",
-			"Ural",
-			"Ural_Covered",
-			"Ural_AA",
-			"BTR60BM",
-			"BMP_1",
-			"BMP_2",
-			"ZSU_23_4",
-			"T_55A",
-			"T_72",
-			"Mi_8",
 			
 			
 			//Free Nevara Organisation
@@ -120,42 +121,135 @@ class CfgPatches
 			
 			
 			//Leskovets Communist Party
-			"HQ_Bodyguard",
-			"HQ_Coordinator",
-			"HQ_Officer",
-			"HQ_Radioman",
-			"HQ_Quartermaster",
-			"Insurgent_AntiTank",
-			"Insurgent_GroupLeader",
-			"Insurgent_Gunner",
-			"Insurgent_Skirmisher_AKM",
-			"Insurgent_Skirmisher_Romat",
-			"Insurgent_Skirmisher_SKS",
-			"Insurgent_Sniper",
-			"Raider_Autorifleman",
-			"Raider_Assaulter",
-			"Raider_Rocketeer",
-			"Raider_Sniper",
-			"Raider_RaidLeader",
-			"Rebel_AntiTank",
-			"Rebel_Grenadier",
-			"Rebel_Machinegunner",
-			"Rebel_Marksman",
-			"Rebel_Rifleman",
-			"Rebel_TeamLeader",
-			"Rebel_SectionLeader",
-			"Veteran_AntiTank",
-			"Veteran_Grenadier",
-			"Veteran_Marksman",
-			"Veteran_Rifleman",
-			"Veteran_Machinegunner",
-			"Veteran_TeamLeader",
-			"Veteran_SectionLeader",
+			"LCP_HQ_Bodyguard",
+			"LCP_HQ_Commander",
+			"LCP_HQ_Coordinator",
+			"LCP_HQ_Officer",
+			"LCP_HQ_Quartermaster",
+			"LCP_HQ_Radioman",
+			"LCP_Insurgent_AntiTank",
+			"LCP_Insurgent_Fighter",
+			"LCP_Insurgent_GroupLeader",
+			"LCP_Insurgent_Gunner",
+			"LCP_Insurgent_Skirmisher_AKM",
+			"LCP_Insurgent_Skirmisher_Romat",
+			"LCP_Insurgent_Skirmisher_SKS",
+			"LCP_Insurgent_Sniper",
+			"LCP_Raider_Assaulter",
+			"LCP_Raider_Autorifleman",
+			"LCP_Raider_RaidLeader",
+			"LCP_Raider_Rocketeer",
+			"LCP_Raider_Sniper",
+			"LCP_Rebel_AntiTank",
+			"LCP_Rebel_Grenadier",
+			"LCP_Rebel_Machinegunner",
+			"LCP_Rebel_Rifleman",
+			"LCP_Rebel_SectionLeader",
+			"LCP_Rebel_TeamLeader",
+			"LCP_Veteran_AntiTank",
+			"LCP_Veteran_Grenadier",
+			"LCP_Veteran_Machinegunner",
+			"LCP_Veteran_Rifleman",
+			"LCP_Veteran_SectionLeader",
+			"LCP_Veteran_TeamLeader",
+			"LCP_Static_AGS_17",
+			"LCP_Static_DhSKM",
+			"LCP_Static_Mortar",			
+			"LCP_Static_SAM",
+			"LCP_Static_ZU_23_2",
+			"LCP_Vehicle_BMP_1",
+			"LCP_Vehicle_BMP_2",
+			"LCP_Vehicle_BTR_60",
+			"LCP_Vehicle_UAZ",
+			"LCP_Vehicle_UAZ_Covered",
+			"LCP_Vehicle_URAL",
+			"LCP_Vehicle_URAL_Covered",
+			"LCP_Vehicle_V3S",
+			"LCP_Vehicle_V3S_Covered",
+			"LCP_Vehicle_ZSU_23_4",
+			//Leskovets Communist Party Non-units
+			"LCP_Radiopack",
+			"LCP_Fighterpack",
+			"LCP_Gunnerpack",
+			"LCP_RaiderRocketeerPack",
+			"LCP_Rebel_Machinegun",
+			"LCP_Rebel_RPG",
+			"LCP_Veteran_Machinegun",
+			"LCP_Veteran_RPG",
+			
+			
+			//Fulguda Army
+			"FulgudaCamo_AntiTank",
+			"FulgudaCamo_Machinegunner",
+			"FulgudaCamo_Marksman",
+			"FulgudaCamo_Rifleman",
+			"FulgudaCamo_SquadLeader",
+			"FulgudaCamo_TeamLeader",
+			"FulgudaCamo_",
+			"FulgudaHQ_Bodyguard",
+			"FulgudaHQ_Commander",
+			"FulgudaHQ_CommanderCompany",
+			"FulgudaHQ_CommanderPlatoon",
+			"FulgudaHQ_Lieutenant",
+			"FulgudaHQ_Major",
+			"FulgudaHQ_Officer",
+			"FulgudaHQ_Radioman",
+			"FulgudaHQ_SecurityRifle",
+			"FulgudaHQ_SecurityShotgunner",
+			"FulgudaHQ_SecuritySMG",
+			"FulgudaHQ_Sergeant",
+			"FulgudaHQ_",
+			"FulgudaNormal_AntiTank",
+			"FulgudaNormal_Crewman",
+			"FulgudaNormal_HeliCrew",
+			"FulgudaNormal_HeliPilot",
+			"FulgudaNormal_Machinegunner",
+			"FulgudaNormal_Marksman",
+			"FulgudaNormal_Pilot",
+			"FulgudaNormal_Rifleman",
+			"FulgudaNormal_SquadLeader",
+			"FulgudaNormal_TeamLeader",
+			"FulgudaNormal_",
+			"FulgudaSF_AntiAir",
+			"FulgudaSF_AntiTank",
+			"FulgudaSF_AntiTankHeavy",
+			"FulgudaSF_Autorifleman",
+			"FulgudaSF_Breacher1",
+			"FulgudaSF_Breacher2",
+			"FulgudaSF_CQC",
+			"FulgudaSF_CQCGrenadier",
+			"FulgudaSF_Gunner",
+			"FulgudaSF_Operator",
+			"FulgudaSF_SquadLeader",
+			"FulgudaSFRecee_FireCoordinator",
+			"FulgudaSFRecee_JTAC",
+			"FulgudaSFRecee_RTO",
+			"FulgudaSFRecee_Shooter",
+			"FulgudaSFRecee_Spotter",
+			"FulgudaSpecialPurpose_Advisor",
+			"FulgudaSpecialPurpose_Overseer",
+			"FulgudaSpecialPurpose_Overseer",
+			"FulgudaSpecialPurpose_Operator",
+			"FulgudaSpecialPurpose_SectionLeader",
+			"FulgudaSpecialPurposeCBRN_Advisor",
+			"FulgudaSpecialPurposeCBRN_Overseer",
+			"FulgudaSpecialPurposeCBRN_Overseer",
+			"FulgudaSpecialPurposeCBRN_Operator",
+			"FulgudaSpecialPurposeCBRN_SectionLeader",
 			
 			
 			/*
-			//Tembelan National Army
-			"
+			//Reiburian Armed Forces
+			"Reiburia_AntiTank",
+			"Reiburia_Autorifleman",
+			"Reiburia_Crewman",
+			"Reiburia_Machinegunner",
+			"Reiburia_Officer",
+			"Reiburia_Radioman",
+			"Reiburia_Rifleman",
+			"Reiburia_Signaller",
+			"Reiburia_SquadLeader",
+			"Reiburia_TeamLeader"
 			
 			
 			//Shadow Company
@@ -225,7 +319,58 @@ class CfgPatches
 			
 			//Ashton's Misc.
 			"ADFX01",
-			"ADFX02"
+			"ADFX02",
+			"ACE_BLACKWASP",
+			"ACE_F16C",
+			"ACE_F35B",
+			"ACE_F4PHANTOM",
+			"ACE_HARRIER",
+			"ACE_MIRAGE2000",
+			"ACE_SHIKRA",
+			"JAMMED_A7CORSAIR",
+			"JAMMED_AH64",
+			"JAMMED_BM21",
+			"JAMMED_BMP1",
+			"JAMMED_BMP2",
+			"JAMMED_C130",
+			"JAMMED_CH47",
+			"JAMMED_F16C",
+			"JAMMED_F4PHANTOM",
+			"JAMMED_HUMVEEDESERT",
+			"JAMMED_HUMVEEDESERTM2",
+			"JAMMED_HUMVEEWOODLAND",
+			"JAMMED_HUMVEEWOODLANDM2",
+			"JAMMED_KA50",
+			"JAMMED_KA52",
+			"JAMMED_KAMAZ",
+			"JAMMED_KAMAZCOVERED",
+			"JAMMED_M1A1",
+			"JAMMED_M1A2",
+			"JAMMED_M2A3",
+			"JAMMED_MIRAGE2000",
+			"JAMMED_MI24",
+			"JAMMED_MI8",
+			"JAMMED_MTVRDESERT",
+			"JAMMED_MTVRWOODLAND",
+			"JAMMED_SAMSITE",
+			"JAMMED_SHIKRA",
+			"JAMMED_SUV",
+			"JAMMED_T72",
+			"JAMMED_T90A",
+			"JAMMED_VODNIK",
+			"JAMMED_VODNIKPKM",
+			"JAMMED_VODNIKAGS",
+			"JAMMED_VODNIKBMP",
+			"JAMMED_VODNIKBTR",
+			"JAMMED_UAZ",
+			"JAMMED_UAZCOVERED",
+			"JAMMED_UH1Y",
+			"JAMMED_UH60M",
+			"JAMMED_UH60MEWSS",
+			"JAMMED_URAL",
+			"JAMMED_URALCOVERED",
+			"JAMMED_ZSU_23_4",
+			"JAMMED_ZU_23_2"
 			
 		};
 		weapons[] = {};
@@ -269,6 +414,12 @@ class CfgFactionClasses
 	class Leskovets_Communist_Party
 	{
 		displayName="Leskovets Communist Party";
+		priority=2;
+		side=2;
+	};
+	class Fulguda_Army
+	{
+		displayName="Fulguda Army";
 		priority=2;
 		side=2;
 	};
@@ -340,8 +491,8 @@ class CfgVehicleClasses
 		displayName="Armour";
 		priority=3;
 	};
-	};
 };
+
 
  ///// Weapon Attachments /////
 class CfgWeapons
@@ -481,9 +632,23 @@ class CfgWeapons
 			};
 		};
 	};
+	class SVD_ScopedMagnified: CUP_srifle_SVD
+	{
+		displayName = "SVD Magnified Scoped";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_pso_3_open";
+			};
+		};
+	};
 };
 class CfgVehicles
 {
+	// Soldiers
+	class B_Pilot_F;
 	class I_Soldier_TL_F;
 	class I_Soldier_SL_F;
 	class I_Soldier_AR_F;
@@ -500,23 +665,38 @@ class CfgVehicles
 	class I_Officer_F;
 	class I_Helipilot_F;
 	// Backpacks
-	class CUP_B_SLA_Medicbag;
+	class CFP_AssaultPack_M81;
+	class CFP_RPGPack_Grey;
 	class CFP_RPGPack_Khaki;
 	class CFP_RPGPack_TropicGreen;
-	class CFP_RPGPack_Grey;
-	class B_TacticalPack_oli;
+	class CUP_B_AlicePack_Bedroll;
+	class CUP_B_CivPack_WDL;
+	class CUP_B_SLA_Medicbag;
+	class B_AssualtPack_rgr;
 	class B_FieldPack_khk;
 	class B_FieldPack_oli;
-	class milgp_bp_Tomahawk_rgr;
+	class B_Kitbag_rgr;
 	class B_LegStrapBag_coyote_F;
 	class B_LegStrapBag_black_F;
+	class B_RadioBag_01_black_F;
 	class B_TacticalPack;
 	class B_TacticalPack_blk;
-	class B_Kitbag_rgr;
-	class B_AssualtPack_rgr;
-	//Vehicles
-	class CUP_O_BMP1_TKA;
-	class CUP_O_BMP2_TKA;
+	class B_TacticalPack_oli;
+	class milgp_bp_Tomahawk_rgr;
+	// Static Weapons
+	class CUP_O_DSHKM_ChDKZ;
+	class CUP_O_DSHkM_MiniTriPod_ChDKZ;
+	class CUP_O_2b14_82mm_ChDKZ;
+	class CUP_B_MK19_TriPod_US;
+	class CUP_B_AGS_ACR;
+	class CUP_B_Igla_AA_pod_CDF;
+	class CUP_O_Kornet_RU;
+	class CUP_O_Metis_RU;
+	class B_SAM_System_02_F;
+	// Vehicles
+	//// Wheeled
+	class CUP_O_BM21_RU;
+	class CUP_O_BM21_SLA;
 	class CUP_C_LR_Transport_CTK;
 	class CUP_B_LR_MG_GB_W;
 	class CUP_O_LR_SPG9_TKA;
@@ -525,24 +705,27 @@ class CfgVehicles
 	class I_G_Offroad_01_AT_F;
 	class I_G_Offroad_01_armed_F;
 	class CUP_O_Ural_RU;
-	class CUP_B_BTR60_CDF;
-	class CUP_O_T55_TK;
-	class CUP_B_T72_CDF;
+	class CFP_O_NKARMY_BTR_60_01;
 	class CUP_O_Datsun_PK_Random;
-	class CUP_O_Mi8_CHDKZ;
-	class CUP_B_ZSU23_Afghan_CDF;
 	class CUP_B_BRDM2_CDF;
 	class CUP_B_BRDM2_ATGM_CDF;
 	class CUP_O_Ural_ZU23_RU;
-	class CFP_I_SDRebelsrf_DShKM_01;
-	class CFP_I_SDRebelsrf_DShKM_Low_01;
-	class CFP_I_SDRebelsrf_Mortar_01;
-	class CUP_B_MK19_TriPod_US;
-	class CUP_B_AGS_ACR;
-	class CUP_B_Igla_AA_pod_CDF;
-	class CUP_O_Kornet_RU;
-	class CFP_O_HAMAS_Metis_01;
+	//// Tracked
+	class CFP_O_TBAN_BMP_1_01;
+	class CFP_O_TBAN_BMP_2_01;
+	class CFP_O_TBAN_T55_01;
+	class CFP_O_HEZBOLLAH_T72_01;
+	class CUP_B_ZSU23_Afghan_CDF;
+	//// Boats
+	//// Aircraft
+	class CUP_O_Mi8_CHDKZ;
 	class O_Plane_Fighter_02_F;
+	class B_Plane_Fighter_01_F;
+	class F16C_BLU;
+	class CUP_B_F35B_BAF;
+	class F4E_BLU;
+	class CUP_B_GR9_DYN_GB;
+	class M2000C_BLU;
 	
 	////////// Buhriz Militia Backpacks //////////
 	
@@ -698,7 +881,7 @@ class CfgVehicles
 	class Bonesetter_Bag: CUP_B_SLA_Medicbag
 	{
 		scope=1;
-		displayName="Medic Bag";
+		displayName="BM_Medic Bag";
 		class TransportMagazines
 		{
 			class _xx_Medikit
@@ -757,10 +940,162 @@ class CfgVehicles
             };
 		};
 	};
+	
+	////////// Leskovets Communist Party Backpacks //////////
+	
+	class LCP_Radiopack: B_RadioBag_01_black_F
+	{
+		scope=1;
+		displayName="LCP Radiopack";
+		class TransportMagazines
+		{
+			class SmokeShellGreen
+			{
+				magazine="SmokeShellGreen";
+				count=2;
+			};
+			class SmokeShellPurple
+			{
+				magazine="SmokeShellPurple";
+				count=2;
+			};
+			class SmokeShellRed
+			{
+				magazine="SmokeShellRed";
+				count=2;
+			};
+			class SmokeShellBlue
+			{
+				magazine="SmokeShellBlue";
+				count=2;
+			};
+		};
+	};
+	class LCP_Fighterpack: CUP_B_AlicePack_Bedroll
+	{
+		scope=1;
+		displayName="Fighter's Pack";
+		class TransportMagazines
+		{
+			class ACE_Chemlight_Shield
+			{
+				magazine="ACE_Chemlight_Shield";
+				count=1;
+			};
+			class Chemlight_red
+			{
+				magazine="Chemlight_red";
+				count=2;
+			};
+			class ACE_Chemlight_White
+			{
+				magazine="ACE_Chemlight_White";
+				count=2;
+			};
+			class ACE_Humanitarian_Ration
+			{
+				magazine="ACE_Humanitarian_Ration";
+				count=5;
+			};
+			class ACE_WaterBottle
+			{
+				magazine="ACE_WaterBottle";
+				count=5;
+			};
+		};
+	};
+	class LCP_Gunnerpack: CFP_AssaultPack_M81
+	{
+		scope=1;
+		displayName="Gunner's Pack";
+		class TransportMagazines
+		{
+			class CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=3;
+			};
+		};
+	};
+	class LCP_RaiderRocketeerPack: CUP_B_CivPack_WDL
+	{
+		scope=1;
+		displayName="Rocketeer Bag";
+		class TransportMagazines
+		{
+			class RPG7_F
+			{
+				magazine="RPG7_F";
+				count=4;
+			};
+		};
+	};
+	class LCP_Rebel_Machinegun: CFP_AssaultPack_M81
+	{
+		scope=1;
+		displayName="Ammo Bag";
+		class TransportMagazines
+		{
+			class CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=2;
+			};
+		};
+	};
+	class LCP_Rebel_RPG: CFP_RPGPack_Khaki
+	{
+		scope=1;
+		displayName="RPG Carrier";
+		class TransportMagazines
+		{
+			class CUP_PG7V_M
+			{
+				magazine="CUP_PG7V_M";
+				count=2;
+			};
+			class CUP_OG7_M
+			{
+				magazine="CUP_OG7_M";
+				count=1;
+			};
+		};
+	};
+	class LCP_Veteran_Machinegun: CFP_AssaultPack_M81
+	{
+		scope=1;
+		displayName="Ammo Bag";
+		class TransportMagazines
+		{
+			class CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M
+			{
+				magazine="CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M";
+				count=3;
+			};
+		};
+	};
+	class LCP_Veteran_RPG: CFP_RPGPack_TropicGreen
+	{
+		scope=1;
+		displayName="RPG Carrier";
+		class TransportMagazines
+		{
+			class CUP_PG7V_M
+			{
+				magazine="CUP_PG7V_M";
+				count=3;
+			};
+			class CUP_OG7_M
+			{
+				magazine="CUP_OG7_M";
+				count=1;
+			};
+		};
+	};
 
     ////////// Buhriz Insurgents //////////
 	
-	class Insurgent_1: I_Soldier_F
+	class BM_Insurgent_1: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -771,7 +1106,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Insurgent_1";
+		_generalMacro="BM_Insurgent_1";
 		scope=2;
 		displayName="Insurgent (AK74)";
 		weapons[]=
@@ -831,7 +1166,7 @@ class CfgVehicles
 		uniformClass="CUP_I_B_PMC_Unit_3";
 		camouflage=1.6;
 	};
-	class Insurgent_2: I_Soldier_F
+	class BM_Insurgent_2: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -842,7 +1177,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Insurgent_2";
+		_generalMacro="BM_Insurgent_2";
 		scope=2;
 		displayName="Insurgent (AKMS)";
 		weapons[]=
@@ -904,7 +1239,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_BlackGrey";
 		camouflage=1.6;
 	};
-	class Insurgent_3: I_Soldier_AR_F
+	class BM_Insurgent_3: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -915,7 +1250,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Insurgent_3";
+		_generalMacro="BM_Insurgent_3";
 		scope=2;
 		displayName="Insurgent (RPK)";
 		weapons[]=
@@ -975,7 +1310,7 @@ class CfgVehicles
 		uniformClass="CUP_I_B_PMC_Unit_6";
 		camouflage=1.6;
 	};
-	class Insurgent_4: I_Soldier_F
+	class BM_Insurgent_4: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -986,7 +1321,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Insurgent_4";
+		_generalMacro="BM_Insurgent_4";
 		scope=2;
 		displayName="Insurgent (AKS74U)";
 		weapons[]=
@@ -1048,7 +1383,7 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_PulloverUniform_Green";
 		camouflage=1.6;
 	};
-	class Insurgent_Affiliate: I_Soldier_TL_F
+	class BM_Insurgent_Affiliate: I_Soldier_TL_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1060,7 +1395,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Insurgent_Affiliate";
+		_generalMacro="BM_Insurgent_Affiliate";
 		scope=2;
 		displayName="Insurgent Affiliate";
 		weapons[]=
@@ -1150,7 +1485,7 @@ class CfgVehicles
 		uniformClass="CUP_I_B_PARA_Unit_1";
 		camouflage=1.7;
 	};
-	class Insurgent_Associate: I_Soldier_SL_F
+	class BM_Insurgent_Associate: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1162,7 +1497,7 @@ class CfgVehicles
 			"Head_Euro"
 		};
 		author="Ashton";
-		_generalMacro="Insurgent_Associate";
+		_generalMacro="BM_Insurgent_Associate";
 		scope=2;
 		displayName="Insurgent Associate";
 		weapons[]=
@@ -1235,7 +1570,7 @@ class CfgVehicles
 
 	////////// Buhriz Iskandar //////////
 	
-	class Iskandar_AntiArmor: I_Soldier_LAT_F
+	class BM_Iskandar_AntiArmor: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1247,7 +1582,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Iskandar_AntiArmor";
+		_generalMacro="BM_Iskandar_AntiArmor";
 		scope=2;
 		displayName="Iskandar (AT)";
 		weapons[]=
@@ -1303,7 +1638,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class Iskandar_Autorifleman: I_Soldier_AR_F
+	class BM_Iskandar_Autorifleman: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1314,7 +1649,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Iskandar_Autorifleman";
+		_generalMacro="BM_Iskandar_Autorifleman";
 		scope=2;
 		displayName="Iskandar (AR)";
 		weapons[]=
@@ -1372,7 +1707,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-    class Iskandar_Grenadier: I_Soldier_GL_F
+    class BM_Iskandar_Grenadier: I_Soldier_GL_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1383,7 +1718,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Iskandar_Grenadier";
+		_generalMacro="BM_Iskandar_Grenadier";
 		scope=2;
 		displayName="Iskandar (M79)";
 		weapons[]=
@@ -1473,7 +1808,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class Iskandar_Rifleman: I_Soldier_F
+	class BM_Iskandar_Rifleman: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1484,7 +1819,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Iskandar_Rifleman";
+		_generalMacro="BM_Iskandar_Rifleman";
 		scope=2;
 		displayName="Iskandar (Rifleman)";
 		weapons[]=
@@ -1546,7 +1881,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class Iskandar_Sharpshooter: I_Soldier_M_F
+	class BM_Iskandar_Sharpshooter: I_Soldier_M_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1557,7 +1892,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Iskandar_Sharpshooter";
+		_generalMacro="BM_Iskandar_Sharpshooter";
 		scope=2;
 		displayName="Iskandar (SVDS)";
 		weapons[]=
@@ -1623,7 +1958,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class Bomber: I_Soldier_F
+	class BM_Bomber: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1634,9 +1969,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Bomber";
+		_generalMacro="BM_Bomber";
 		scope=2;
-		displayName="Iskandar (Bomber)";
+		displayName="Iskandar (BM_Bomber)";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74U",
@@ -1690,7 +2025,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class Bonesetter: I_medic_F
+	class BM_Bonesetter: I_medic_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1702,9 +2037,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Bonesetter";
+		_generalMacro="BM_Bonesetter";
 		scope=2;
-		displayName="Iskandar (Bonesetter)";
+		displayName="Iskandar (BM_Bonesetter)";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74U",
@@ -1764,7 +2099,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_Green";
 		camouflage=1.6;
 	};
-	class Warlord_Light: I_Officer_F
+	class BM_Warlord_Light: I_Officer_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1775,7 +2110,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Warlord_Light";
+		_generalMacro="BM_Warlord_Light";
 		scope=2;
 		displayName="Warlord (Light)";
 		weapons[]=
@@ -1837,7 +2172,7 @@ class CfgVehicles
 		uniformClass="CFP_U_KhetPartug_Short_M81";
 		camouflage=1.6;
 	};
-	class Warlord_Standard: I_Officer_F
+	class BM_Warlord_Standard: I_Officer_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1848,7 +2183,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Warlord_Standard";
+		_generalMacro="BM_Warlord_Standard";
 		scope=2;
 		displayName="Warlord";
 		weapons[]=
@@ -1914,7 +2249,7 @@ class CfgVehicles
 		uniformClass="CFP_U_KhetPartug_Short_M81";
 		camouflage=1.6;
 	};
-	class Warlord_Heavy: I_Officer_F
+	class BM_Warlord_Heavy: I_Officer_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -1925,7 +2260,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Warlord_Heavy";
+		_generalMacro="BM_Warlord_Heavy";
 		scope=2;
 		displayName="Warlord (Heavy)";
 		weapons[]=
@@ -1994,7 +2329,7 @@ class CfgVehicles
 	
     ////////// Buhriz Militia //////////
 	
-	class AntiAir_Light: I_Soldier_AA_F
+	class BM_AntiAir_Light: I_Soldier_AA_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2006,7 +2341,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="AntiAir_Light";
+		_generalMacro="BM_AntiAir_Light";
 		scope=2;
 		displayName="AA Soldier (Light)";
 		weapons[]=
@@ -2072,7 +2407,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class AntiAir_Standard: I_Soldier_AA_F
+	class BM_AntiAir_Standard: I_Soldier_AA_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2084,7 +2419,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="AntiAir_Standard";
+		_generalMacro="BM_AntiAir_Standard";
 		scope=2;
 		displayName="AA Soldier";
 		weapons[]=
@@ -2152,7 +2487,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class AntiArmor_Disposable: I_Soldier_LAT_F
+	class BM_AntiArmor_Disposable: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2164,7 +2499,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="AntiArmor_Disposable";
+		_generalMacro="BM_AntiArmor_Disposable";
 		scope=2;
 		displayName="AT Soldier (M72)";
 		weapons[]=
@@ -2220,7 +2555,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class AntiArmor_Heavy: I_Soldier_LAT_F
+	class BM_AntiArmor_Heavy: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2232,7 +2567,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="AntiArmor_Heavy";
+		_generalMacro="BM_AntiArmor_Heavy";
 		scope=2;
 		displayName="AT Soldier (Heavy)";
 		weapons[]=
@@ -2288,7 +2623,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class AntiArmor_Standard: I_Soldier_LAT_F
+	class BM_AntiArmor_Standard: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2300,7 +2635,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="AntiArmor_Standard";
+		_generalMacro="BM_AntiArmor_Standard";
 		scope=2;
 		displayName="AT Soldier";
 		weapons[]=
@@ -2354,7 +2689,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class AntiArmor_Light: I_Soldier_LAT_F
+	class BM_AntiArmor_Light: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2366,7 +2701,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="AntiArmor_Light";
+		_generalMacro="BM_AntiArmor_Light";
 		scope=2;
 		displayName="AT Soldier (Light)";
 		weapons[]=
@@ -2426,7 +2761,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Auto_Rifleman_Heavy: I_Soldier_AR_F
+	class BM_Auto_Rifleman_Heavy: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2438,7 +2773,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Auto_Rifleman_Heavy";
+		_generalMacro="BM_Auto_Rifleman_Heavy";
 		scope=2;
 		displayName="Autorifleman (Heavy)";
 		weapons[]=
@@ -2488,7 +2823,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Auto_Rifleman_Standard: I_Soldier_AR_F
+	class BM_Auto_Rifleman_Standard: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2500,7 +2835,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Auto_Rifleman_Standard";
+		_generalMacro="BM_Auto_Rifleman_Standard";
 		scope=2;
 		displayName="Autorifleman";
 		weapons[]=
@@ -2546,7 +2881,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Auto_Rifleman_Light: I_Soldier_AR_F
+	class BM_Auto_Rifleman_Light: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2558,7 +2893,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Auto_Rifleman_Light";
+		_generalMacro="BM_Auto_Rifleman_Light";
 		scope=2;
 		displayName="Autorifleman (Light)";
 		weapons[]=
@@ -2602,7 +2937,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Crewman: I_crew_F
+	class BM_Crewman: I_crew_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2613,9 +2948,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Crewman";
+		_generalMacro="BM_Crewman";
 		scope=2;
-		displayName="Crewman";
+		displayName="BM_Crewman";
 		weapons[]=
 		{
 			"CUP_hgun_Makarov",
@@ -2663,7 +2998,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_M81";
 		camouflage=1.6;
 	};
-	class Driver: I_Soldier_F
+	class BM_Driver: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2674,9 +3009,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Driver";
+		_generalMacro="BM_Driver";
 		scope=2;
-		displayName="Driver";
+		displayName="BM_Driver";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74U",
@@ -2724,7 +3059,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-    class Grenadier_Standard: I_Soldier_GL_F
+    class BM_Grenadier_Standard: I_Soldier_GL_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2735,7 +3070,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Grenadier_Standard";
+		_generalMacro="BM_Grenadier_Standard";
 		scope=2;
 		displayName="Grenadier";
 		weapons[]=
@@ -2809,7 +3144,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Grenadier_Light: I_Soldier_GL_F
+	class BM_Grenadier_Light: I_Soldier_GL_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2820,7 +3155,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Grenadier_Light";
+		_generalMacro="BM_Grenadier_Light";
 		scope=2;
 		displayName="Grenadier (Light)";
 		weapons[]=
@@ -2884,7 +3219,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Marksman_Standard: I_Soldier_M_F
+	class BM_Marksman_Standard: I_Soldier_M_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2895,7 +3230,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Marksman_Standard";
+		_generalMacro="BM_Marksman_Standard";
 		scope=2;
 		displayName="Marksman";
 		weapons[]=
@@ -2965,7 +3300,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Marksman_Light: I_Soldier_M_F
+	class BM_Marksman_Light: I_Soldier_M_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -2976,7 +3311,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Marksman_Light";
+		_generalMacro="BM_Marksman_Light";
 		scope=2;
 		displayName="Marksman (Light)";
 		weapons[]=
@@ -3040,7 +3375,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Medic: I_medic_F
+	class BM_Medic: I_medic_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3052,9 +3387,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Medic";
+		_generalMacro="BM_Medic";
 		scope=2;
-		displayName="Medic";
+		displayName="BM_Medic";
 		weapons[]=
 		{
 			"CUP_arifle_AK74_Early",
@@ -3108,7 +3443,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Officer: I_Officer_F
+	class BM_Officer: I_Officer_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3119,9 +3454,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Officer";
+		_generalMacro="BM_Officer";
 		scope=2;
-		displayName="Officer";
+		displayName="BM_Officer";
 		weapons[]=
 		{
 			"CUP_arifle_AKM_Early",
@@ -3169,7 +3504,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Officer_Armed: I_Officer_F
+	class BM_Officer_Armed: I_Officer_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3180,9 +3515,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Officer_Armed";
+		_generalMacro="BM_Officer_Armed";
 		scope=2;
-		displayName="Officer (Armed)";
+		displayName="BM_Officer (Armed)";
 		weapons[]=
 		{
 			"CUP_arifle_AKM_Early",
@@ -3254,7 +3589,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Pilot: I_Helipilot_F
+	class BM_Pilot: I_Helipilot_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3265,9 +3600,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Pilot";
+		_generalMacro="BM_Pilot";
 		scope=2;
-		displayName="Pilot";
+		displayName="BM_Pilot";
 		weapons[]=
 		{
 			"CUP_hgun_Makarov",
@@ -3315,7 +3650,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Rifleman_AKMS_Light: I_Soldier_F
+	class BM_Rifleman_AKMS_Light: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3326,7 +3661,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Rifleman_AKMS_Light";
+		_generalMacro="BM_Rifleman_AKMS_Light";
 		scope=2;
 		displayName="Rifleman (AKMS Light)";
 		weapons[]=
@@ -3380,7 +3715,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Rifleman_AKMS_Standard: I_Soldier_F
+	class BM_Rifleman_AKMS_Standard: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3391,7 +3726,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Rifleman_AKMS_Standard";
+		_generalMacro="BM_Rifleman_AKMS_Standard";
 		scope=2;
 		displayName="Rifleman (AKMS)";
 		weapons[]=
@@ -3459,7 +3794,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Rifleman_AK74_Light: I_Soldier_F
+	class BM_Rifleman_AK74_Light: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3470,7 +3805,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Rifleman_AK74_Light";
+		_generalMacro="BM_Rifleman_AK74_Light";
 		scope=2;
 		displayName="Rifleman (AK74 Light)";
 		weapons[]=
@@ -3524,7 +3859,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Rifleman_AK74_Standard: I_Soldier_F
+	class BM_Rifleman_AK74_Standard: I_Soldier_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3535,7 +3870,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Rifleman_AK74_Standard";
+		_generalMacro="BM_Rifleman_AK74_Standard";
 		scope=2;
 		displayName="Rifleman (AK74)";
 		weapons[]=
@@ -3605,7 +3940,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Sharpshooter: I_Soldier_M_F
+	class BM_Sharpshooter: I_Soldier_M_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3616,9 +3951,9 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Sharpshooter";
+		_generalMacro="BM_Sharpshooter";
 		scope=2;
-		displayName="Sharpshooter";
+		displayName="BM_Sharpshooter";
 		weapons[]=
 		{
 			"Scoped_Mosin_Nagant",
@@ -3690,7 +4025,7 @@ class CfgVehicles
 		uniformClass="CFP_U_WorkUniform_Green";
 		camouflage=1.6;
 	};
-	class Sniper_Standard: I_Soldier_M_F
+	class BM_Sniper_Standard: I_Soldier_M_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3701,7 +4036,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Sniper_Standard";
+		_generalMacro="BM_Sniper_Standard";
 		scope=2;
 		displayName="Sniper";
 		weapons[]=
@@ -3759,7 +4094,7 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-	class Sniper_Light: I_Soldier_M_F
+	class BM_Sniper_Light: I_Soldier_M_F
 	{
 		side=2;
 		faction="Buhriz_Movement";
@@ -3770,7 +4105,7 @@ class CfgVehicles
 			"Head_African"
 		};
 		author="Ashton";
-		_generalMacro="Sniper_Light";
+		_generalMacro="BM_Sniper_Light";
 		scope=2;
 		displayName="Sniper (Light)";
 		weapons[]=
@@ -3826,14 +4161,14 @@ class CfgVehicles
 		uniformClass="CFP_U_FieldUniform_M81";
 		camouflage=1.6;
 	};
-    class Offroad: C_Offroad_01_F
+    class BM_Offroad: C_Offroad_01_F
     {
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Offroad"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Offroad"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -3851,14 +4186,14 @@ class CfgVehicles
             };
         };
     };
-	class Offroad_HMG: I_G_Offroad_01_armed_F
+	class BM_Offroad_HMG: I_G_Offroad_01_armed_F
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Offroad (HMG)"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Offroad (HMG)"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -3876,14 +4211,14 @@ class CfgVehicles
             };
         };
     };
-	class Offroad_AT: I_G_Offroad_01_AT_F
+	class BM_Offroad_AT: I_G_Offroad_01_AT_F
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Offroad (AT)"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Offroad (AT)"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -3901,102 +4236,102 @@ class CfgVehicles
             };
         };
     };
-	class Static_AGS: CUP_B_AGS_ACR
+	class BM_Static_AGS: CUP_B_AGS_ACR
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "AGS30"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_DShKM: CFP_I_SDRebelsrf_DShKM_01
+	class BM_Static_DShKM: CUP_O_DSHKM_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "DShKM"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_DhSKM_Minitripod: CFP_I_SDRebelsrf_DShKM_Low_01
+	class Static_DhSKM_Minitripod: CUP_O_DSHkM_MiniTriPod_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "DShKM (MiniTripod)"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_Igla: CUP_B_Igla_AA_pod_CDF
+	class BM_Static_Igla: CUP_B_Igla_AA_pod_CDF
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "9K38 (Djigit)"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_Kornet: CUP_O_Kornet_RU
+	class BM_Static_Kornet: CUP_O_Kornet_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "9K1131 'KornetM'"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
 	};
-	class Static_Metis: CFP_O_HAMAS_Metis_01
+	class BM_Static_Metis: CUP_O_Metis_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "9K1152 'MetisM'"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_Mk19: CUP_B_MK19_TriPod_US
+	class BM_Static_Mk19: CUP_B_MK19_TriPod_US
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "Mk. 19 (M3)"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_Mortar: CFP_I_SDRebelsrf_Mortar_01
+	class BM_Static_Mortar: CUP_O_2b14_82mm_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "2B141 'Podnos'"; //Ingame name
-        crew = "Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Insurgent_1"};
-		gunnerType="Insurgent_1";
+        crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Insurgent_1"};
+		gunnerType="BM_Insurgent_1";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Pickup: CUP_C_LR_Transport_CTK
+	class BM_Pickup: CUP_C_LR_Transport_CTK
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Pickup"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Pickup"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4014,14 +4349,14 @@ class CfgVehicles
             };
         };
     };
-	class Pickup_HMG: CUP_B_LR_MG_GB_W
+	class BM_Pickup_HMG: CUP_B_LR_MG_GB_W
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Pickup (HMG)"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Pickup (HMG)"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4039,14 +4374,14 @@ class CfgVehicles
             };
         };
     };
-	class Pickup_AT: CUP_O_LR_SPG9_TKA
+	class BM_Pickup_AT: CUP_O_LR_SPG9_TKA
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Pickup (AT)"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Pickup (AT)"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4064,14 +4399,14 @@ class CfgVehicles
             };
         };
     };
-	class Truck: C_Van_01_transport_F
+	class BM_Truck: C_Van_01_transport_F
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Truck"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Truck"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4089,13 +4424,13 @@ class CfgVehicles
             };
         };
     };
-	class Ural: CUP_O_Ural_RU
+	class BM_Ural: CUP_O_Ural_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
+        displayName = "BM_Ural"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4113,13 +4448,13 @@ class CfgVehicles
             };
         };
     };
-	class Ural_Covered: CUP_O_Ural_RU
+	class BM_Ural_Covered: CUP_O_Ural_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural (Covered)"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
+        displayName = "BM_Ural (Covered)"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4137,14 +4472,14 @@ class CfgVehicles
             };
         };
     };
-	class Ural_AA: CUP_O_Ural_ZU23_RU
+	class BM_Ural_AA: CUP_O_Ural_ZU23_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural (ZU232)"; //Ingame name
-        crew = "Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Driver"};
-		gunnerType="Driver";
+        displayName = "BM_Ural (ZU232)"; //Ingame name
+        crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Driver"};
+		gunnerType="BM_Driver";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4162,15 +4497,15 @@ class CfgVehicles
             };
         };
     };
-	class BTR60BM: CUP_B_BTR60_CDF
+	class BM_BTR60BM: CFP_O_NKARMY_BTR_60_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "BTR-60"; //Ingame name
-        crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Crewman"};
-		gunnerType="Crewman";
-        hiddenSelections[] = {"LGreen"};
+        crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Crewman"};
+		gunnerType="BM_Crewman";
+        //hiddenSelections[] = {"LGreen"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
         {
@@ -4187,14 +4522,14 @@ class CfgVehicles
             };
         };
     };
-	class BMP_1: CUP_O_BMP1_TKA
+	class BM_BMP_1: CFP_O_TBAN_BMP_1_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "BMP1"; //Ingame name
-        crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Crewman"};
-		gunnerType="Crewman";
+        crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Crewman"};
+		gunnerType="BM_Crewman";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4212,14 +4547,14 @@ class CfgVehicles
             };
         };
     };
-	class BMP_2: CUP_O_BMP2_TKA
+	class BM_BMP_2: CFP_O_TBAN_BMP_2_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "BMP2"; //Ingame name
-        crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Crewman"};
-		gunnerType="Crewman";
+        crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Crewman"};
+		gunnerType="BM_Crewman";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4237,14 +4572,14 @@ class CfgVehicles
             };
         };
     };
-	class ZSU_23_4: CUP_B_ZSU23_Afghan_CDF
+	class BM_ZSU_23_4: CUP_B_ZSU23_Afghan_CDF
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "ZSU234"; //Ingame name
-        crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Crewman"};
-		gunnerType="Crewman";
+        crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Crewman"};
+		gunnerType="BM_Crewman";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4262,14 +4597,14 @@ class CfgVehicles
             };
         };
     };
-	class T_55A: CUP_O_T55_TK
+	class BM_T_55A: CFP_O_TBAN_T55_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "T-55A"; //Ingame name
-        crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Crewman"};
-		gunnerType="Crewman";
+        crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Crewman"};
+		gunnerType="BM_Crewman";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4287,14 +4622,14 @@ class CfgVehicles
             };
         };
     };
-	class T_72: CUP_B_T72_CDF
+	class BM_T_72: CFP_O_HEZBOLLAH_T72_01
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "T-72"; //Ingame name
-        crew = "Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Crewman"};
-		gunnerType="Crewman";
+        crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Crewman"};
+		gunnerType="BM_Crewman";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4312,14 +4647,14 @@ class CfgVehicles
             };
         };
     };
-	class Mi_8: CUP_O_Mi8_CHDKZ
+	class BM_Mi_8: CUP_O_Mi8_CHDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
         displayName = "Mi8"; //Ingame name
-        crew = "Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
-		typicalCargo[] = {"Pilot"};
-		gunnerType="Pilot";
+        crew = "BM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"BM_Pilot"};
+		gunnerType="BM_Pilot";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -4338,7 +4673,7 @@ class CfgVehicles
         };
     };
 	
-	////////// Jofren's Faithful //////////
+	////////// Jofren's Faithful (Free Nevara Organisation) //////////
 	
 	class Anti_Infantry_Operator: I_Soldier_LAT_F
 	{
@@ -6343,7 +6678,6 @@ class CfgVehicles
             };
         };
     };
-	
 	class ADFX02: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
@@ -6352,6 +6686,3176 @@ class CfgVehicles
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_BLACKWASP: B_Plane_Fighter_01_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F/A-181 Black Wasp II ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_F16C: F16C_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-16C ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_F35B: CUP_B_F35B_BAF
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-35B Lightning II ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_F4PHANTOM: F4E_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-4E Phantom II ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_HARRIER: CUP_B_GR9_DYN_GB
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "Harrier GR.9 ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_MIRAGE2000: M2000C_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "Mirage 2000EG ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class ACE_SHIKRA: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "To-201 Shikra ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_A7CORSAIR: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_AH64: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_C130: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_CH47: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_F16C: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_F4PHANTOM: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_HUMVEEDESERT: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_HUMVEEDESERTM2: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_HUMVEEWOODLAND: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_HUMVEEWOODLANDM2: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_KA50: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_KA52: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_KAMAZ: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_KAMAZCOVERED: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_MIRAGE2000: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_MI24: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_MI8: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_MTVRDESERT: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_MTVRWOODLAND: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_SHIKRA: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_SUV: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_UAZ: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_UAZCOVERED: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_UH1Y: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_UH60M: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_UH60MEWSS: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_URAL: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_URALCOVERED: O_Plane_Fighter_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	
+	/////// Leskovets Communist Party (LCP) ///////
+	class LCP_HQ_Bodyguard: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Bodyguard";
+		scope=2;
+		displayName="HQ Unit (Bodyguard)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_C_Ushanka_02",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_C_Ushanka_02",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};	
+	class LCP_HQ_Commander: I_Officer_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Commander";
+		scope=2;
+		displayName="HQ Unit (Commander)";
+		weapons[]=
+		{
+			"CUP_hgun_Makarov",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_hgun_Makarov",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_01",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_01",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};		
+	class LCP_HQ_Coordinator: I_Soldier_SL_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Coordinator";
+		scope=2;
+		displayName="HQ Unit (Coordinator)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed",
+			"SmokeShellRed"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket2_01",
+			"SP_PatrolCap_Green",
+			"VSM_Peltor_m81_glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket2_01",
+			"SP_PatrolCap_Green",
+			"VSM_Peltor_m81_glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_U_FieldUniform_M81_SS";
+		camouflage=1.6;
+	};	
+	class LCP_HQ_Officer: I_Officer_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Officer";
+		scope=2;
+		displayName="HQ Unit (BM_Officer)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74",
+			"Rangefinder",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_PASGT_no_bags_OD",
+			"SP_Beret_Red",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_PASGT_no_bags_OD",
+			"SP_Beret_Red",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_HQ_Quartermaster: I_Officer_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Quartermaster";
+		scope=2;
+		displayName="HQ Unit (Quartermaster)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_PASGT",
+			"CUP_H_US_patrol_cap_WDL",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_PASGT",
+			"CUP_H_US_patrol_cap_WDL",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_HQ_Radioman: I_Soldier_SL_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Radiopack";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_HQ_Radioman";
+		scope=2;
+		displayName="HQ Unit (Radioman)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74U",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74U",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_TacChestrig_grn_F",
+			"CFP_PatrolCap_M81",
+			"VSM_Peltor_m81_glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_TacChestrig_grn_F",
+			"CFP_PatrolCap_M81",
+			"VSM_Peltor_m81_glasses",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_GUER_M81";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_AntiTank: I_Soldier_LAT_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_AntiTank";
+		scope=2;
+		displayName="Insurgent (AT)";
+		weapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"CUP_RPG18_M",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"CUP_RPG18_M",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"CUP_H_FR_BandanaWdl",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"CUP_H_FR_BandanaWdl",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_GUER_M81";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_Fighter: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Fighterpack";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_Fighter";
+		scope=2;
+		displayName="Insurgent (Fighter)";
+		weapons[]=
+		{
+			"CUP_arifle_AKMS_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKMS_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_O_Ins_Carrier_Rig",
+			"CUP_H_TK_Helmet",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_O_Ins_Carrier_Rig",
+			"CUP_H_TK_Helmet",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_05";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_GroupLeader: I_Soldier_SL_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_GroupLeader";
+		scope=2;
+		displayName="Insurgent (Group Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AKM_GL_Early",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKM_GL_Early",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"SmokeShell",
+			"CUP_HandGrenade_RGO"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"SmokeShell",
+			"CUP_HandGrenade_RGO"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_ALICE",
+			"CFP_Headband_wdl",
+			"G_Balaclava_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_ALICE",
+			"CFP_Headband_wdl",
+			"G_Balaclava_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_Gunner: I_Soldier_AR_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Gunnerpack";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_Gunner";
+		scope=2;
+		displayName="Insurgent (Gunner)";
+		weapons[]=
+		{
+			"CUP_lmg_PKM",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_lmg_PKM",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_SSh68NetHelmet_Green1",
+			"CUP_V_OI_TKI_Jacket3_01",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_SSh68NetHelmet_Green1",
+			"CUP_V_OI_TKI_Jacket3_01",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_GUER_M81Tee";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_Skirmisher_AKM: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_Skirmisher_AKM";
+		scope=2;
+		displayName="Insurgent (Skirmisher AKM)";
+		weapons[]=
+		{
+			"CUP_arifle_AKM_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKM_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F"
+		};
+		respawnMagazines[]=
+		{
+            "30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F",
+			"30Rnd_762x39_Mag_F"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"SP_SSh68NetHelmet_Green1",
+			"G_Balaclava_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_RUS_Smersh_1",
+			"SP_SSh68NetHelmet_Green1",
+			"G_Balaclava_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_02";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_Skirmisher_Romat: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_Skirmisher_Romat";
+		scope=2;
+		displayName="Insurgent (Skirmisher Romat)";
+		weapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_ALICE",
+			"CUP_H_C_Ushanka_02",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_ALICE",
+			"CUP_H_C_Ushanka_02",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_05";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_Skirmisher_SKS: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_Skirmisher_SKS";
+		scope=2;
+		displayName="Insurgent (Skirmisher SKS)";
+		weapons[]=
+		{
+			"CUP_SKS",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_SKS",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_10Rnd_762x39_SKS_M",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO",
+			"CUP_HandGrenade_RGO"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_02",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_OI_TKI_Jacket6_01",
+			"CUP_H_C_Ushanka_02",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Insurgent_Sniper: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Insurgent_Sniper";
+		scope=2;
+		displayName="Insurgent (Sniper)";
+		weapons[]=
+		{
+			"CUP_srifle_Mosin_Nagant",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_srifle_Mosin_Nagant",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"CUP_5Rnd_762x54_Mosin_M",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_O_Ins_Carrier_Rig_Light",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_GUER_M81";
+		camouflage=1.6;
+	};
+	class LCP_Raider_Assaulter: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Raider_Assaulter";
+		scope=2;
+		displayName="Raider (Assaulter)";
+		weapons[]=
+		{
+			"CUP_arifle_TYPE_56_2_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_TYPE_56_2_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		camouflage=1.6;
+	};
+	class LCP_Raider_Autorifleman: I_Soldier_AR_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Raider_Autorifleman";
+		scope=2;
+		displayName="Raider (Autorifleman)";
+		weapons[]=
+		{
+			"CUP_arifle_RPK74_45",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_RPK74_45",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_45Rnd_TE4_LRT4_Green_Tracer_545x39_RPK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		camouflage=1.6;
+	};
+	class LCP_Raider_RaidLeader: I_Soldier_SL_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Raider_RaidLeader";
+		scope=2;
+		displayName="Raider (Raid Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AKMS_GL",
+			"CUP_hgun_Makarov",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKMS_GL",
+			"CUP_hgun_Makarov",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Grenadier_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Grenadier_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		camouflage=1.6;
+	};
+	class LCP_Raider_Rocketeer: I_Soldier_LAT_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_RaiderRocketeerPack";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Raider_Rocketeer";
+		scope=2;
+		displayName="Raider (Rocketeer)";
+		weapons[]=
+		{
+			"CUP_arifle_TYPE_56_2_Early",
+			"launch_RPG7_F",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_TYPE_56_2_Early",
+			"launch_RPG7_F",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		camouflage=1.6;
+	};
+	class LCP_Raider_Sniper: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Raider_Sniper";
+		scope=2;
+		displayName="Raider (Sniper)";
+		weapons[]=
+		{
+			"SVD_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"SVD_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_10Rnd_762x54_SVD_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_Olive",
+			"CUP_H_RUS_SSH68_olive",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		camouflage=1.6;
+	};
+	class LCP_Rebel_AntiTank: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Rebel_RPG";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Rebel_AntiTank";
+		scope=2;
+		displayName="Rebel (AT)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_launch_RPG7V",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_launch_RPG7V",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Rebel_Grenadier: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Rebel_Grenadier";
+		scope=2;
+		displayName="Rebel (Grenadier)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_GL_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_GL_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Rebel_Machinegunner: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Rebel_Machinegun";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Rebel_Machinegunner";
+		scope=2;
+		displayName="Rebel (Machinegunner)";
+		weapons[]=
+		{
+			"CUP_lmg_PKM",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_lmg_PKM",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Rebel_Rifleman: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Rebel_Rifleman";
+		scope=2;
+		displayName="Rebel (Rifleman)";
+		weapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Rebel_SectionLeader: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Rebel_SectionLeader";
+		scope=2;
+		displayName="Rebel (Section Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Rebel_TeamLeader: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Rebel_TeamLeader";
+		scope=2;
+		displayName="Rebel (Team Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Tactical1_M81",
+			"SP_SSh68CoverHelmet_Green1",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_AntiTank: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Veteran_RPG";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_AntiTank";
+		scope=2;
+		displayName="Veteran (AT)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_launch_RPG7V",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_launch_RPG7V",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_Grenadier: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_Grenadier";
+		scope=2;
+		displayName="Veteran (Grenadier)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_GL_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_GL_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SMOKE_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_1Rnd_SmokeRed_GP25_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Grenadier_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Grenadier_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_Machinegunner: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		backpack="LCP_Veteran_Machinegun";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_Machinegunner";
+		scope=2;
+		displayName="Veteran (Machinegunner)";
+		weapons[]=
+		{
+			"CUP_lmg_PKM",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_lmg_PKM",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_100Rnd_TE4_LRT4_762x54_PK_Tracer_Green_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Base_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_Rifleman: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_Rifleman";
+		scope=2;
+		displayName="Veteran (Rifleman)";
+		weapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_IMI_Romat",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_SectionLeader: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_SectionLeader";
+		scope=2;
+		displayName="Veteran (Section Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74_Early",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74_Early",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Veteran_TeamLeader: I_Soldier_F
+	{
+		side=2;
+		faction="Leskovets_Communist_Party";
+		vehicleclass="LCP_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="LCP_Veteran_TeamLeader";
+		scope=2;
+		displayName="Veteran (Team Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AK74_Early",
+			"CUP_hgun_Makarov",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_30Rnd_545x39_AK_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_8Rnd_9x18_Makarov_M",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell",
+			"SmokeShellRed"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Interceptor_Rifleman_M81",
+			"CUP_H_C_Ushanka_03",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		camouflage=1.6;
+	};
+	class LCP_Static_AGS_17: O_Plane_Fighter_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "AGS-17"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_DhSKM: O_Plane_Fighter_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "DhSKM"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_Mortar: O_Plane_Fighter_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "Mortar"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -6389,28 +9893,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_1";
+						vehicle="BM_Insurgent_1";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Insurgent_3";
+						vehicle="BM_Insurgent_3";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Insurgent_4";
+						vehicle="BM_Insurgent_4";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6423,28 +9927,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_1";
+						vehicle="BM_Insurgent_1";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Insurgent_3";
+						vehicle="BM_Insurgent_3";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Insurgent_3";
+						vehicle="BM_Insurgent_3";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6457,56 +9961,56 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_1";
+						vehicle="BM_Insurgent_1";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Insurgent_3";
+						vehicle="BM_Insurgent_3";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Insurgent_4";
+						vehicle="BM_Insurgent_4";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Insurgent_3";
+						vehicle="BM_Insurgent_3";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Insurgent_4";
+						vehicle="BM_Insurgent_4";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
 					class Unit7
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -6519,14 +10023,14 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_1";
+						vehicle="BM_Insurgent_1";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
@@ -6539,35 +10043,35 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Affiliate";
+						vehicle="BM_Insurgent_Affiliate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Insurgent_Associate";
+						vehicle="BM_Insurgent_Associate";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Insurgent_1";
+						vehicle="BM_Insurgent_1";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Insurgent_2";
+						vehicle="BM_Insurgent_2";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Insurgent_3";
+						vehicle="BM_Insurgent_3";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
@@ -6585,28 +10089,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Affiliate";
+						vehicle="BM_Insurgent_Affiliate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Grenadier";
+						vehicle="BM_Iskandar_Grenadier";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6619,28 +10123,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Affiliate";
+						vehicle="BM_Insurgent_Affiliate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6653,28 +10157,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Affiliate";
+						vehicle="BM_Insurgent_Affiliate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6687,28 +10191,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Affiliate";
+						vehicle="BM_Insurgent_Affiliate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_Sharpshooter";
+						vehicle="BM_Iskandar_Sharpshooter";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_Sharpshooter";
+						vehicle="BM_Iskandar_Sharpshooter";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6721,56 +10225,56 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Warlord_Heavy";
+						vehicle="BM_Warlord_Heavy";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Grenadier";
+						vehicle="BM_Iskandar_Grenadier";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
 					class Unit7
 					{
 						side=2;
-						vehicle="Bonesetter";
+						vehicle="BM_Bonesetter";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -6783,56 +10287,56 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Associate";
+						vehicle="BM_Insurgent_Associate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Grenadier";
+						vehicle="BM_Iskandar_Grenadier";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="Bonesetter";
+						vehicle="BM_Bonesetter";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
 					class Unit7
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -6845,14 +10349,14 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Iskandar_Grenadier";
+						vehicle="BM_Iskandar_Grenadier";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Rifleman";
+						vehicle="BM_Iskandar_Rifleman";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
@@ -6865,28 +10369,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Iskandar_Grenadier";
+						vehicle="BM_Iskandar_Grenadier";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Iskandar_Sharpshooter";
+						vehicle="BM_Iskandar_Sharpshooter";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_AntiArmor";
+						vehicle="BM_Iskandar_AntiArmor";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Bonesetter";
+						vehicle="BM_Bonesetter";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6906,42 +10410,42 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Warlord_Heavy";
+						vehicle="BM_Warlord_Heavy";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Warlord_Standard";
+						vehicle="BM_Warlord_Standard";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Iskandar_Sharpshooter";
+						vehicle="BM_Iskandar_Sharpshooter";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Iskandar_Grenadier";
+						vehicle="BM_Iskandar_Grenadier";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Iskandar_Autorifleman";
+						vehicle="BM_Iskandar_Autorifleman";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Bonesetter";
+						vehicle="BM_Bonesetter";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
@@ -6960,28 +10464,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Light";
+						vehicle="BM_Grenadier_Light";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Light";
+						vehicle="BM_Auto_Rifleman_Light";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Rifleman_AK74_Light";
+						vehicle="BM_Rifleman_AK74_Light";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Light";
+						vehicle="BM_AntiArmor_Light";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -6994,28 +10498,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Standard";
+						vehicle="BM_Grenadier_Standard";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Standard";
+						vehicle="BM_Auto_Rifleman_Standard";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Rifleman_AK74_Standard";
+						vehicle="BM_Rifleman_AK74_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Standard";
+						vehicle="BM_AntiArmor_Standard";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -7028,28 +10532,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Standard";
+						vehicle="BM_Grenadier_Standard";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Heavy";
+						vehicle="BM_Auto_Rifleman_Heavy";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Rifleman_AK74_Standard";
+						vehicle="BM_Rifleman_AK74_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Heavy";
+						vehicle="BM_AntiArmor_Heavy";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -7062,56 +10566,56 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Light";
+						vehicle="BM_Grenadier_Light";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Light";
+						vehicle="BM_Rifleman_AKMS_Light";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Light";
+						vehicle="BM_Auto_Rifleman_Light";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Light";
+						vehicle="BM_AntiArmor_Light";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Light";
+						vehicle="BM_Rifleman_AKMS_Light";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Light";
+						vehicle="BM_Auto_Rifleman_Light";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="AntiArmor_Light";
+						vehicle="BM_AntiArmor_Light";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
 					class Unit7
 					{
 						side=2;
-						vehicle="Medic";
+						vehicle="BM_Medic";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -7124,56 +10628,56 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Standard";
+						vehicle="BM_Grenadier_Standard";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Standard";
+						vehicle="BM_Rifleman_AKMS_Standard";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Standard";
+						vehicle="BM_Auto_Rifleman_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Standard";
+						vehicle="BM_AntiArmor_Standard";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Standard";
+						vehicle="BM_Rifleman_AKMS_Standard";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Standard";
+						vehicle="BM_Auto_Rifleman_Standard";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="AntiArmor_Standard";
+						vehicle="BM_AntiArmor_Standard";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
 					class Unit7
 					{
 						side=2;
-						vehicle="Medic";
+						vehicle="BM_Medic";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -7186,56 +10690,56 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Standard";
+						vehicle="BM_Grenadier_Standard";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Standard";
+						vehicle="BM_Rifleman_AKMS_Standard";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Heavy";
+						vehicle="BM_Auto_Rifleman_Heavy";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Heavy";
+						vehicle="BM_AntiArmor_Heavy";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Grenadier_Standard";
+						vehicle="BM_Grenadier_Standard";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Heavy";
+						vehicle="BM_Auto_Rifleman_Heavy";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="AntiArmor_Heavy";
+						vehicle="BM_AntiArmor_Heavy";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
 					class Unit7
 					{
 						side=2;
-						vehicle="Medic";
+						vehicle="BM_Medic";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -7248,28 +10752,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Light";
+						vehicle="BM_Grenadier_Light";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Light";
+						vehicle="BM_Rifleman_AKMS_Light";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Standard";
+						vehicle="BM_Auto_Rifleman_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Standard";
+						vehicle="BM_Auto_Rifleman_Standard";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -7282,28 +10786,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Light";
+						vehicle="BM_Grenadier_Light";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Light";
+						vehicle="BM_Rifleman_AKMS_Light";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="AntiArmor_Standard";
+						vehicle="BM_AntiArmor_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Standard";
+						vehicle="BM_AntiArmor_Standard";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -7316,42 +10820,42 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Grenadier_Light";
+						vehicle="BM_Grenadier_Light";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AK74_Light";
+						vehicle="BM_Rifleman_AK74_Light";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="AntiArmor_Disposable";
+						vehicle="BM_AntiArmor_Disposable";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Light";
+						vehicle="BM_Auto_Rifleman_Light";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Marksman_Light";
+						vehicle="BM_Marksman_Light";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Medic";
+						vehicle="BM_Medic";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
@@ -7364,42 +10868,42 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Insurgent_Associate";
+						vehicle="BM_Insurgent_Associate";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Rifleman_AKMS_Standard";
+						vehicle="BM_Rifleman_AKMS_Standard";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Auto_Rifleman_Heavy";
+						vehicle="BM_Auto_Rifleman_Heavy";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="AntiArmor_Heavy";
+						vehicle="BM_AntiArmor_Heavy";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="AntiArmor_Disposable";
+						vehicle="BM_AntiArmor_Disposable";
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="Marksman_Standard";
+						vehicle="BM_Marksman_Standard";
 						rank="PRIVATE";
 						position[]={11,0,0};
 					};
@@ -7412,28 +10916,28 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Sniper_Standard";
+						vehicle="BM_Sniper_Standard";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Sniper_Standard";
+						vehicle="BM_Sniper_Standard";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Marksman_Standard";
+						vehicle="BM_Marksman_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Insurgent_Affiliate";
+						vehicle="BM_Insurgent_Affiliate";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -7446,42 +10950,41 @@ class CfgGroups
 					class Unit0
 					{
 						side=2;
-						vehicle="Officer_Armed";
+						vehicle="BM_Officer_Armed";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="Warlord_Heavy";
+						vehicle="BM_Warlord_Heavy";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="Warlord_Standard";
+						vehicle="BM_Warlord_Standard";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="Grenadier_Standard";
+						vehicle="BM_Grenadier_Standard";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="Medic";
+						vehicle="BM_Medic";
 						rank="PRIVATE";
 						position[]={9,0,0};
-					}
+					};
 				};
 			};
-		};
-		
+		};		
 		class Jofren_Faithful
 		{
 			name="Free Nevara Organisation";
@@ -7764,7 +11267,6 @@ class CfgGroups
 					};
 				};
 			};
-
 			name2="Militants";
 			class Militants
 			{
@@ -8018,6 +11520,233 @@ class CfgGroups
 						vehicle="Rifleman_3";
 						rank="PRIVATE";
 						position[]={15,0,0};
+					};
+				};
+			};
+		};
+		class Leskovets_Communist_Party
+		{
+			name="Leskovets Communist Party";
+			class LCP_HQ
+			{
+				name="HQ/Logistics";
+				class LCP_Command_Team_1
+				{
+					name="Command Team 1";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Officer";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Coordinator";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+				};
+				class LCP_Command_Team_2
+				{
+					name="Command Team 2";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Commander";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Quartermaster";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+				};
+				class LCP_Command_Team_3
+				{
+					name="Henchmen Group";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Commander";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Officer";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Quartermaster";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Bodyguard_Group
+				{
+					name="Bodyguard Group";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Fire_Support_Team
+				{
+					name="Fire Support Team";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Coordinator";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={5,0,0};
 					};
 				};
 			};

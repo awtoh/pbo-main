@@ -687,8 +687,6 @@ class CfgVehicles
 	//// Wheeled
 	class CUP_O_BM21_RU;
 	class CUP_O_BM21_SLA;
-	class CFP_O_TBAN_BMP_1_01;
-	class CFP_O_TBAN_BMP_2_01;
 	class CUP_C_LR_Transport_CTK;
 	class CUP_B_LR_MG_GB_W;
 	class CUP_O_LR_SPG9_TKA;
@@ -698,14 +696,19 @@ class CfgVehicles
 	class I_G_Offroad_01_armed_F;
 	class CUP_O_Ural_RU;
 	class CFP_O_NKARMY_BTR_60_01;
-	class CFP_O_TBAN_T55_01;
-	class CFP_O_HEZBOLLAH_T72_01;
 	class CUP_O_Datsun_PK_Random;
-	class CUP_O_Mi8_CHDKZ;
-	class CUP_B_ZSU23_Afghan_CDF;
 	class CUP_B_BRDM2_CDF;
 	class CUP_B_BRDM2_ATGM_CDF;
 	class CUP_O_Ural_ZU23_RU;
+	//// Tracked
+	class CFP_O_TBAN_BMP_1_01;
+	class CFP_O_TBAN_BMP_2_01;
+	class CFP_O_TBAN_T55_01;
+	class CFP_O_HEZBOLLAH_T72_01;
+	class CUP_B_ZSU23_Afghan_CDF;
+	//// Boats
+	//// Aircraft
+	class CUP_O_Mi8_CHDKZ;
 	class O_Plane_Fighter_02_F;
 	class B_Plane_Fighter_01_F;
 	class F16C_BLU;

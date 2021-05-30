@@ -154,6 +154,7 @@ class CfgPatches
 			"LCP_Veteran_TeamLeader",
 			"LCP_Static_AGS_17",
 			"LCP_Static_DhSKM",
+			"LCP_Static_DhSKM_Low",
 			"LCP_Static_Mortar",			
 			"LCP_Static_SAM",
 			"LCP_Static_ZU_23_2",
@@ -7641,7 +7642,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};	
 	class LCP_HQ_Commander: I_Officer_F
@@ -7705,7 +7706,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};		
 	class LCP_HQ_Coordinator: I_Soldier_SL_F
@@ -7843,7 +7844,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_HQ_Quartermaster: I_Officer_F
@@ -7903,7 +7904,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_HQ_Radioman: I_Soldier_SL_F
@@ -8203,7 +8204,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Gunner: I_Soldier_AR_F
@@ -8470,7 +8471,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Sniper: I_Soldier_F
@@ -8994,7 +8995,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_Grenadier: I_Soldier_F
@@ -9076,7 +9077,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_Machinegunner: I_Soldier_F
@@ -9137,7 +9138,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_Rifleman: I_Soldier_F
@@ -9203,7 +9204,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_SectionLeader: I_Soldier_F
@@ -9269,7 +9270,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_TeamLeader: I_Soldier_F
@@ -9339,7 +9340,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_AntiTank: I_Soldier_F
@@ -9414,7 +9415,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Grenadier: I_Soldier_F
@@ -9506,7 +9507,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Machinegunner: I_Soldier_F
@@ -9571,7 +9572,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Rifleman: I_Soldier_F
@@ -9643,7 +9644,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_SectionLeader: I_Soldier_F
@@ -9715,7 +9716,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_TeamLeader: I_Soldier_F
@@ -9795,10 +9796,10 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_06";
+		uniformClass="CUP_U_B_BDUv2_M81";
 		camouflage=1.6;
 	};
-	class LCP_Static_AGS_17: O_Plane_Fighter_02_F
+	class LCP_Static_AGS_17: CUP_B_AGS_ACR
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
@@ -9823,7 +9824,7 @@ class CfgVehicles
             };
         };
     };
-	class LCP_Static_DhSKM: O_Plane_Fighter_02_F
+	class LCP_Static_DhSKM: CUP_O_DSHKM_ChDKZ
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
@@ -9848,7 +9849,32 @@ class CfgVehicles
             };
         };
     };
-	class LCP_Static_Mortar: O_Plane_Fighter_02_F
+	class LCP_Static_DhSKM_Low: CUP_O_DSHkM_MiniTriPod_ChDKZ
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "DhSKM"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_Mortar: CUP_O_2b14_82mm_ChDKZ
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;

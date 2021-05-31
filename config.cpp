@@ -7642,7 +7642,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};	
 	class LCP_HQ_Commander: I_Officer_F
@@ -7706,7 +7706,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};		
 	class LCP_HQ_Coordinator: I_Soldier_SL_F
@@ -7844,7 +7844,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_HQ_Quartermaster: I_Officer_F
@@ -7904,7 +7904,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_HQ_Radioman: I_Soldier_SL_F
@@ -7973,7 +7973,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_AntiTank: I_Soldier_LAT_F
@@ -8043,7 +8043,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Fighter: I_Soldier_F
@@ -8204,7 +8204,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Gunner: I_Soldier_AR_F
@@ -8263,7 +8263,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81Tee";
+		uniformClass="CFP_BDU_M81Tee";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_AKM: I_Soldier_F
@@ -8471,7 +8471,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Sniper: I_Soldier_F
@@ -8613,7 +8613,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		uniformClass="CUP_U_O_RUS_Gorka_Green";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Autorifleman: I_Soldier_AR_F
@@ -8687,7 +8687,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		uniformClass="CUP_U_O_RUS_Gorka_Green";
 		camouflage=1.6;
 	};
 	class LCP_Raider_RaidLeader: I_Soldier_SL_F
@@ -8775,7 +8775,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		uniformClass="CUP_U_O_RUS_Gorka_Green";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Rocketeer: I_Soldier_LAT_F
@@ -8850,7 +8850,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		uniformClass="CUP_U_O_RUS_Gorka_Green";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Sniper: I_Soldier_F
@@ -8926,7 +8926,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_B_BDUv2_gloves_M81";
+		uniformClass="CUP_U_O_RUS_Gorka_Green";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_AntiTank: I_Soldier_F
@@ -8995,7 +8995,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_Grenadier: I_Soldier_F
@@ -9077,7 +9077,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_Machinegunner: I_Soldier_F
@@ -9138,7 +9138,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_Rifleman: I_Soldier_F
@@ -9204,7 +9204,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_SectionLeader: I_Soldier_F
@@ -9270,7 +9270,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_TeamLeader: I_Soldier_F
@@ -9340,7 +9340,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_AntiTank: I_Soldier_F
@@ -9415,7 +9415,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Grenadier: I_Soldier_F
@@ -9507,7 +9507,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Machinegunner: I_Soldier_F
@@ -9572,7 +9572,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_Rifleman: I_Soldier_F
@@ -9644,7 +9644,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_SectionLeader: I_Soldier_F
@@ -9716,7 +9716,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Veteran_TeamLeader: I_Soldier_F
@@ -9796,7 +9796,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_GUER_M81";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Static_AGS_17: CUP_B_AGS_ACR

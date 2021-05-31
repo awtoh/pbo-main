@@ -693,6 +693,7 @@ class CfgVehicles
 	class CUP_B_Igla_AA_pod_CDF;
 	class CUP_O_Kornet_RU;
 	class CUP_O_Metis_RU;
+	class CUP_O_ZU23_RU;
 	class B_SAM_System_02_F;
 	// Vehicles
 	//// Wheeled
@@ -9853,7 +9854,7 @@ class CfgVehicles
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
-        displayName = "DhSKM"; //Ingame name
+        displayName = "DhSKM (Mini Tripod)"; //Ingame name
         crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"LCP_Rebel_Rifleman"};
 		gunnerType="LCP_Rebel_Rifleman";
@@ -9879,6 +9880,56 @@ class CfgVehicles
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
         displayName = "Mortar"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_SAM: B_SAM_System_02_F
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "SAM Launcher"; //Ingame name
+        crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"LCP_Rebel_Rifleman"};
+		gunnerType="LCP_Rebel_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class LCP_Static_ZU_23_2: CUP_O_ZU23_RU
+	{
+        faction = "Leskovets_Communist_Party"; //Faction
+        side = 2;
+        displayName = "ZU-23-2"; //Ingame name
         crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"LCP_Rebel_Rifleman"};
 		gunnerType="LCP_Rebel_Rifleman";
@@ -11640,7 +11691,7 @@ class CfgGroups
 				};
 				class LCP_Command_Team_3
 				{
-					name="Henchmen Group";
+					name="Command Team 3";
 					faction="Leskovets_Communist_Party";
 					side=2;
 					class Unit0

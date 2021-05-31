@@ -12894,6 +12894,222 @@ class CfgGroups
 					};
 				};
 			};
+			name4="Rebels";
+			class LCP_Rebels
+			{
+				name="Rebels";			
+				class LCP_Rebel_Squad
+				{
+					name="Squad";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Rebel_SectionLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Rebel_TeamLeader";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Rebel_Grenadier";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Rebel_Machinegunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Rebel_AntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Rebel_TeamLeader";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Rebel_Grenadier";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="LCP_Rebel_Machinegunner";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="LCP_Rebel_AntiTank";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class LCP_Rebel_Fireteam
+				{
+					name="Fireteam";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Rebel_TeamLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Rebel_Grenadier";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Rebel_Machinegunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Rebel_AntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+			};
+			name5="Veterans";
+			class LCP_Veterans
+			{
+				name="Veterans";			
+				class LCP_Veteran_Squad
+				{
+					name="Squad";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Veteran_SectionLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Veteran_TeamLeader";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Veteran_Grenadier";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Veteran_Machinegunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Veteran_AntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Veteran_TeamLeader";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Veteran_Grenadier";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="LCP_Veteran_Machinegunner";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="LCP_Veteran_AntiTank";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class LCP_Veteran_Fireteam
+				{
+					name="Fireteam";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Veteran_TeamLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Veteran_Grenadier";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Veteran_Machinegunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Veteran_AntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+			};
 		};
 	};
 };

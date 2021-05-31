@@ -13002,7 +13002,7 @@ class CfgGroups
 					};
 				};
 			};
-			name4="Veterans";
+			name5="Veterans";
 			class LCP_Veterans
 			{
 				name="Veterans";			

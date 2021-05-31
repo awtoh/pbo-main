@@ -4297,7 +4297,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "AGS30"; //Ingame name
+        displayName = "AGS-17"; //Ingame name
         crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Insurgent_1"};
 		gunnerType="BM_Insurgent_1";
@@ -4341,7 +4341,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "9K1131 'KornetM'"; //Ingame name
+        displayName = "9K113 'Kornet'"; //Ingame name
         crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Insurgent_1"};
 		gunnerType="BM_Insurgent_1";
@@ -4352,7 +4352,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "9K1152 'MetisM'"; //Ingame name
+        displayName = "9K115 'Metis'"; //Ingame name
         crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Insurgent_1"};
 		gunnerType="BM_Insurgent_1";
@@ -4374,7 +4374,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "2B141 'Podnos'"; //Ingame name
+        displayName = "2B14 'Podnos'"; //Ingame name
         crew = "BM_Insurgent_1"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Insurgent_1"};
 		gunnerType="BM_Insurgent_1";

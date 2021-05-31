@@ -2028,7 +2028,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Bomber";
 		scope=2;
-		displayName="Iskandar (BM_Bomber)";
+		displayName="Iskandar (Bomber)";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74U",
@@ -2096,7 +2096,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Bonesetter";
 		scope=2;
-		displayName="Iskandar (BM_Bonesetter)";
+		displayName="Iskandar (Bonesetter)";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74U",
@@ -4010,7 +4010,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Sharpshooter";
 		scope=2;
-		displayName="BM_Sharpshooter";
+		displayName="Sharpshooter";
 		weapons[]=
 		{
 			"Scoped_Mosin_Nagant",

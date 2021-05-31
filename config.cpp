@@ -329,13 +329,20 @@ class CfgPatches
 			"ACE_MIRAGE2000",
 			"ACE_SHIKRA",
 			"JAMMED_A7CORSAIR",
-			"JAMMED_AH64",
+			"JAMMED_A10",
+			"JAMMED_AH64D",
+			"JAMMED_BLACKWASP",
 			"JAMMED_BM21",
 			"JAMMED_BMP1",
 			"JAMMED_BMP2",
+			"JAMMED_BMP3",
+			"JAMMED_BTR60",
+			"JAMMED_BTR80A",
+			"JAMMED_BTR90",
 			"JAMMED_C130",
 			"JAMMED_CH47",
 			"JAMMED_F16C",
+			"JAMMED_F35B",
 			"JAMMED_F4PHANTOM",
 			"JAMMED_HUMVEEDESERT",
 			"JAMMED_HUMVEEDESERTM2",
@@ -347,13 +354,19 @@ class CfgPatches
 			"JAMMED_KAMAZCOVERED",
 			"JAMMED_M1A1",
 			"JAMMED_M1A2",
+			"JAMMED_M2A2",
 			"JAMMED_M2A3",
 			"JAMMED_MIRAGE2000",
-			"JAMMED_MI24",
-			"JAMMED_MI8",
+			"JAMMED_MI24P",
+			"JAMMED_MI24V",
+			"JAMMED_MI8AMT",
+			"JAMMED_MI8MTV3",
 			"JAMMED_MTVRDESERT",
 			"JAMMED_MTVRWOODLAND",
-			"JAMMED_SAMSITE",
+			"JAMMED_OFFROAD",
+			"JAMMED_OFFROADAT",
+			"JAMMED_OFFROADHMG",
+			"JAMMED_SAMLAUNCHER",
 			"JAMMED_SHIKRA",
 			"JAMMED_SUV",
 			"JAMMED_T72",
@@ -361,13 +374,15 @@ class CfgPatches
 			"JAMMED_VODNIK",
 			"JAMMED_VODNIKPKM",
 			"JAMMED_VODNIKAGS",
-			"JAMMED_VODNIKBMP",
-			"JAMMED_VODNIKBTR",
+			"JAMMED_VODNIKBPPU",
+			"JAMMED_VODNIKKPVT",
+			"JAMMED_VODNIKMEDEVAC",
 			"JAMMED_UAZ",
 			"JAMMED_UAZCOVERED",
 			"JAMMED_UH1Y",
-			"JAMMED_UH60M",
-			"JAMMED_UH60MEWSS",
+			"JAMMED_UH1YGUNSHIP",
+			"JAMMED_MH60L",
+			"JAMMED_MH60LDAP",
 			"JAMMED_URAL",
 			"JAMMED_URALCOVERED",
 			"JAMMED_ZSU_23_4",
@@ -708,16 +723,45 @@ class CfgVehicles
 	class I_G_Offroad_01_armed_F;
 	class CUP_O_Ural_RU;
 	class CFP_O_NKARMY_BTR_60_01;
+	class CFP_O_NKARMY_BTR_80A_01;
+	class CUP_O_BTR60_RU;
+	class CUP_O_BTR80A_CAMO_RU;
+	class CUP_O_BTR90_RU;
 	class CUP_O_Datsun_PK_Random;
 	class CUP_B_BRDM2_CDF;
 	class CUP_B_BRDM2_ATGM_CDF;
 	class CUP_O_Ural_ZU23_RU;
+	class CUP_O_Kamaz_RU;
+	class CUP_O_Kamaz_Open_RU;
+	class CUP_O_UAZ_Unarmed_RU;
+	class CUP_O_UAZ_Open_RU;
+	class CUP_O_GAZ_Vodnik_Unarmed_RU;
+	class CUP_O_GAZ_Vodnik_PK_RU;
+	class CUP_O_GAZ_Vodnik_AGS_RU;
+	class CUP_O_GAZ_Vodnik_BPPU_RU;
+	class CUP_O_GAZ_Vodnik_KPVT_RU;
+	class CUP_O_GAZ_Vodnik_MedEvac_RU;
+	class CUP_O_SUV_TKA;
+	class CFP_B_USARMY_2003_MTVR_DES_01;
+	class CFP_B_USARMY_2003_MTVR_WDL_01;
+	class CUP_B_HMMWV_M2_USA;
+	class CUP_B_HMMWV_Unarmed_USA;
+	class CUP_B_USARMY_HMMWV_M2_USA;
+	class CUP_B_USARMY_HMMWV_Unarmed_USA;
+
 	//// Tracked
 	class CFP_O_TBAN_BMP_1_01;
 	class CFP_O_TBAN_BMP_2_01;
 	class CFP_O_TBAN_T55_01;
 	class CFP_O_HEZBOLLAH_T72_01;
 	class CUP_B_ZSU23_Afghan_CDF;
+	class CUP_B_M1A1_NATO_T;
+	class CUP_B_M1A_TUSK_NATO_T;
+	class CUP_B_M2Bradley_NATO_T;
+	class CUP_B_M2A3Bradley_NATO_T;
+	class CUP_O_BMP3_RU;
+	class CUP_O_ZSU23_SLA;
+	class CUP_O_T90_RU;
 	//// Boats
 	//// Aircraft
 	class CUP_O_Mi8_CHDKZ;
@@ -728,6 +772,17 @@ class CfgVehicles
 	class F4E_BLU;
 	class CUP_B_GR9_DYN_GB;
 	class M2000C_BLU;
+	class CUP_O_Ka52_RU;
+	class CUP_O_Ka50_DL_RU;
+	class CUP_B_CH47F_USA;
+	class CUP_B_AH64D_DL_USA;
+	class CUP_O_Mi8_RU;
+	class CUP_O_Mi8AMT_RU;
+	class CUP_O_Mi24_P_Dynamic_RU;
+	class CUP_O_Mi24_V_Dynamic_RU;
+	class CUP_B_A10_DYN_USA;
+	class CUP_B_MH60L_DAP_4x_USN;
+	class CUP_B_UH60S_USN;
 	
 	////////// Buhriz Militia Backpacks //////////
 	
@@ -6905,7 +6960,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_AH64: O_Plane_Fighter_02_F
+	class JAMMED_AH64D: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7480,7 +7535,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_UH60M: O_Plane_Fighter_02_F
+	class JAMMED_MH60L: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7505,7 +7560,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_UH60MEWSS: O_Plane_Fighter_02_F
+	class JAMMED_MH60LDAP: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -8119,7 +8174,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_05";
+		uniformClass="SP_0000_Standard_PulloverUniform_Green";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_GroupLeader: I_Soldier_SL_F
@@ -8328,7 +8383,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_02";
+		uniformClass="CFP_GUER_ERDLpants";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_Romat: I_Soldier_F
@@ -8398,7 +8453,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_CHDKZ_Kam_05";
+		uniformClass="CFP_GUER_Tigerpants";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_SKS: I_Soldier_F

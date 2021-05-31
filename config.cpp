@@ -4874,7 +4874,7 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"m12_grn",
+			"SP_PlateCarrier1_Green",
 			"ffaa_moe_casco_02_1_b",
 			"ItemMap",
 			"ItemCompass",
@@ -4884,7 +4884,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"m12_grn",
+			"SP_PlateCarrier1_Green",
 			"ffaa_moe_casco_02_1_b",
 			"ItemMap",
 			"ItemCompass",

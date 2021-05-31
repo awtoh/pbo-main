@@ -7441,7 +7441,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_MTVRWOODLAND: CFP_B_USARMY_2003_MTVR_WDL_01_01
+	class JAMMED_MTVRWOODLAND: CFP_B_USARMY_2003_MTVR_WDL_01
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7516,7 +7516,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_UAZ: CUP_O_UAZ_Open_RU_RU
+	class JAMMED_UAZ: CUP_O_UAZ_Open_RU
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;

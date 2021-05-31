@@ -7516,7 +7516,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_UAZ: CUP_O_UAZ_Open_RU_RU
+	class JAMMED_UAZ: CUP_O_UAZ_Open_RU
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;

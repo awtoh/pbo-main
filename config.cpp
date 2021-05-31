@@ -3007,7 +3007,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Crewman";
 		scope=2;
-		displayName="BM_Crewman";
+		displayName="Crewman";
 		weapons[]=
 		{
 			"CUP_hgun_Makarov",
@@ -4315,7 +4315,7 @@ class CfgVehicles
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class Static_DhSKM_Minitripod: CUP_O_DSHkM_MiniTriPod_ChDKZ
+	class BM_Static_DhSKM_Minitripod: CUP_O_DSHkM_MiniTriPod_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;

@@ -8400,7 +8400,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CFP_BDU_M81Tee";
+		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
 	class LCP_Insurgent_Skirmisher_AKM: I_Soldier_F
@@ -8750,7 +8750,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_RUS_Gorka_Green";
+		uniformClass="CFP_IDF_2";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Autorifleman: I_Soldier_AR_F
@@ -8824,7 +8824,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_RUS_Gorka_Green";
+		uniformClass="CFP_IDF_2";
 		camouflage=1.6;
 	};
 	class LCP_Raider_RaidLeader: I_Soldier_SL_F
@@ -8912,7 +8912,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_RUS_Gorka_Green";
+		uniformClass="CFP_IDF_2";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Rocketeer: I_Soldier_LAT_F
@@ -8987,7 +8987,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_RUS_Gorka_Green";
+		uniformClass="CFP_IDF_2";
 		camouflage=1.6;
 	};
 	class LCP_Raider_Sniper: I_Soldier_F
@@ -9063,7 +9063,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_RUS_Gorka_Green";
+		uniformClass="CFP_IDF_2";
 		camouflage=1.6;
 	};
 	class LCP_Rebel_AntiTank: I_Soldier_F

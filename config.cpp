@@ -4385,7 +4385,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Pickup"; //Ingame name
+        displayName = "Pickup"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4410,7 +4410,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Pickup (HMG)"; //Ingame name
+        displayName = "Pickup (HMG)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4435,7 +4435,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Pickup (AT)"; //Ingame name
+        displayName = "Pickup (AT)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4460,7 +4460,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Truck"; //Ingame name
+        displayName = "Truck"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4485,7 +4485,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Ural"; //Ingame name
+        displayName = "Ural"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
         //hiddenSelections[] = {"camo1","camo2","camo3"};
@@ -4509,7 +4509,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Ural (Covered)"; //Ingame name
+        displayName = "Ural (Covered)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
         //hiddenSelections[] = {"camo1","camo2","camo3"};
@@ -4533,7 +4533,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Ural (ZU232)"; //Ingame name
+        displayName = "Ural (ZU232)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4633,7 +4633,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "ZSU234"; //Ingame name
+        displayName = "ZSU-23-4"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -4708,7 +4708,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Mi8"; //Ingame name
+        displayName = "Mi-8"; //Ingame name
         crew = "BM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Pilot"};
 		gunnerType="BM_Pilot";

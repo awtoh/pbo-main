@@ -12098,7 +12098,7 @@ class CfgGroups
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
-					class Unit4
+					class Unit5
 					{
 						side=2;
 						vehicle="LCP_Insurgent_Fighter";
@@ -12146,7 +12146,7 @@ class CfgGroups
 						rank="PRIVATE";
 						position[]={9,0,0};
 					};
-					class Unit4
+					class Unit5
 					{
 						side=2;
 						vehicle="LCP_Insurgent_Sniper";

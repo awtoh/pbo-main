@@ -8864,6 +8864,11 @@ class CfgVehicles
 			"CUP_30Rnd_762x39_AK47_bakelite_M",
 			"CUP_30Rnd_762x39_AK47_bakelite_M",
 			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
 			"CUP_1Rnd_SMOKE_GP25_M",
 			"CUP_1Rnd_SMOKE_GP25_M",
 			"CUP_1Rnd_SMOKE_GP25_M",
@@ -8883,6 +8888,11 @@ class CfgVehicles
 			"CUP_30Rnd_762x39_AK47_bakelite_M",
 			"CUP_30Rnd_762x39_AK47_bakelite_M",
 			"CUP_30Rnd_762x39_AK47_bakelite_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
+			"CUP_1Rnd_HE_GP25_M",
 			"CUP_1Rnd_SMOKE_GP25_M",
 			"CUP_1Rnd_SMOKE_GP25_M",
 			"CUP_1Rnd_SMOKE_GP25_M",
@@ -11960,6 +11970,927 @@ class CfgGroups
 						vehicle="LCP_HQ_Bodyguard";
 						rank="PRIVATE";
 						position[]={5,0,0};
+					};
+				};
+			};
+			name2="Insurgents";
+			class LCP_Insurgents
+			{
+				name="Insurgents";			
+				class LCP_Insurgents_Cell_AntiTank
+				{
+					name="Cell (Anti Tank)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+				};
+				class LCP_Insurgents_Cell_Gunner
+				{
+					name="Cell (Gunner)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+				};
+				class LCP_Insurgents_Cell_Sniper
+				{
+					name="Cell (Sniper)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+				};
+				class LCP_Insurgents_Group_Fighters
+				{
+					name="Group (Fighters)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+				};
+				class LCP_Insurgents_Group_Snipers
+				{
+					name="Group (Snipers)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+				};				
+				class LCP_Insurgents_Skirmish_Team_Rifles
+				{
+					name="Skirmish Team (Rifles)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Insurgents_Skirmish_Team_Assault
+				{
+					name="Skirmish Team (Assault)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Insurgents_Skirmish_Team_Carbine
+				{
+					name="Skirmish Team (Carbine)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Insurgents_Team_AntiTank
+				{
+					name="Team (Anti Tank)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+				};
+				class LCP_Insurgents_Team_Gunners
+				{
+					name="Team (Gunners)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+				};
+				class LCP_Insurgents_Team_Snipers
+				{
+					name="Team (Snipers)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class LCP_Insurgents_Team_Support
+				{
+					name="Team (Support)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class LCP_Insurgents_Squad_Ambush
+				{
+					name="Squad (Ambush)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+				};
+				class LCP_Insurgents_Squad_Rifles
+				{
+					name="Squad (Rifles)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Fighter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Gunner";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+				};
+				class LCP_Insurgents_Squad_Snipers
+				{
+					name="Squad (Snipers)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Insurgent_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_AKM";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_SKS";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Insurgent_AntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Skirmisher_Romat";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="LCP_Insurgent_Sniper";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+				};
+			};
+			name3="Raiders";
+			class LCP_Raiders
+			{
+				name="Raiders";			
+				class LCP_Raider_AssaultSection
+				{
+					name="Assault Section";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Raider_RaidLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Raider_Party
+				{
+					name="Party";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Raider_RaidLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Raider_Autorifleman";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Raider_Rocketeer";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+				};
+				class LCP_Raider_Squad
+				{
+					name="Squad";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Raider_RaidLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Raider_Rocketeer";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_Raider_Autorifleman";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_Raider_Rocketeer";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_Raider_Autorifleman";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="LCP_Raider_Sniper";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+				};
+				class LCP_Raider_Team_Autorifles
+				{
+					name="Team (Autorifles)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Raider_RaidLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Raider_Autorifleman";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Raider_Autorifleman";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class LCP_Raider_Team_Rocketeers
+				{
+					name="Team (Rocketeers)";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_Raider_RaidLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_Raider_Assaulter";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_Raider_Rocketeer";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_Raider_Rocketeer";
+						rank="PRIVATE";
+						position[]={7,0,0};
 					};
 				};
 			};

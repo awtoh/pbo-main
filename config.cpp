@@ -3068,7 +3068,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Driver";
 		scope=2;
-		displayName="BM_Driver";
+		displayName="Driver";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74U",
@@ -3446,7 +3446,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Medic";
 		scope=2;
-		displayName="BM_Medic";
+		displayName="Medic";
 		weapons[]=
 		{
 			"CUP_arifle_AK74_Early",
@@ -3513,7 +3513,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Officer";
 		scope=2;
-		displayName="BM_Officer";
+		displayName="Officer";
 		weapons[]=
 		{
 			"CUP_arifle_AKM_Early",
@@ -3574,7 +3574,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Officer_Armed";
 		scope=2;
-		displayName="BM_Officer (Armed)";
+		displayName="Officer (Armed)";
 		weapons[]=
 		{
 			"CUP_arifle_AKM_Early",
@@ -3659,7 +3659,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="BM_Pilot";
 		scope=2;
-		displayName="BM_Pilot";
+		displayName="Pilot";
 		weapons[]=
 		{
 			"CUP_hgun_Makarov",

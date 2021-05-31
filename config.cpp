@@ -7795,7 +7795,7 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="LCP_HQ_Officer";
 		scope=2;
-		displayName="HQ Unit (BM Officer)";
+		displayName="HQ Unit (Officer)";
 		weapons[]=
 		{
 			"CUP_arifle_AKS74",

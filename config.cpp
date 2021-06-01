@@ -356,11 +356,11 @@ class CfgPatches
 			"JAMMED_M1A2",
 			"JAMMED_M2A2",
 			"JAMMED_M2A3",
-			"JAMMED_MIRAGE2000",
 			"JAMMED_MI24P",
 			"JAMMED_MI24V",
 			"JAMMED_MI8AMT",
 			"JAMMED_MI8MTV3",
+			"JAMMED_MIRAGE2000",
 			"JAMMED_MTVRDESERT",
 			"JAMMED_MTVRWOODLAND",
 			"JAMMED_OFFROAD",
@@ -6966,6 +6966,31 @@ class CfgVehicles
             };
         };
     };
+	class JAMMED_A10: CUP_B_A10_DYN_USA
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
 	class JAMMED_AH64D: CUP_B_AH64D_DL_USA
 	{
         faction = "Ashton_Misc"; //Faction
@@ -6974,6 +6999,206 @@ class CfgVehicles
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BLACKWASP: B_Plane_Fighter_01_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BM21: CUP_O_BM21_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BMP1: CFP_O_TBAN_BMP_1_01
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BMP2: CFP_O_TBAN_BMP_2_01
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BMP3: CUP_O_BMP3_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BTR60: CUP_O_BTR60_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BTR80A0: CUP_O_BTR80A_CAMO_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_BTR90: CUP_O_BTR90_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
         class TransportItems //Cargo Items
@@ -7291,7 +7516,82 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_MIRAGE2000: M2000C_BLU
+	class JAMMED_M1A1: CUP_B_M1A1_NATO_T
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_M1A2: CUP_B_M1A_TUSK_NATO_T
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_M2A2: CUP_B_M2Bradley_NATO_T
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_M2A3: CUP_B_M2A3Bradley_NATO_T
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7416,6 +7716,31 @@ class CfgVehicles
             };
         };
     };
+	class JAMMED_MIRAGE2000: M2000C_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
 	class JAMMED_MTVRDESERT: CFP_B_USARMY_2003_MTVR_DES_01
 	{
         faction = "Ashton_Misc"; //Faction
@@ -7466,6 +7791,106 @@ class CfgVehicles
             };
         };
     };
+	class JAMMED_OFFROAD: C_Offroad_01_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_OFFROADAT: I_G_Offroad_01_AT_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_OFFROADHMG: I_G_Offroad_01_armed_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_SAMLAUNCHER: B_SAM_System_02_F
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
 	class JAMMED_SHIKRA: O_Plane_Fighter_02_F
 	{
         faction = "Ashton_Misc"; //Faction
@@ -7492,6 +7917,206 @@ class CfgVehicles
         };
     };
 	class JAMMED_SUV: CUP_O_SUV_TKA
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_T72: CFP_O_HEZBOLLAH_T72_01
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_T90A: CUP_O_T90_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_VODNIK: CUP_O_GAZ_Vodnik_Unarmed_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_VODNIKPKM: CUP_O_GAZ_Vodnik_PK_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_VODNIKAGS: CUP_O_GAZ_Vodnik_AGS_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_VODNIKBPPU: CUP_O_GAZ_Vodnik_BPPU_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_VODNIKKPVT: CUP_O_GAZ_Vodnik_KPVT_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_VODNIKMEDEVAC: CUP_O_GAZ_Vodnik_MedEvac_RU
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -7692,6 +8317,56 @@ class CfgVehicles
         };
     };
 	class JAMMED_URALCOVERED: CUP_O_Ural_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_ZSU_23_4: CUP_O_ZSU23_SLA
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "JAMMED"; //Ingame name
+        crew = "B_Soldier_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Soldier_F"};
+		gunnerType="B_Soldier_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class JAMMED_ZU_23_2: CUP_O_ZU23_RU
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -9076,7 +9751,7 @@ class CfgVehicles
 		uniformClass="CFP_IDF_2";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_AntiTank: I_Soldier_F
+	class LCP_Rebel_AntiTank: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -9227,7 +9902,7 @@ class CfgVehicles
 		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_Machinegunner: I_Soldier_F
+	class LCP_Rebel_Machinegunner: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -9354,7 +10029,7 @@ class CfgVehicles
 		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
-	class LCP_Rebel_SectionLeader: I_Soldier_F
+	class LCP_Rebel_SectionLeader: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -9490,7 +10165,7 @@ class CfgVehicles
 		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
-	class LCP_Veteran_AntiTank: I_Soldier_F
+	class LCP_Veteran_AntiTank: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -9657,7 +10332,7 @@ class CfgVehicles
 		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
-	class LCP_Veteran_Machinegunner: I_Soldier_F
+	class LCP_Veteran_Machinegunner: I_Soldier_AR_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";
@@ -9794,7 +10469,7 @@ class CfgVehicles
 		uniformClass="CFP_BDU_M81";
 		camouflage=1.6;
 	};
-	class LCP_Veteran_SectionLeader: I_Soldier_F
+	class LCP_Veteran_SectionLeader: I_Soldier_SL_F
 	{
 		side=2;
 		faction="Leskovets_Communist_Party";

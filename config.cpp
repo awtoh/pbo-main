@@ -328,6 +328,12 @@ class CfgPatches
 			"ACE_HARRIER",
 			"ACE_MIRAGE2000",
 			"ACE_SHIKRA",
+			"FICTIONAL_F_12H",
+			"FICTIONAL_F_19",
+			"FICTIONAL_F_5G",
+			"FICTIONAL_MIG_21G",
+			"FICTIONAL_MIG_24A",
+			"FICTIONAL_SU_23",
 			"JAMMED_A7CORSAIR",
 			"JAMMED_A10",
 			"JAMMED_AH64D",
@@ -791,6 +797,10 @@ class CfgVehicles
 	class CUP_B_UH60S_USN;
 	class CUP_B_UH1Y_Gunship_Dynamic_USMC;
 	class CUP_B_UH1Y_UNA_USMC;
+	class CUP_O_SU34_RU;
+	class CUP_O_Su25_Dyn_RU;
+	class CUP_O_L39_TK;
+	class CUP_B_AV8B_DYN_USMC;
 	
 	////////// Buhriz Militia Backpacks //////////
 	
@@ -6923,6 +6933,156 @@ class CfgVehicles
         faction = "Ashton_Misc"; //Faction
         side = 2;
         displayName = "To-201 Shikra ACE"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class FICTIONAL_F_12H: CUP_B_AV8B_DYN_USMC
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-12H Kestrel"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class FICTIONAL_F_19: F16C_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-19 Caracara"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class FICTIONAL_F_5G: F4E_BLU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "F-5G Tiger III"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class FICTIONAL_MIG_21G: CUP_O_L39_TK
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "MiG-21G Fishbed Super"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class FICTIONAL_MIG_24A: CUP_O_Su25_Dyn_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "MiG-24A Foothill"; //Ingame name
+        crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"B_Pilot_F"};
+		gunnerType="B_Pilot_F";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+    };
+	class FICTIONAL_SU_23: CUP_O_SU34_RU
+	{
+        faction = "Ashton_Misc"; //Faction
+        side = 2;
+        displayName = "Su-23 Furnace"; //Ingame name
         crew = "B_Pilot_F"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"B_Pilot_F"};
 		gunnerType="B_Pilot_F";

@@ -695,7 +695,7 @@ class CfgVehicles
 	class CUP_B_AlicePack_Bedroll;
 	class CUP_B_CivPack_WDL;
 	class CUP_B_SLA_Medicbag;
-	class B_AssualtPack_rgr;
+	class B_assaultPack_rgr;
 	class B_FieldPack_khk;
 	class B_FieldPack_oli;
 	class B_Kitbag_rgr;
@@ -966,7 +966,7 @@ class CfgVehicles
             };
 		};
 	};
-	class Bomber_Bag: B_AssualtPack_rgr	
+	class Bomber_Bag: B_assaultPack_rgr	
 	{
 		scope=1;
 		displayName="Bomb Bag";
@@ -12145,9 +12145,9 @@ class CfgGroups
 						position[]={11,0,0};
 					};
 				};
-				class Assualt_Team
+				class assault_Team
 				{
-					name="Assualt Team";
+					name="assault Team";
 					faction="Buhriz_Movement";
 					side=2;
 					class Unit0

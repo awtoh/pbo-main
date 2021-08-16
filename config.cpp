@@ -228,6 +228,7 @@ class CfgPatches
 			"ABTMSF_RTO",
 			"ABTM_Static_AARadar",
 			"ABTM_Static_AALauncher",
+			"ABTM_Static_AGS17",
 			"ABTM_Static_AT_Gun",
 			"ABTM_Static_DhSKM_High",
 			"ABTM_Static_DhSKM_Low",
@@ -264,8 +265,8 @@ class CfgPatches
 			"ABTM_VehicleAir_Mi_8",
 			"ABTM_VehicleAir_Mi_8MTV",
 			"ABTM_VehicleAir_Mi_24",
-			"ABTM_VehicleAir_UH-1",
-			"ABTM_VehicleAir_UH-60",
+			"ABTM_VehicleAir_UH_1",
+			"ABTM_VehicleAir_UH_60",
 			//ABTM OPFOR Non-units
 			"ABTM_Legbag",
 			"ABTM_Radiopack",
@@ -4334,7 +4335,7 @@ class CfgVehicles
     {
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Offroad"; //Ingame name
+        displayName = "Offroad"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4359,7 +4360,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Offroad (HMG)"; //Ingame name
+        displayName = "Offroad (HMG)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4384,7 +4385,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BM_Offroad (AT)"; //Ingame name
+        displayName = "Offroad (AT)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";

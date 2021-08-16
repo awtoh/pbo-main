@@ -534,6 +534,12 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+	class ABTM_Redland_Aggressors
+	{
+		displayName="Redland Aggressors";
+		priority=2;
+		side=2;
+	};
 	class Fulguda_Army
 	{
 		displayName="Fulguda Army";
@@ -608,6 +614,26 @@ class CfgVehicleClasses
 		displayName="Armour";
 		priority=3;
 	};
+	class ABTM_Infantry
+	{
+		displayName="Infantry";
+		priority=1;
+	};
+	class ABTM_Cars
+	{
+		displayName="Vehicles";
+		priority=2;
+	};
+	class ABTM_Armour
+	{
+		displayName="Armour";
+		priority=3;
+	};
+	class ABTM_Aircraft
+	{
+		displayName="Helicopters";
+		priority=3;
+	};
 };
 
 
@@ -621,11 +647,16 @@ class CfgWeapons
 	class hgun_PDW2000_F;
 	class CUP_arifle_G3A3_ris_vfg_black;
 	class CUP_arifle_HK416_CQB_Black;
+	class CUP_srifle_M14;
+	class CUP_arifle_M16A2;
+	class CUP_arifle_M16A4_Base;
+	class CUP_arifle_M4A1_MOE_wdl;
+	class CFP_EBR_wdl_F;
 	
 	//Define Weapons with attachments
   	class SVD_Scoped: CUP_srifle_SVD
 	{
-		displayName = "SVD Scoped";
+		displayName = "Buhriz SVD Scoped";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -637,7 +668,7 @@ class CfgWeapons
 	};
 	class Scoped_Mosin_Nagant: CUP_srifle_Mosin_Nagant
 	{
-		displayName = "Scoped Mosin Nagant";
+		displayName = "Buhriz Mosin Nagant Scoped";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -649,7 +680,7 @@ class CfgWeapons
 	};
 	class PMC_M4A1: CUP_arifle_M4A1
 	{
-		displayName = "M4A1 Modded";
+		displayName = "Buhriz M4A1 Modded";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -671,7 +702,7 @@ class CfgWeapons
 	};
 	class TAR21EOTech: arifle_TRG20_F
 	{
-		displayName = "TAR-21 w/ EOTech";
+		displayName = "FN TAR-21 w/ EOTech";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -683,7 +714,7 @@ class CfgWeapons
 	};
 	class CPWMod: hgun_PDW2000_F
 	{
-		displayName = "Silenced CPW w/ T-1";
+		displayName = "FN Silenced CPW w/ T-1";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -700,7 +731,7 @@ class CfgWeapons
 	};
 	class CPWMod2: hgun_PDW2000_F
 	{
-		displayName = "CPW w/ T-1";
+		displayName = "FN CPW w/ T-1";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -712,7 +743,7 @@ class CfgWeapons
 	};
 	class G3A3Hitman: CUP_arifle_G3A3_ris_vfg_black
 	{
-		displayName = "Scoped G3A3";
+		displayName = "FN G3A3 Magnified Scoped";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -729,7 +760,7 @@ class CfgWeapons
 	};
 	class HK416Mod1: CUP_arifle_HK416_CQB_Black
 	{
-		displayName = "HK416 Modded";
+		displayName = "FN HK416 Modded";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
@@ -758,6 +789,86 @@ class CfgWeapons
 			{
 				slot = "CowsSlot";
 				item = "cup_optic_pso_3_open";
+			};
+		};
+	};
+	class ABTM_M14_ScopedMagnified: CUP_srifle_M14
+	{
+		displayName = "RA M14 Magnified Scoped";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "optic_lrps";
+			};
+		};
+	};
+	class ABTM_Security_M16A2: CUP_arifle_M16A2
+	{
+		displayName = "RA M16A2 Patrol";
+		class LinkedItems
+		{
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_flashlight";
+			};
+		};
+	};
+	class ABTM_Security_M16A4: CUP_arifle_M16A4_Base
+	{
+		displayName = "RA M16A4 Defender";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_mars";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_anpeq_15_flashlight_black_l";
+			};
+		};
+	};
+	class ABTM_WDL_LIGHT_M4A1: CUP_arifle_M4A1_MOE_wdl
+	{
+		displayName = "RA M4A1 MOE Freedom";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_compm2_woodland";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_anpeq_15_od";
+			};
+		};
+	};
+	class ABTM_WDL_LIGHT_M14: CFP_EBR_wdl_F
+	{
+		displayName = "RA M14 MOD 0 Gazelle";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_elcan_specterdr_od";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "muzzle_snds_b_lush_f";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_anpeq_15_od";
 			};
 		};
 	};
@@ -1244,6 +1355,27 @@ class CfgVehicles
 			};
 		};
 	};
+	class LCP_Veteran_RPG: CFP_RPGPack_TropicGreen
+	{
+		scope=1;
+		displayName="RPG Carrier";
+		class TransportMagazines
+		{
+			class CUP_PG7V_M
+			{
+				magazine="CUP_PG7V_M";
+				count=3;
+			};
+			class CUP_OG7_M
+			{
+				magazine="CUP_OG7_M";
+				count=1;
+			};
+		};
+	};
+	
+	////////// Redland Aggressors Backpacks //////////
+	
 	class LCP_Veteran_RPG: CFP_RPGPack_TropicGreen
 	{
 		scope=1;

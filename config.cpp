@@ -268,10 +268,17 @@ class CfgPatches
 			"ABTM_VehicleAir_UH_1",
 			"ABTM_VehicleAir_UH_60",
 			//ABTM OPFOR Non-units
-			"ABTM_Legbag",
-			"ABTM_Radiopack",
-			"ABTM_ARAmmoBag",
-			"ABTM_SFBackpack"
+			"ABTM_Command_Jammer",
+			"ABTM_Command_RTO",
+			"ABTM_Command_RTOInterceptor",
+			"ABTM_Main_ARAmmoBag",
+			"ABTM_Main_ARAmmoBagWDL",
+			"ABTM_Main_ATAmmoBag",
+			"ABTM_Main_ATAmmoBagWDL",
+			"ABTM_Main_Radiopack",
+			"ABTM_Main_RadiopackWDL",
+			"ABTM_Misc_Kit",
+			"ABTM_SF_Backpack",
 			
 			
 			//Fulguda Army
@@ -652,6 +659,13 @@ class CfgWeapons
 	class CUP_arifle_M16A4_Base;
 	class CUP_arifle_M4A1_MOE_wdl;
 	class CFP_EBR_wdl_F;
+	class CUP_smg_MP5A5;
+	class CUP_arifle_M4A1_standard_short_wdl;
+	class CUP_hgun_Colt1911;
+	class hlc_pistol_P229R_Elite;
+	class CUP_arifle_M4A3_black;
+	class CUP_arifle_M4A1_BUIS_GL;
+	class CUP_srifle_Mk12SPR;
 	
 	//Define Weapons with attachments
   	class SVD_Scoped: CUP_srifle_SVD
@@ -872,6 +886,130 @@ class CfgWeapons
 			};
 		};
 	};
+	class ABTM_WDL_LIGHT_MP5: CUP_smg_MP5A5
+	{
+		displayName = "RA MP5A5 Kite";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_holoblack";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "muzzle_snds_l";
+			};
+		};
+	};
+	class ABTM_WDL_LIGHT_M4A1TL: CUP_arifle_M4A1_standard_short_wdl
+	{
+		displayName = "RA M4A1 Liberty";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_mars_od";
+			};
+		};
+	};
+	class ABTM_WDL_LIGHT_M1911: CUP_hgun_Colt1911
+	{
+		displayName = "RA M1911 Kemko";
+		class LinkedItems
+		{
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "muzzle_snds_acp";
+			};
+		};
+	};
+	class ABTM_SF_P229R: hlc_pistol_P229R_Elite
+	{
+		displayName = "RA P229R Contact";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "hlc_optic228_docter_cadex";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "hlc_muzzle_octane9";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_cz_m3x";
+			};
+		};
+	};
+	class ABTM_SF_M4A3: CUP_arifle_M4A3_black
+	{
+		displayName = "RA M4A3 Aggressor";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_compm2_low";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "muzzle_snds_m";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_anpeq_15_flashlight_black_l";
+			};
+		};
+	};
+	class ABTM_SF_M4A3GL: CUP_arifle_M4A1_BUIS_GL
+	{
+		displayName = "RA M4A3 Aggressor w/ M203";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_compm2_low";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "muzzle_snds_m";
+			};
+			class LinkedItemsAcc
+			{
+				slot = "PointerSlot";
+				item = "cup_acc_anpeq_15_flashlight_black_l";
+			};
+		};
+	};
+	class ABTM_SF_Mk12SPR: CUP_srifle_Mk12SPR
+	{
+		displayName = "RA Mk 12 Sparrow";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "cup_optic_sb_11_4x20_pm";
+			};
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "cup_muzzle_snds_mk12";
+			};
+		};
+	};
 };
 class CfgVehicles
 {
@@ -893,6 +1031,7 @@ class CfgVehicles
 	class I_crew_F;
 	class I_Officer_F;
 	class I_Helipilot_F;
+	
 	// Backpacks
 	class CFP_AssaultPack_M81;
 	class CFP_RPGPack_Grey;
@@ -912,6 +1051,7 @@ class CfgVehicles
 	class B_TacticalPack_blk;
 	class B_TacticalPack_oli;
 	class milgp_bp_Tomahawk_rgr;
+	
 	// Static Weapons
 	class CUP_O_DSHKM_ChDKZ;
 	class CUP_O_DSHkM_MiniTriPod_ChDKZ;
@@ -923,7 +1063,11 @@ class CfgVehicles
 	class CUP_O_Metis_RU;
 	class CUP_O_ZU23_RU;
 	class B_SAM_System_02_F;
+	
 	// Vehicles
+	
+	
+	
 	//// Wheeled
 	class CUP_O_BM21_RU;
 	class CUP_O_BM21_SLA;
@@ -964,6 +1108,7 @@ class CfgVehicles
 	class CUP_B_USARMY_HMMWV_Unarmed_USA;
 	class CUP_I_V3S_Open_TKG;
 	class CUP_I_V3S_Covered_TKG;
+	class cwr3_o_uaz452;
 
 	//// Tracked
 	class CFP_O_TBAN_BMP_1_01;
@@ -978,7 +1123,13 @@ class CfgVehicles
 	class CUP_O_BMP3_RU;
 	class CUP_O_ZSU23_SLA;
 	class CUP_O_T90_RU;
+	class cwr3_o_t64b;
+	class cwr3_o_t64bv;
 	//// Boats
+	class cwr3_b_boat;
+	class CUP_O_LCVP_SLA;
+	class sfp_rbb_norrkoping;
+	class sfp_strb90;
 	//// Aircraft
 	class CUP_O_Mi8_CHDKZ;
 	class O_Plane_Fighter_02_F;
@@ -1165,7 +1316,7 @@ class CfgVehicles
 		displayName="BM_Medic Bag";
 		class TransportMagazines
 		{
-			class _xx_Medikit
+			class Medikit
 			{
                 name = "Medikit";
                 count = 3;
@@ -1201,7 +1352,7 @@ class CfgVehicles
 		displayName="Medical Kit";
 		class TransportMagazines
 		{
-			class _xx_Medikit
+			class Medikit
 			{
                 name = "Medikit";
                 count = 5;
@@ -1214,7 +1365,7 @@ class CfgVehicles
 		displayName="M72 Holder";
 		class TransportMagazines
 		{
-			class _xx_Medikit
+			class Medikit
 			{
                 name = "Medikit";
                 count = 1;
@@ -1376,20 +1527,15 @@ class CfgVehicles
 	
 	////////// Redland Aggressors Backpacks //////////
 	
-	class LCP_Veteran_RPG: CFP_RPGPack_TropicGreen
+	class ABTM_Command_Jammer
 	{
 		scope=1;
-		displayName="RPG Carrier";
+		displayName="Radio (Jammer)";
 		class TransportMagazines
 		{
-			class CUP_PG7V_M
+			class ACE_Cellphone
 			{
-				magazine="CUP_PG7V_M";
-				count=3;
-			};
-			class CUP_OG7_M
-			{
-				magazine="CUP_OG7_M";
+				magazine="ACE_Cellphone";
 				count=1;
 			};
 		};

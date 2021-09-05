@@ -278,6 +278,8 @@ class CfgPatches
 			"ABTM_Main_Radiopack",
 			"ABTM_Main_RadiopackWDL",
 			"ABTM_Misc_Kit",
+			"ABTM_Misc_RPGs",
+			"ABTM_Misc_RPGwithBackpack",
 			"ABTM_SF_Backpack",
 			
 			
@@ -1051,6 +1053,11 @@ class CfgVehicles
 	class B_TacticalPack_blk;
 	class B_TacticalPack_oli;
 	class milgp_bp_Tomahawk_rgr;
+	class sfp_ra180;
+	class TFAR_rt1523g_black;
+	class B_RadioBag_01_oucamo_F;
+	class sfp_backpack_grg_loader;
+	class sfp_stridssele_backpack_grg;
 	
 	// Static Weapons
 	class CUP_O_DSHKM_ChDKZ;
@@ -1527,10 +1534,163 @@ class CfgVehicles
 	
 	////////// Redland Aggressors Backpacks //////////
 	
-	class ABTM_Command_Jammer
+	class ABTM_Command_Jammer: B_RadioBag_01_oucamo_F
 	{
 		scope=1;
 		displayName="Radio (Jammer)";
+		class TransportMagazines
+		{
+			class ACE_Cellphone
+			{
+				magazine="ACE_Cellphone";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Command_RTO: TFAR_rt1523g_black
+	{
+		scope=1;
+		displayName="Radio (RTO)";
+		class TransportMagazines
+		{
+			class ACE_Cellphone
+			{
+				magazine="ACE_Cellphone";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Command_RTOInterceptor: sfp_ra180
+	{
+		scope=1;
+		displayName="Radio (RTO Interceptor)";
+		class TransportMagazines
+		{
+			class ACE_Cellphone
+			{
+				magazine="ACE_Cellphone";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Main_ARAmmoBag: B_AssaultPack_blk
+	{
+		scope=1;
+		displayName="Autorifleman Ammo Bag";
+		class TransportMagazines
+		{
+			class CUP_200Rnd_TE4_Red_Tracer_556x45_M249
+			{
+				magazine="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+				count=3;
+			};
+		};
+	};
+	class ABTM_Main_ARAmmoBagWDL: B_AssaultPack_rgr
+	{
+		scope=1;
+		displayName="Autorifleman Ammo Bag (Woodland)";
+		class TransportMagazines
+		{
+			class CUP_200Rnd_TE4_Red_Tracer_556x45_M249
+			{
+				magazine="CUP_200Rnd_TE4_Red_Tracer_556x45_M249";
+				count=3;
+			};
+		};
+	};
+	class ABTM_Main_ATAmmoBag: B_AssaultPack_blk
+	{
+		scope=1;
+		displayName="AntiTank Ammo Bag";
+		class TransportMagazines
+		{
+			class MRAWS_HEAT55_F
+			{
+				magazine="MRAWS_HEAT55_F";
+				count=2;
+			};
+			class MRAWS_HE_F
+			{
+				magazine="MRAWS_HE_F";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Main_ATAmmoBagWDL: B_AssaultPack_rgr
+	{
+		scope=1;
+		displayName="AntiTank Ammo Bag (Woodland)";
+		class TransportMagazines
+		{
+			class MRAWS_HEAT55_F
+			{
+				magazine="MRAWS_HEAT55_F";
+				count=2;
+			};
+			class MRAWS_HE_F
+			{
+				magazine="MRAWS_HE_F";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Main_Radiopack: B_RadioBag_01_black_F
+	{
+		scope=1;
+		displayName="Radiopack";
+		class TransportMagazines
+		{
+			class ACE_Cellphone
+			{
+				magazine="ACE_Cellphone";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Main_RadiopackWDL: B_RadioBag_01_eaf_F
+	{
+		scope=1;
+		displayName="Radiopack (Woodland)";
+		class TransportMagazines
+		{
+			class ACE_Cellphone
+			{
+				magazine="ACE_Cellphone";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Misc_Kit:
+	{
+		scope=1;
+		displayName="Soldier's Kit";
+		class TransportMagazines
+		{
+			class ACE_Cellphone
+			{
+				magazine="ACE_Cellphone";
+				count=1;
+			};
+		};
+	};
+	class ABTM_Misc_RPGs:
+	{
+		scope=1;
+		displayName="RPG-18 Carrier";
+		class TransportMagazines
+		{
+			class CUP_launch_RPG18_Loaded
+			{
+				magazine="CUP_launch_RPG18_Loaded";
+				count=1;
+			};
+		};
+	};
+	class ABTM_SF_Backpack:
+	{
+		scope=1;
+		displayName="SF Backpack";
 		class TransportMagazines
 		{
 			class ACE_Cellphone
@@ -11531,6 +11691,218 @@ class CfgVehicles
             };
         };
     };
+	
+	/////// Redland Aggressors (ABTM/Ah Boys To Men OPFOR) ///////
+	class ABTM_AntiAir: I_Soldier_AA_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_AntiAir";
+		scope=2;
+		displayName="Aggressor (AA)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"cwr3_launch_redeye_loaded",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"cwr3_launch_redeye_loaded",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_AntiTank: I_Soldier_LAT_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_AntiTank";
+		scope=2;
+		displayName="Aggressor (AT)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"launch_MRAWS_green_rail_F",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"launch_MRAWS_green_rail_F",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_Autorifleman: I_Soldier_AR_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_AntiTank";
+		scope=2;
+		displayName="Aggressor (AR)";
+		weapons[]=
+		{
+			"CUP_lmg_M249_E1",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_lmg_M249_E1",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
 };
 class CfgGroups
 {

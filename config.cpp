@@ -12055,6 +12055,64 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
 };
 class CfgGroups
 {

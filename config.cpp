@@ -186,13 +186,15 @@ class CfgPatches
 			"ABTM_Crewman",
 			"ABTM_DMR",
 			"ABTM_DMRAssist",
+			"ABTM_Driver",
 			"ABTM_Engineer",
 			"ABTM_Machinegunner",
 			"ABTM_MachinegunnerAssist",
 			"ABTM_Pilot",
 			"ABTM_Radioman",
 			"ABTM_Rifleman",
-			"ABTM_RiflemanRPG",
+			"ABTM_RiflemanRPG1",
+			"ABTM_RiflemanRPG2",
 			"ABTM_Sentry1",
 			"ABTM_Sentry2",
 			"ABTM_SquadLeader",
@@ -203,12 +205,14 @@ class CfgPatches
 			"ABTM_CrewmanWDL",
 			"ABTM_DMRWDL",
 			"ABTM_DMRAssistWDL",
+			"ABTM_DriverWDL",
 			"ABTM_EngineerWDL",
 			"ABTM_MachinegunnerWDL",
 			"ABTM_MachinegunnerAssistWDL",
 			"ABTM_RadiomanWDL",
 			"ABTM_RiflemanWDL",
-			"ABTM_RiflemanRPGWDL",
+			"ABTM_RiflemanRPG1WDL",
+			"ABTM_RiflemanRPG2WDL",
 			"ABTM_Sentry1WDL",
 			"ABTM_Sentry2WDL",
 			"ABTM_SquadLeaderWDL",
@@ -661,6 +665,7 @@ class CfgWeapons
 	class CUP_arifle_M16A4_Base;
 	class CUP_arifle_M4A1_MOE_wdl;
 	class CFP_EBR_wdl_F;
+	class ADFU_minimi;
 	class CUP_smg_MP5A5;
 	class CUP_arifle_M4A1_standard_short_wdl;
 	class CUP_hgun_Colt1911;
@@ -810,13 +815,25 @@ class CfgWeapons
 	};
 	class ABTM_M14_ScopedMagnified: CUP_srifle_M14
 	{
-		displayName = "RA M14 Magnified Scoped";
+		displayName = "RA M14 Falcon";
 		class LinkedItems
 		{
 			class LinkedItemsOptic
 			{
 				slot = "CowsSlot";
 				item = "optic_lrps";
+			};
+		};
+	};
+	class ABTM_Minimi: ADFU_minimi
+	{
+		displayName = "RA Minimi Enforcer";
+		class LinkedItems
+		{
+			class LinkedItemsOptic
+			{
+				slot = "CowsSlot";
+				item = "ACE_optic_Hamr_PIP";
 			};
 		};
 	};
@@ -5032,7 +5049,7 @@ class CfgVehicles
             };
         };
     };
-	class BM_Ural: CUP_O_Ural_RU
+	class BM_Ural: CUP_O_Ural_Open_RU
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -5084,7 +5101,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural (ZU232)"; //Ingame name
+        displayName = "Ural (ZU-23-2)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -5134,7 +5151,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BMP1"; //Ingame name
+        displayName = "BMP-1"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5159,7 +5176,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BMP2"; //Ingame name
+        displayName = "BMP-2"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5209,7 +5226,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "T-55A"; //Ingame name
+        displayName = "T-55A BM"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5234,7 +5251,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "T-72"; //Ingame name
+        displayName = "T-72 BM"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5259,7 +5276,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Mi-8"; //Ingame name
+        displayName = "Mi-8 BM"; //Ingame name
         crew = "BM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Pilot"};
 		gunnerType="BM_Pilot";
@@ -9499,14 +9516,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_IMI_Romat",
-			"CUP_RPG18_M",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_IMI_Romat",
-			"CUP_RPG18_M",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
@@ -12047,6 +12064,1622 @@ class CfgVehicles
 			"CUP_V_PMC_CIRAS_Black_Patrol",
 			"CUP_H_USArmy_Boonie_hs_UCP",
 			"VSM_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_DMRAssist: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMRAssist";
+		scope=2;
+		displayName="Aggressor (DMR Assistant)";
+		weapons[]=
+		{
+			"CUP_arifle_M16A1",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_M16A1",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_PMC_CIRAS_Black_TL",
+			"CUP_H_USArmy_Boonie_hs_UCP",
+			"CFP_Shemagh_Face_Atacsau",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_PMC_CIRAS_Black_TL",
+			"CUP_H_USArmy_Boonie_hs_UCP",
+			"CFP_Shemagh_Face_Atacsau",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_Driver: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_Driver";
+		scope=2;
+		displayName="Aggressor (Driver)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_Tactical1_Black",
+			"CUP_H_USArmy_HelmetACH_UCP",
+			"G_Bandanna_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_Tactical1_Black",
+			"CUP_H_USArmy_HelmetACH_UCP",
+			"G_Bandanna_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_Engineer: I_engineer_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_Engineer";
+		scope=2;
+		displayName="Aggressor (Engineer)";
+		weapons[]=
+		{
+			"CUP_arifle_M16A1",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_M16A1",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_Machinegunner: I_Soldier_AR_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor (MG)";
+		weapons[]=
+		{
+			"ABTM_Minimi",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_Minimi",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_MachinegunnerAssist: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_MachinegunnerAssist";
+		scope=2;
+		displayName="Aggressor (MG Assistant)";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_DMR";
+		scope=2;
+		displayName="Aggressor ()";
+		weapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_M14_ScopedMagnified",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_20Rnd_762x51_DMR",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",

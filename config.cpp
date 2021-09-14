@@ -4953,7 +4953,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Pickup"; //Ingame name
+        displayName = "Pickup BM"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -4978,7 +4978,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Pickup (HMG)"; //Ingame name
+        displayName = "Pickup BM (HMG)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -5003,7 +5003,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Pickup (AT)"; //Ingame name
+        displayName = "Pickup BM (AT)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -5028,7 +5028,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Truck"; //Ingame name
+        displayName = "Truck BM"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -5053,7 +5053,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural"; //Ingame name
+        displayName = "Ural BM"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
         //hiddenSelections[] = {"camo1","camo2","camo3"};
@@ -5077,7 +5077,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural (Covered)"; //Ingame name
+        displayName = "Ural BM (Covered)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
         //hiddenSelections[] = {"camo1","camo2","camo3"};
@@ -5101,7 +5101,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "Ural (ZU-23-2)"; //Ingame name
+        displayName = "Ural BM (ZU-23-2)"; //Ingame name
         crew = "BM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Driver"};
 		gunnerType="BM_Driver";
@@ -5126,7 +5126,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BTR-60"; //Ingame name
+        displayName = "BTR-60 BM"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5151,7 +5151,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BMP-1"; //Ingame name
+        displayName = "BMP-1 BM"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5176,7 +5176,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "BMP-2"; //Ingame name
+        displayName = "BMP-2 BM"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -5201,7 +5201,7 @@ class CfgVehicles
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
-        displayName = "ZSU-23-4"; //Ingame name
+        displayName = "ZSU-23-4 BM"; //Ingame name
         crew = "BM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"BM_Crewman"};
 		gunnerType="BM_Crewman";
@@ -12369,24 +12369,40 @@ class CfgVehicles
 		displayName="Aggressor (MG Assistant)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=

@@ -17478,5 +17478,225 @@ class CfgGroups
 				};
 			};
 		};
+		class ABTM_Redland_Aggressors
+		{
+			name="Redland Aggressors";
+			class ABTM_Main
+			{
+				name="Aggressors";
+				class ABTM_Main_Fireteam
+				{
+					name="Fireteam";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Autorifleman";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_Rifleman";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class LCP_Command_Team_2
+				{
+					name="Command Team 2";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Commander";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Quartermaster";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+				};
+				class LCP_Command_Team_3
+				{
+					name="Command Team 3";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Commander";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Officer";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Quartermaster";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Bodyguard_Group
+				{
+					name="Bodyguard Group";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class LCP_Fire_Support_Team
+				{
+					name="Fire Support Team";
+					faction="Leskovets_Communist_Party";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="LCP_HQ_Coordinator";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="LCP_HQ_Radioman";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="LCP_HQ_Bodyguard";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+				};
+			};
+		};
 	};
 };

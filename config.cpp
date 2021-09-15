@@ -265,6 +265,7 @@ class CfgPatches
 			"ABTM_VehicleAir_AH1",
 			"ABTM_VehicleAir_AH64",
 			"ABTM_VehicleAir_F4Phantom",
+			"ABTM_VehicleAir_JAS39Gripen",
 			"ABTM_VehicleAir_Mirage2000",
 			"ABTM_VehicleAir_Mi_8",
 			"ABTM_VehicleAir_Mi_8MTV",
@@ -1078,6 +1079,9 @@ class CfgVehicles
 	class sfp_backpack_grg_loader;
 	class sfp_stridssele_backpack_grg;
 	class B_LegStrapBag_olive_F;
+	class cwr3_o_backpack_harness_roll;
+	class B_AssaultPack_blk;
+	class B_RadioBag_01_eaf_F;
 	
 	// Static Weapons
 	class CUP_O_DSHKM_ChDKZ;
@@ -1709,7 +1713,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class ABTM_Misc_Kit:
+	class ABTM_Misc_Kit: cwr3_o_backpack_harness_roll
 	{
 		scope=1;
 		displayName="Soldier's Kit";
@@ -1722,7 +1726,7 @@ class CfgVehicles
 			};
 		};
 	};
-	class ABTM_Misc_RPGs:
+	class ABTM_Misc_RPGs1: sfp_backpack_grg_loader
 	{
 		scope=1;
 		displayName="RPG-18 Carrier";
@@ -1731,11 +1735,24 @@ class CfgVehicles
 			class CUP_launch_RPG18_Loaded
 			{
 				magazine="CUP_launch_RPG18_Loaded";
-				count=1;
+				count=4;
 			};
 		};
 	};
-	class ABTM_SF_Backpack:
+	class ABTM_Misc_RPGs2: sfp_stridssele_backpack_grg
+	{
+		scope=1;
+		displayName="RPG-18 Carrier";
+		class TransportMagazines
+		{
+			class CUP_launch_RPG18_Loaded
+			{
+				magazine="CUP_launch_RPG18_Loaded";
+				count=2;
+			};
+		};
+	};
+	class ABTM_SF_Backpack: sfp_stridssele_backpack_grg
 	{
 		scope=1;
 		displayName="SF Backpack";
@@ -11903,7 +11920,7 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_AntiTank";
+		_generalMacro="ABTM_Autorifleman";
 		scope=2;
 		displayName="Aggressor (AR)";
 		weapons[]=
@@ -12675,6 +12692,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Misc_RPGs1";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -12747,10 +12765,11 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_RiflemanRPG2: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Misc_RPGs2";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -12759,32 +12778,50 @@ class CfgVehicles
 		author="Ashton";
 		_generalMacro="ABTM_DMR";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor (Rifleman, RPG 2)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
+			"CUP_V_B_Ciras_Black3",
 			"CUP_H_USArmy_MICH_UCP",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
@@ -12794,7 +12831,7 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
+			"CUP_V_B_Ciras_Black3",
 			"CUP_H_USArmy_MICH_UCP",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
@@ -12805,7 +12842,7 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_Sentry1: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -12815,36 +12852,102 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_Sentry1";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor (Sentry 1)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_Tactical1_Black",
+			"CUP_H_US_patrol_cap_UCP",
+			"G_Bandanna_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_Tactical1_Black",
+			"CUP_H_US_patrol_cap_UCP",
+			"G_Bandanna_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_Sentry2: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_Sentry2";
+		scope=2;
+		displayName="Aggressor (Sentry 2)";
+		weapons[]=
+		{
+			"CUP_arifle_M16A2",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_M16A2",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
 			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"CUP_H_USArmy_Boonie_UCP",
+			"CUP_PMC_Facewrap_Skull",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -12853,7 +12956,107 @@ class CfgVehicles
 		respawnLinkedItems[]=
 		{
 			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"CUP_H_USArmy_Boonie_UCP",
+			"CUP_PMC_Facewrap_Skull",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_SquadLeader: I_Soldier_SL_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_SquadLeader";
+		scope=2;
+		displayName="Aggressor (Squad Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_M16A2_GL",
+			"CUP_hgun_M9",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_M16A2_GL",
+			"CUP_hgun_M9",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_B_Ciras_Black2",
+			"CUP_H_USArmy_MICH_Headset_UCP",
+			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_B_Ciras_Black2",
+			"CUP_H_USArmy_MICH_Headset_UCP",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -12863,7 +13066,7 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_TeamLeader: I_Soldier_TL_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -12873,36 +13076,54 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_TeamLeader";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor (Team Leader)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"CUP_V_B_Ciras_Black3",
+			"CUP_H_USArmy_MICH_ESS_Headset_UCP",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -12910,9 +13131,9 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"CUP_V_B_Ciras_Black3",
+			"CUP_H_USArmy_MICH_ESS_Headset_UCP",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -12921,7 +13142,7 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_AntiAirWDL: I_Soldier_AA_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -12931,36 +13152,54 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_AntiAirWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (AA)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
+			"cwr3_launch_redeye_loaded",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
+			"cwr3_launch_redeye_loaded",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -12968,18 +13207,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_AntiTankWDL: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -12989,35 +13228,53 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_AntiTankWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (AT)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
+			"launch_MRAWS_green_rail_F",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
+			"launch_MRAWS_green_rail_F",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -13026,18 +13283,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_AutoriflemanWDL: I_Soldier_AR_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13047,35 +13304,47 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_AutoriflemanWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (AR)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_lmg_M249_E1",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_lmg_M249_E1",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_200Rnd_TE4_Red_Tracer_556x45_M249",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -13084,18 +13353,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_CrewmanWDL: I_crew_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13105,36 +13374,44 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_CrewmanWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Crew)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"SmokeShellPurple",
+			"SmokeShellYellow",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"SmokeShellPurple",
+			"SmokeShellYellow",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"SP_Tactical1_Green",
+			"CUP_H_SLA_TankerHelmet",
+			"SP_Balaclava_Skull2",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13142,18 +13419,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"SP_Tactical1_Green",
+			"CUP_H_SLA_TankerHelmet",
+			"SP_Balaclava_Skull2",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_FieldUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_DMRWDL: I_Soldier_M_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13163,9 +13440,9 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_DMRWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (DMR)";
 		weapons[]=
 		{
 			"ABTM_M14_ScopedMagnified",
@@ -13181,18 +13458,34 @@ class CfgVehicles
 		magazines[]=
 		{
             "CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
             "CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_20Rnd_762x51_DMR",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_adf",
+			"H_Booniehat_khk_hs",
+			"VSM_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13200,18 +13493,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_adf",
+			"H_Booniehat_khk_hs",
+			"VSM_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_DMRAssistWDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13221,36 +13514,52 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_DMRAssistWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (DMR Asst.)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A1",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A1",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_adf",
+			"H_Booniehat_khk_hs",
+			"CFP_Shemagh_Face_Flecktarn",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13258,18 +13567,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_adf",
+			"H_Booniehat_khk_hs",
+			"CFP_Shemagh_Face_Flecktarn",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_DriverWDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13279,36 +13588,44 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_DriverWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Driver)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"SP_Tactical1_Green",
+			"CUP_H_Ger_M92",
+			"G_Bandanna_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13316,18 +13633,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"SP_Tactical1_Green",
+			"CUP_H_Ger_M92",
+			"G_Bandanna_blk",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_EngineerWDL: I_engineer_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13337,35 +13654,55 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_EngineerWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Engineer)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A1",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A1",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_20Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -13374,18 +13711,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_MachinegunnerWDL: I_Soldier_AR_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13395,36 +13732,42 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_MachinegunnerWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (MG)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"ABTM_Minimi",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"ABTM_Minimi",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"ADFU_200Rnd_556x45",
+			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13432,18 +13775,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_MachinegunnerAssistWDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13453,36 +13796,52 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_MachinegunnerAssistWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (MG Asst.)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13490,56 +13849,73 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_RadiomanWDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Main_RadiopackWDL";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_RadiomanWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Radioman)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_Colt727",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_adf_sc",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -13548,18 +13924,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_adf_sc",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_RiflemanWDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13569,36 +13945,52 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_RiflemanWDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Rifleman)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13606,56 +13998,75 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_RiflemanRPG1WDL: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Misc_RPGs1";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_RiflemanRPG1WDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Rifleman, RPG 1)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -13664,56 +14075,75 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_RiflemanRPG2WDL: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Misc_RPGs2";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_RiflemanRPG2WDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Rifleman, RPG 2)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
+			"CUP_launch_RPG18_Loaded",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
@@ -13722,18 +14152,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92",
 			"VSM_Balaclava2_black_Goggles",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_Sentry1WDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13743,36 +14173,40 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_Sentry1WDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Sentry 1)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"SP_Tactical1_Green",
+			"CUP_H_US_patrol_cap_WDL",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13780,18 +14214,18 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"SP_Tactical1_Green",
+			"CUP_H_US_patrol_cap_WDL",
+			"G_Bandanna_oli",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
-	class ABTM_: I_Soldier_F
+	class ABTM_Sentry2WDL: I_Soldier_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
@@ -13801,36 +14235,40 @@ class CfgVehicles
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTM_DMR";
+		_generalMacro="ABTM_Sentry2WDL";
 		scope=2;
-		displayName="Aggressor ()";
+		displayName="Aggressor Woodland (Sentry 2)";
 		weapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"ABTM_M14_ScopedMagnified",
+			"CUP_arifle_M16A2",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
 		{
-            "CUP_20Rnd_762x51_DMR",
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"SmokeShell"
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"H_Booniehat_khk",
+			"CUP_PMC_Facewrap_Tropical",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -13838,15 +14276,191 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
-			"VSM_Balaclava2_black_Goggles",
+			"ake_ilbv_sbo3_inf",
+			"H_Booniehat_khk",
+			"CUP_PMC_Facewrap_Tropical",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
+		camouflage=1.6;
+	};
+	class ABTM_SquadLeaderWDL: I_Soldier_SL_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_SquadLeaderWDL";
+		scope=2;
+		displayName="Aggressor Woodland (Squad Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_M16A2_GL",
+			"CUP_hgun_M9",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_M16A2_GL",
+			"CUP_hgun_M9",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_HE_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_Smoke_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"1Rnd_SmokeRed_Grenade_shell",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"ake_ilbv_sbo3_inf_sc",
+			"CUP_H_Ger_M92",
+			"VSM_Balaclava2_black_Peltor_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"ake_ilbv_sbo3_inf_sc",
+			"CUP_H_Ger_M92",
+			"VSM_Balaclava2_black_Peltor_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
+		camouflage=1.6;
+	};
+	class ABTM_TeamLeaderWDL: I_Soldier_TL_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_TeamLeaderWDL";
+		scope=2;
+		displayName="Aggressor Woodland (Team Leader)";
+		weapons[]=
+		{
+			"CUP_arifle_M16A2",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_M16A2",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShellRed",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"ake_ilbv_sbo3_inf_sc",
+			"CUP_H_Ger_M92",
+			"VSM_Balaclava2_black_Peltor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"ake_ilbv_sbo3_inf_sc",
+			"CUP_H_Ger_M92",
+			"VSM_Balaclava2_black_Peltor",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
 };

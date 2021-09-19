@@ -11979,6 +11979,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Misc_Kit";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -12004,7 +12005,8 @@ class CfgVehicles
 		};
 		magazines[]=
 		{
-            "CUP_30Rnd_556x45_Stanag",
+            "CUP_Javelin_M",
+			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
@@ -12017,7 +12019,8 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
-            "CUP_30Rnd_556x45_Stanag",
+            "CUP_Javelin_M",
+			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
@@ -13661,6 +13664,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Misc_Kit";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -13686,7 +13690,8 @@ class CfgVehicles
 		};
 		magazines[]=
 		{
-            "CUP_30Rnd_556x45_Stanag",
+            "CUP_Javelin_M",
+			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
@@ -13699,7 +13704,8 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
-            "CUP_30Rnd_556x45_Stanag",
+            "CUP_Javelin_M",
+			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
@@ -13712,8 +13718,8 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG_CF",
 			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
@@ -13722,15 +13728,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG_CF",
 			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
 	class ABTM_ATGMAssistWDL: I_Soldier_F
@@ -13787,8 +13793,8 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG_CF",
 			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
@@ -13797,15 +13803,15 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"V_PlateCarrier1_blk",
-			"CUP_H_USArmy_MICH_UCP",
+			"ake_ilbv_sbo3_inf",
+			"CUP_H_Ger_M92_GG_CF",
 			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
 	class ABTM_AutoriflemanWDL: I_Soldier_AR_F

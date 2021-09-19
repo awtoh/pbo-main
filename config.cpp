@@ -153,8 +153,8 @@ class CfgPatches
 			"LCP_Veteran_SectionLeader",
 			"LCP_Veteran_TeamLeader",
 			"LCP_Static_AGS_17",
-			"LCP_Static_DhSKM",
-			"LCP_Static_DhSKM_Low",
+			"LCP_Static_DShKM",
+			"LCP_Static_DShKM_Low",
 			"LCP_Static_Mortar",			
 			"LCP_Static_SAM",
 			"LCP_Static_ZU_23_2",
@@ -182,12 +182,16 @@ class CfgPatches
 			//ABTM OPFOR
 			"ABTM_AntiAir",
 			"ABTM_AntiTank",
+			"ABTM_ATGM",
+			"ABTM_ATGMAssist",
 			"ABTM_Autorifleman",
 			"ABTM_Crewman",
 			"ABTM_DMR",
 			"ABTM_DMRAssist",
 			"ABTM_Driver",
 			"ABTM_Engineer",
+			"ABTM_HeliCrew",
+			"ABTM_HeliPilot",
 			"ABTM_Machinegunner",
 			"ABTM_MachinegunnerAssist",
 			"ABTM_Pilot",
@@ -201,6 +205,8 @@ class CfgPatches
 			"ABTM_TeamLeader",
 			"ABTM_AntiAirWDL",
 			"ABTM_AntiTankWDL",
+			"ABTM_ATGMWDL",
+			"ABTM_ATGMAssistWDL",
 			"ABTM_AutoriflemanWDL",
 			"ABTM_CrewmanWDL",
 			"ABTM_DMRWDL",
@@ -234,8 +240,8 @@ class CfgPatches
 			"ABTM_Static_AALauncher",
 			"ABTM_Static_AGS17",
 			"ABTM_Static_AT_Gun",
-			"ABTM_Static_DhSKM_High",
-			"ABTM_Static_DhSKM_Low",
+			"ABTM_Static_DShKM_High",
+			"ABTM_Static_DShKM_Low",
 			"ABTM_Static_Kornet",
 			"ABTM_Static_M2ShieldHigh",
 			"ABTM_Static_M2ShieldLow",
@@ -280,11 +286,15 @@ class CfgPatches
 			"ABTM_Main_ARAmmoBagWDL",
 			"ABTM_Main_ATAmmoBag",
 			"ABTM_Main_ATAmmoBagWDL",
+			"ABTM_Main_ATGMAmmoBag",
+			"ABTM_Main_ATGMAmmoBagWDL",
+			"ABTM_Main_MachinegunnerAmmoBag",
+			"ABTM_Main_MachinegunnerAmmoBagWDL",
 			"ABTM_Main_Radiopack",
 			"ABTM_Main_RadiopackWDL",
 			"ABTM_Misc_Kit",
-			"ABTM_Misc_RPGs",
-			"ABTM_Misc_RPGwithBackpack",
+			"ABTM_Misc_RPGs1",
+			"ABTM_Misc_RPGs2",
 			"ABTM_SF_Backpack",
 			
 			
@@ -1082,6 +1092,8 @@ class CfgVehicles
 	class cwr3_o_backpack_harness_roll;
 	class B_AssaultPack_blk;
 	class B_RadioBag_01_eaf_F;
+	class SP_Carryall_Black;
+	class B_Carryall_oli;
 	
 	// Static Weapons
 	class CUP_O_DSHKM_ChDKZ;
@@ -1626,7 +1638,7 @@ class CfgVehicles
 	class ABTM_Main_ATAmmoBag: B_AssaultPack_blk
 	{
 		scope=1;
-		displayName="AntiTank Ammo Bag";
+		displayName="Anti-Tank Ammo Bag";
 		class TransportMagazines
 		{
 			class MRAWS_HEAT55_F
@@ -1644,7 +1656,7 @@ class CfgVehicles
 	class ABTM_Main_ATAmmoBagWDL: B_AssaultPack_rgr
 	{
 		scope=1;
-		displayName="AntiTank Ammo Bag (Woodland)";
+		displayName="Anti-Tank Ammo Bag (Woodland)";
 		class TransportMagazines
 		{
 			class MRAWS_HEAT55_F
@@ -1656,6 +1668,58 @@ class CfgVehicles
 			{
 				magazine="MRAWS_HE_F";
 				count=1;
+			};
+		};
+	};
+	class ABTM_Main_ATGMAmmoBag: B_AssaultPack_blk
+	{
+		scope=1;
+		displayName="ATGM Ammo Bag";
+		class TransportMagazines
+		{
+			class CUP_Javelin_M
+			{
+				magazine="CUP_Javelin_M";
+				count=2;
+			};
+		};
+	};
+	class ABTM_Main_ATGMAmmoBagWDL: B_AssaultPack_rgr
+	{
+		scope=1;
+		displayName="ATGM Ammo Bag (Woodland)";
+		class TransportMagazines
+		{
+			class CUP_Javelin_M
+			{
+				magazine="CUP_Javelin_M";
+				count=2;
+			};
+		};
+	};
+	class ABTM_Main_MachinegunnerAmmoBag: SP_Carryall_Black
+	{
+		scope=1;
+		displayName="Machinegun Ammo Bag";
+		class TransportMagazines
+		{
+			class ADFU_200Rnd_556x45
+			{
+				magazine="ADFU_200Rnd_556x45";
+				count=3;
+			};
+		};
+	};
+	class ABTM_Main_MachinegunnerAmmoBagWDL: B_Carryall_oli
+	{
+		scope=1;
+		displayName="Machinegun Ammo Bag (Woodland)";
+		class TransportMagazines
+		{
+			class ADFU_200Rnd_556x45
+			{
+				magazine="ADFU_200Rnd_556x45";
+				count=3;
 			};
 		};
 	};
@@ -1729,12 +1793,12 @@ class CfgVehicles
 	class ABTM_Misc_RPGs1: sfp_backpack_grg_loader
 	{
 		scope=1;
-		displayName="RPG-18 Carrier";
+		displayName="RPG-18 Carrier (4x)";
 		class TransportMagazines
 		{
-			class CUP_launch_RPG18_Loaded
+			class CUP_launch_RPG18
 			{
-				magazine="CUP_launch_RPG18_Loaded";
+				magazine="CUP_launch_RPG18";
 				count=4;
 			};
 		};
@@ -1742,12 +1806,12 @@ class CfgVehicles
 	class ABTM_Misc_RPGs2: sfp_stridssele_backpack_grg
 	{
 		scope=1;
-		displayName="RPG-18 Carrier";
+		displayName="RPG-18 Carrier (2x)";
 		class TransportMagazines
 		{
-			class CUP_launch_RPG18_Loaded
+			class CUP_launch_RPG18
 			{
-				magazine="CUP_launch_RPG18_Loaded";
+				magazine="CUP_launch_RPG18";
 				count=2;
 			};
 		};
@@ -4931,7 +4995,7 @@ class CfgVehicles
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
     };
-	class BM_Static_DhSKM_Minitripod: CUP_O_DSHkM_MiniTriPod_ChDKZ
+	class BM_Static_DShKM_Minitripod: CUP_O_DSHkM_MiniTriPod_ChDKZ
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -9564,14 +9628,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_IMI_Romat",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_IMI_Romat",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
@@ -11406,11 +11470,11 @@ class CfgVehicles
             };
         };
     };
-	class LCP_Static_DhSKM: CUP_O_DSHKM_ChDKZ
+	class LCP_Static_DShKM: CUP_O_DSHKM_ChDKZ
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
-        displayName = "DhSKM"; //Ingame name
+        displayName = "DShKM"; //Ingame name
         crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"LCP_Rebel_Rifleman"};
 		gunnerType="LCP_Rebel_Rifleman";
@@ -11431,11 +11495,11 @@ class CfgVehicles
             };
         };
     };
-	class LCP_Static_DhSKM_Low: CUP_O_DSHkM_MiniTriPod_ChDKZ
+	class LCP_Static_DShKM_Low: CUP_O_DSHkM_MiniTriPod_ChDKZ
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
-        displayName = "DhSKM (Mini Tripod)"; //Ingame name
+        displayName = "DShKM (Mini Tripod)"; //Ingame name
         crew = "LCP_Rebel_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"LCP_Rebel_Rifleman"};
 		gunnerType="LCP_Rebel_Rifleman";
@@ -11774,14 +11838,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye_loaded",
+			"cwr3_launch_redeye",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye_loaded",
+			"cwr3_launch_redeye",
 			"Throw",
 			"Put"
 		};
@@ -11838,6 +11902,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Main_ATAmmoBag";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -11902,6 +11967,157 @@ class CfgVehicles
 			"V_PlateCarrier1_blk",
 			"CUP_H_USArmy_MICH_UCP",
 			"VSM_Balaclava2_black_Goggles",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_ATGM: I_Soldier_LAT_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_ATGM";
+		scope=2;
+		displayName="Aggressor (ATGM)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"CUP_launch_Javelin",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"CUP_launch_Javelin",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_ATGMAssist: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Main_ATGMAmmoBag";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_ATGMAssist";
+		scope=2;
+		displayName="Aggressor (ATGM Asst.)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_balaclava2_Black",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -11996,12 +12212,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -12062,12 +12280,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"ABTM_M14_ScopedMagnified",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"ABTM_M14_ScopedMagnified",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -12136,12 +12356,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A1",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A1",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -12338,6 +12560,138 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
+	class ABTM_HeliCrew: I_helipilot_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_HeliCrew";
+		scope=2;
+		displayName="Aggressor (Heli Crew)";
+		weapons[]=
+		{
+			"CUP_hgun_CZ75",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_hgun_CZ75",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_16Rnd_9x19_cz75",
+			"CUP_16Rnd_9x19_cz75",
+			"SmokeShellYellow",
+			"SmokeShellPurple",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_16Rnd_9x19_cz75",
+			"CUP_16Rnd_9x19_cz75",
+			"SmokeShellYellow",
+			"SmokeShellPurple",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pilot",
+			"H_CrewHelmetHeli_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"cwr3_b_vest_pilot",
+			"H_CrewHelmetHeli_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="GR_HeliPilot_Uniform";
+		camouflage=1.6;
+	};
+	class ABTM_HeliPilot: I_helipilot_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_HeliPilot";
+		scope=2;
+		displayName="Aggressor (Heli Pilot)";
+		weapons[]=
+		{
+			"cwr3_smg_uzi",
+			"CUP_hgun_CZ75",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"cwr3_smg_uzi",
+			"CUP_hgun_CZ75",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_9x19_UZI",
+			"CUP_30Rnd_9x19_UZI",
+			"CUP_30Rnd_9x19_UZI",
+			"CUP_16Rnd_9x19_cz75",
+			"CUP_16Rnd_9x19_cz75",
+			"SmokeShellYellow",
+			"SmokeShellPurple",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_9x19_UZI",
+			"CUP_30Rnd_9x19_UZI",
+			"CUP_30Rnd_9x19_UZI",
+			"CUP_16Rnd_9x19_cz75",
+			"CUP_16Rnd_9x19_cz75",
+			"SmokeShellYellow",
+			"SmokeShellPurple",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"cwr3_b_vest_pilot",
+			"H_PilotHelmetHeli_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"cwr3_b_vest_pilot",
+			"H_PilotHelmetHeli_B",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="GR_HeliPilot_Uniform";
+		camouflage=1.6;
+	};
 	class ABTM_Machinegunner: I_Soldier_AR_F
 	{
 		side=2;
@@ -12406,6 +12760,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Main_MachinegunnerAmmoBag";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -12418,12 +12773,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
@@ -12556,12 +12913,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
@@ -12705,14 +13064,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
@@ -12782,14 +13141,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
@@ -12983,6 +13342,7 @@ class CfgVehicles
 		{
 			"CUP_arifle_M16A2_GL",
 			"CUP_hgun_M9",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
@@ -12990,6 +13350,7 @@ class CfgVehicles
 		{
 			"CUP_arifle_M16A2_GL",
 			"CUP_hgun_M9",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
@@ -13082,12 +13443,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A2",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A2",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -13158,14 +13521,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye_loaded",
+			"cwr3_launch_redeye",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye_loaded",
+			"cwr3_launch_redeye",
 			"Throw",
 			"Put"
 		};
@@ -13294,6 +13657,157 @@ class CfgVehicles
 		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
 	};
+	class ABTM_ATGMWDL: I_Soldier_LAT_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_ATGMWDL";
+		scope=2;
+		displayName="Aggressor Woodland (ATGM)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"CUP_launch_Javelin",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"CUP_launch_Javelin",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_GCOVERED_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
+	class ABTM_ATGMAssistWDL: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Main_ATGMAmmoBagWDL";
+		vehicleclass="ABTM_Infantry";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTM_ATGMAssistWDL";
+		scope=2;
+		displayName="Aggressor Woodland (ATGM Asst.)";
+		weapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_Colt727",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+            "CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
+			"CUP_HandGrenade_L109A1_HE",
+			"CUP_HandGrenade_L109A1_HE",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_PlateCarrier1_blk",
+			"CUP_H_USArmy_MICH_UCP",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
+		camouflage=1.6;
+	};
 	class ABTM_AutoriflemanWDL: I_Soldier_AR_F
 	{
 		side=2;
@@ -13380,12 +13894,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -13446,12 +13962,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"ABTM_M14_ScopedMagnified",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"ABTM_M14_ScopedMagnified",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -13520,12 +14038,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A1",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A1",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -13802,12 +14322,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
@@ -13877,12 +14399,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
@@ -14026,14 +14550,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
@@ -14103,14 +14627,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A2",
-			"CUP_launch_RPG18_Loaded",
+			"CUP_launch_RPG18",
 			"Throw",
 			"Put"
 		};
@@ -14304,6 +14828,7 @@ class CfgVehicles
 		{
 			"CUP_arifle_M16A2_GL",
 			"CUP_hgun_M9",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
@@ -14311,6 +14836,7 @@ class CfgVehicles
 		{
 			"CUP_arifle_M16A2_GL",
 			"CUP_hgun_M9",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
@@ -14403,12 +14929,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_M16A2",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_M16A2",
+			"Rangefinder",
 			"Throw",
 			"Put"
 		};
@@ -17484,6 +18012,67 @@ class CfgGroups
 			class ABTM_Main
 			{
 				name="Aggressors";
+				class ABTM_Main_Crewteam3x
+				{
+					name="Crew Team (3x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+				};
+				class ABTM_Main_Crewteam4x
+				{
+					name="Crew Team (4x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_Crewman";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
 				class ABTM_Main_Fireteam
 				{
 					name="Fireteam";
@@ -17518,182 +18107,613 @@ class CfgGroups
 						position[]={7,0,0};
 					};
 				};
-				class LCP_Command_Team_2
+				class ABTM_Main_Fireteam_AA
 				{
-					name="Command Team 2";
-					faction="Leskovets_Communist_Party";
+					name="Fireteam (AA)";
+					faction="ABTM_Redland_Aggressors";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="LCP_HQ_Commander";
-						rank="LIEUTENANT";
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="LCP_HQ_Quartermaster";
-						rank="CORPORAL";
+						vehicle="ABTM_Autorifleman";
+						rank="PRIVATE";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="LCP_HQ_Radioman";
+						vehicle="ABTM_AntiAir";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
+						vehicle="ABTM_Rifleman";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
-					class Unit4
-					{
-						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="PRIVATE";
-						position[]={9,0,0};
-					};
 				};
-				class LCP_Command_Team_3
+				class ABTM_Main_Fireteam_DMR
 				{
-					name="Command Team 3";
-					faction="Leskovets_Communist_Party";
+					name="Fireteam (DMR)";
+					faction="ABTM_Redland_Aggressors";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="LCP_HQ_Commander";
-						rank="LIEUTENANT";
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="LCP_HQ_Officer";
-						rank="LIEUTENANT";
+						vehicle="ABTM_DMR";
+						rank="PRIVATE";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="LCP_HQ_Radioman";
+						vehicle="ABTM_DMRAssist";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="LCP_HQ_Quartermaster";
-						rank="CORPORAL";
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
 						position[]={7,0,0};
 					};
-					class Unit4
-					{
-						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="PRIVATE";
-						position[]={9,0,0};
-					};
-					class Unit5
-					{
-						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="PRIVATE";
-						position[]={11,0,0};
-					};
-					class Unit6
-					{
-						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="PRIVATE";
-						position[]={13,0,0};
-					};
 				};
-				class LCP_Bodyguard_Group
+				class ABTM_Main_Fireteam_MG
 				{
-					name="Bodyguard Group";
-					faction="Leskovets_Communist_Party";
+					name="Fireteam (MG)";
+					faction="ABTM_Redland_Aggressors";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Machinegunner";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerAssist";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_Main_HeliPilots_Attack2x
+				{
+					name="Helicopter Pilots (Attack, 2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_HeliPilot";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_HeliPilot";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_Main_HeliPilots_Transport2x
+				{
+					name="Helicopter Pilots (Transport, 2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_HeliPilot";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_HeliCrew";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_Main_HeliPilots_Transport4x
+				{
+					name="Helicopter Pilots (Transport, 4x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_HeliPilot";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_HeliCrew";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_HeliCrew";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_HeliCrew";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_Main_Sentry2x
+				{
+					name="Sentry (2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_Sentry1";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Sentry2";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_Main_Sentry4x
+				{
+					name="Sentry (4x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_Sentry1";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Sentry2";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Sentry1";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_Sentry2";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_Main_Squad
+				{
+					name="Squad";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeader";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="PRIVATE";
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
+						vehicle="ABTM_Autorifleman";
 						rank="PRIVATE";
 						position[]={5,0,0};
 					};
 					class Unit3
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
+						vehicle="ABTM_AntiTank";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
 					class Unit4
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="CORPORAL";
+						vehicle="ABTM_Rifleman";
+						rank="PRIVATE";
 						position[]={9,0,0};
 					};
 					class Unit5
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
-						rank="PRIVATE";
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
 						position[]={11,0,0};
 					};
 					class Unit6
 					{
 						side=2;
-						vehicle="LCP_HQ_Radioman";
+						vehicle="ABTM_Autorifleman";
 						rank="PRIVATE";
 						position[]={13,0,0};
 					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_Rifleman";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
 				};
-				class LCP_Fire_Support_Team
+				class ABTM_Main_Squad_Weapons_AA
 				{
-					name="Fire Support Team";
-					faction="Leskovets_Communist_Party";
+					name="Squad (Weapons, AA 2x)";
+					faction="ABTM_Redland_Aggressors";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="LCP_HQ_Coordinator";
+						vehicle="ABTM_SquadLeader";
 						rank="SERGEANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="LCP_HQ_Radioman";
+						vehicle="ABTM_TeamLeader";
 						rank="CORPORAL";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="LCP_HQ_Bodyguard";
+						vehicle="ABTM_Autorifleman";
 						rank="PRIVATE";
 						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_AntiAir";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_Rifleman";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_Autorifleman";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTM_AntiAir";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_Rifleman";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_Main_Squad_Weapons_DMR_MG
+				{
+					name="Squad (Weapons, DMR + MG)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Machinegunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="MachinegunnerAssist";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_DMR";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTM_DMRAssist";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_Main_Squad_Weapons_MG
+				{
+					name="Squad (Weapons, MG 2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Machinegunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="MachinegunnerAssist";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_Machinegunner";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="MachinegunnerAssist";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_AntiTank";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_Main_Team_AssaultEngineers
+				{
+					name="Team (Assault Engineers)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Engineer";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_Engineer";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_Machinegunner";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerAssist";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class ABTM_Main_Team_Radio
+				{
+					name="Team (Radio)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeader";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Radioman";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_DMR";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_DMRAssist";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_RiflemanRPG1";
+						rank="PRIVATE";
+						position[]={11,0,0};
 					};
 				};
 			};

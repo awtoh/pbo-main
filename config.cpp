@@ -272,6 +272,7 @@ class CfgPatches
 			"ABTM_VehicleAir_AH64",
 			"ABTM_VehicleAir_F4Phantom",
 			"ABTM_VehicleAir_JAS39Gripen",
+			"ABTM_VehicleAir_JAS39GripenACE",
 			"ABTM_VehicleAir_Mirage2000",
 			"ABTM_VehicleAir_Mi_8",
 			"ABTM_VehicleAir_Mi_8MTV",
@@ -1201,6 +1202,7 @@ class CfgVehicles
 	class CUP_O_Su25_Dyn_RU;
 	class CUP_O_L39_TK;
 	class CUP_B_AV8B_DYN_USMC;
+	class I_Plane_Fighter_04_F;
 	
 	////////// Buhriz Militia Backpacks //////////
 	
@@ -14996,6 +14998,28 @@ class CfgVehicles
 		};
 		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
+	};
+	class ABTM_VehicleAir_JAS39Gripen: I_Plane_Fighter_04_F
+	{
+        faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "JAS 39 'Gripen'"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_JAS39GripenACE: I_Plane_Fighter_04_F
+	{
+        faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "JAS 39 'Gripen' ACE"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
 	};
 };
 class CfgGroups

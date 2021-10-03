@@ -1134,7 +1134,7 @@ class CfgVehicles
 	class CUP_B_AlicePack_Bedroll;
 	class CUP_B_CivPack_WDL;
 	class CUP_B_SLA_Medicbag;
-	class B_assaultPack_rgr;
+	class B_AssaultPack_rgr;
 	class B_FieldPack_khk;
 	class B_FieldPack_oli;
 	class B_Kitbag_rgr;
@@ -1429,7 +1429,7 @@ class CfgVehicles
             };
 		};
 	};
-	class Bomber_Bag: B_assaultPack_rgr	
+	class Bomber_Bag: B_AssaultPack_rgr	
 	{
 		scope=1;
 		displayName="Bomb Bag";
@@ -16136,7 +16136,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="usm_bdu_bnu_odg";
+		uniformClass="SP_0000_Standard_FieldUniform_Green_SS";
 		camouflage=1.6;
 	};
 	class ABTMGarrison_Pistol2: I_Soldier_F
@@ -16264,7 +16264,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="usm_bdu_bnu_odg";
+		uniformClass="SP_0000_Standard_FieldUniform_Green_SS";
 		camouflage=1.6;
 	};
 	class ABTMGarrison_SMG1: I_Soldier_F
@@ -16332,7 +16332,7 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="usm_bdu_bnu_odg";
+		uniformClass="SP_0000_Standard_FieldUniform_Green_SS";
 		camouflage=1.6;
 	};
 	class ABTMGarrison_SMG2: I_Soldier_F
@@ -17502,9 +17502,9 @@ class CfgGroups
 						position[]={11,0,0};
 					};
 				};
-				class assault_Team
+				class Assault_Team
 				{
-					name="assault Team";
+					name="Assault Team";
 					faction="Buhriz_Movement";
 					side=2;
 					class Unit0
@@ -20282,7 +20282,622 @@ class CfgGroups
 					};
 				};
 			};
-			name2="Garrison";
+			name2="Agressors Woodland";
+			class ABTM_RAWDL
+			{
+				name="Aggressors Woodland";
+				class ABTM_RA_FireteamWDL
+				{
+					name="Fireteam Woodland";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_AutoriflemanWDL";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_RiflemanWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_Fireteam_AAWDL
+				{
+					name="Fireteam Woodland (AA)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_AutoriflemanWDL";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_AntiAirWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_RiflemanWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_Fireteam_DMRWDL
+				{
+					name="Fireteam Woodland (DMR)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_DMRWDL";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_DMRAssistWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_Fireteam_MGWDL
+				{
+					name="Fireteam Woodland (MG)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerWDL";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerAssistWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_Sentry2xWDL
+				{
+					name="Sentry Woodland (2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_Sentry1WDL";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Sentry2WDL";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_RA_Sentry4xWDL
+				{
+					name="Sentry Woodland (4x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_Sentry1WDL";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_Sentry2WDL";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_Sentry1WDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_Sentry2WDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SquadWDL
+				{
+					name="Squad Woodland";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_AutoriflemanWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_RiflemanWDL";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_AutoriflemanWDL";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_RiflemanWDL";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_RA_Squad_Weapons_AAWDL
+				{
+					name="Squad Woodland (Weapons, AA 2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_AutoriflemanWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_AntiAirWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_RiflemanWDL";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_AutoriflemanWDL";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTM_AntiAirWDL";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_RiflemanWDL";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_RA_Squad_Weapons_DMR_MGWDL
+				{
+					name="Squad Woodland (Weapons, DMR + MG)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="MachinegunnerAssistWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_DMRWDL";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTM_DMRAssistWDL";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_RA_Squad_Weapons_MGWDL
+				{
+					name="Squad Woodland (Weapons, MG 2x)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="MachinegunnerAssistWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerWDL";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="MachinegunnerAssistWDL";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+				};
+				class ABTM_RA_Team_ATGMWDL
+				{
+					name="Team Woodland (ATGM)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_DMRWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_ATGMWDL";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_ATGMAssistWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_AntiTankWDL";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+				};
+				class ABTM_RA_Team_AssaultEngineersWDL
+				{
+					name="Team Woodland (Assault Engineers)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_EngineerWDL";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_EngineerWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerWDL";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTM_MachinegunnerAssistWDL";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+				};
+				class ABTM_RA_Team_RadioWDL
+				{
+					name="Team Woodland (Radio)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTM_SquadLeaderWDL";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTM_TeamLeaderWDL";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTM_RadiomanWDL";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTM_DMRWDL";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTM_DMRAssistWDL";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTM_RiflemanRPG1WDL";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+				};
+			};
+			name3="Garrison";
 			class ABTM_RA_Garrison
 			{
 				name="Garrison";

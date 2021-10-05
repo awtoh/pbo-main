@@ -236,12 +236,18 @@ class CfgPatches
 			"ABTMCommand_SecurityGuard",
 			"ABTMCommand_SecurityPatrolman",
 			"ABTMCommand_SecuritySentry",
+			
+			/// SECTIONED OFF INTO REDLAND AGGRESSORS REAR LINES ///
+			
 			"ABTMGarrison_Pistol1",
 			"ABTMGarrison_Pistol2",
 			"ABTMGarrison_Pistol3",
 			"ABTMGarrison_SMG1",
 			"ABTMGarrison_SMG2",
 			"ABTMGarrison_SMG3",
+			
+			/// SECTIONED OFF INTO REDLAND AGGRESSORS GUERILLAS ///
+			
 			"ABTMGuerilla_Advisor1",
 			"ABTMGuerilla_Advisor2",
 			"ABTMGuerilla_Advisor3",
@@ -256,6 +262,7 @@ class CfgPatches
 			"ABTMGuerilla_Conscript5",
 			"ABTMGuerilla_Conscript6",
 			"ABTMGuerilla_Coordinator",
+			"ABTMGuerilla_Driver",
 			"ABTMGuerilla_FighterAntiTank",
 			"ABTMGuerilla_FighterGunCrew",
 			"ABTMGuerilla_FighterMachineGunner",
@@ -764,6 +771,8 @@ class CfgWeapons
 	class CUP_arifle_IMI_Romat;
 	class CUP_arifle_Mk16_CQC_FG_black;
 	class CUP_srifle_LeeEnfield;
+	class CUP_arifle_TYPE_56_2_Early;
+	class CUP_hgun_Browning_HP;
 	
 	//Define Weapons with attachments
   	class SVD_Scoped: CUP_srifle_SVD
@@ -1014,6 +1023,18 @@ class CfgWeapons
 			{
 				slot = "MuzzleSlot";
 				item = "muzzle_snds_m";
+			};
+		};
+	};
+	class ABTM_Guerilla_NR_BrowningHP: CUP_hgun_Browning_HP
+	{
+		displayName = "RA Guerilla Browning HP 'Venture'";
+		class LinkedItems
+		{
+			class LinkedItemsMuzzle
+			{
+				slot = "MuzzleSlot";
+				item = "cup_muzzle_snds_m9";
 			};
 		};
 	};
@@ -12056,14 +12077,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye",
+			"CUP_launch_9K32Strela",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye",
+			"CUP_launch_9K32Strela",
 			"Throw",
 			"Put"
 		};
@@ -13742,14 +13763,14 @@ class CfgVehicles
 		weapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye",
+			"CUP_launch_9K32Strela",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_arifle_Colt727",
-			"cwr3_launch_redeye",
+			"CUP_launch_9K32Strela",
 			"Throw",
 			"Put"
 		};
@@ -15881,6 +15902,7 @@ class CfgVehicles
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
+			"CUP_30Rnd_556x45_Stanag",
 			"CUP_HandGrenade_L109A1_HE",
 			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShellPurple",
@@ -15889,6 +15911,7 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
+			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
@@ -16035,7 +16058,6 @@ class CfgVehicles
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",			
 			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShellPurple",
@@ -16045,7 +16067,6 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
 			"CUP_30Rnd_556x45_Stanag",
@@ -16631,7 +16652,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -16715,7 +16736,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -16799,7 +16820,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -16889,7 +16910,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -16955,7 +16976,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17023,7 +17044,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17091,7 +17112,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17118,7 +17139,7 @@ class CfgVehicles
 			"CUP_13Rnd_9x19_Browning_HP",
 			"CUP_13Rnd_9x19_Browning_HP",
 			"CUP_HandGrenade_L109A1_HE",
-			"SmokeShellRed"
+			"SmokeShellRed",
 			"SmokeShell"
 		};
 		respawnMagazines[]=
@@ -17127,7 +17148,7 @@ class CfgVehicles
 			"CUP_13Rnd_9x19_Browning_HP",
 			"CUP_13Rnd_9x19_Browning_HP",
 			"CUP_HandGrenade_L109A1_HE",
-			"SmokeShellRed"
+			"SmokeShellRed",
 			"SmokeShell"
 		};
 		linkedItems[]=
@@ -17157,7 +17178,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17217,7 +17238,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17277,7 +17298,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17367,7 +17388,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17427,7 +17448,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17487,7 +17508,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17557,7 +17578,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17627,11 +17648,77 @@ class CfgVehicles
 		uniformClass="U_I_C_Soldier_Para_4_F";
 		camouflage=1.6;
 	};
+	class ABTMGuerilla_Driver: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_Driver";
+		scope=2;
+		displayName="Aggressor Guerilla (Driver)";
+		weapons[]=
+		{
+			"hgun_Pistol_01_F",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"hgun_Pistol_01_F",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"10Rnd_9x21_Mag",
+			"10Rnd_9x21_Mag",
+			"10Rnd_9x21_Mag",
+			"ACE_Chemlight_White",
+			"ACE_HandFlare_White",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"10Rnd_9x21_Mag",
+			"10Rnd_9x21_Mag",
+			"10Rnd_9x21_Mag",
+			"ACE_Chemlight_White",
+			"ACE_HandFlare_White",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CUP_V_O_TK_CrewBelt",
+			"H_HeadSet_black_F",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CUP_V_O_TK_CrewBelt",
+			"H_HeadSet_black_F",
+			"G_Balaclava_blk",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="U_I_C_Soldier_Para_2_F";
+		camouflage=1.6;
+	};
 	class ABTMGuerilla_FighterAntiTank: I_Soldier_LAT_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17707,7 +17794,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17771,7 +17858,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17837,7 +17924,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17854,7 +17941,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_arifle_AKMS_Early"
+			"CUP_arifle_AKMS_Early",
 			"Throw",
 			"Put"
 		};
@@ -17911,7 +17998,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -17928,7 +18015,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"cwr3_lmg_bren"
+			"cwr3_lmg_bren",
 			"Throw",
 			"Put"
 		};
@@ -17983,7 +18070,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18000,7 +18087,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_srifle_M14"
+			"CUP_srifle_M14",
 			"Throw",
 			"Put"
 		};
@@ -18057,7 +18144,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18074,7 +18161,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_SKS"
+			"CUP_SKS",
 			"Throw",
 			"Put"
 		};
@@ -18129,7 +18216,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18146,7 +18233,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"cwr3_smg_sterling"
+			"cwr3_smg_sterling",
 			"Throw",
 			"Put"
 		};
@@ -18203,7 +18290,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18271,7 +18358,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18288,7 +18375,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_arifle_AKMS_Early"
+			"CUP_arifle_AKMS_Early",
 			"Throw",
 			"Put"
 		};
@@ -18345,7 +18432,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18362,7 +18449,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_srifle_Mosin_Nagant"
+			"CUP_srifle_Mosin_Nagant",
 			"Throw",
 			"Put"
 		};
@@ -18419,7 +18506,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18436,7 +18523,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_srifle_Mosin_Nagant"
+			"CUP_srifle_Mosin_Nagant",
 			"Throw",
 			"Put"
 		};
@@ -18493,7 +18580,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -18510,7 +18597,7 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_srifle_Mosin_Nagant"
+			"CUP_srifle_Mosin_Nagant",
 			"Throw",
 			"Put"
 		};
@@ -18562,39 +18649,53 @@ class CfgVehicles
 		uniformClass="U_I_L_Uniform_01_tshirt_olive_F";
 		camouflage=1.6;
 	};
-	class ABTMGuerilla_NightRaiderAssaultLeader: I_Soldier_F
+	class ABTMGuerilla_NightRaiderAssaultLeader: I_Soldier_SL_F
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
 			"NoGlasses",
 		};
 		author="Ashton";
-		_generalMacro="ABTMGuerilla_Fighter_Sterling";
+		_generalMacro="ABTMGuerilla_NightRaiderAssaultLeader";
 		scope=2;
-		displayName="Aggressor Guerilla (Fighter, Sterling)";
+		displayName="Aggressor Guerilla (Night Raider, Assault Leader)";
 		weapons[]=
 		{
-			"cwr3_smg_sterling",
+			"ABTM_Guerilla_NR_Mk16",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"cwr3_smg_sterling"
+			"ABTM_Guerilla_NR_Mk16",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
 			"CUP_HandGrenade_RGD5",
 			"CUP_HandGrenade_RGD5",
 			"SmokeShell",
@@ -18602,12 +18703,22 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
-			"cwr3_30rnd_sterling_m",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_30Rnd_556x45_Stanag_Mk16_black",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
 			"CUP_HandGrenade_RGD5",
 			"CUP_HandGrenade_RGD5",
 			"SmokeShell",
@@ -18615,9 +18726,10 @@ class CfgVehicles
 		};
 		linkedItems[]=
 		{
-			"CFP_AK_VEST_EDRL",
-			"sfp_m37w_helmet_dok_camo",
-			"G_Balaclava_oli",
+			"SP_Modular2_Black",
+			"SP_Hood_Black",
+			"VSM_Balaclava2_black_Peltor",
+			"CUP_NVG_HMNVS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
@@ -18625,15 +18737,648 @@ class CfgVehicles
 		};
 		respawnLinkedItems[]=
 		{
-			"CFP_AK_VEST_EDRL",
-			"sfp_m37w_helmet_dok_camo",
-			"G_Balaclava_oli",
+			"SP_Modular2_Black",
+			"SP_Hood_Black",
+			"VSM_Balaclava2_black_Peltor",
+			"CUP_NVG_HMNVS",
 			"ItemMap",
 			"ItemCompass",
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="U_I_L_Uniform_01_deserter_F";
+		uniformClass="SP_0000_Standard_Coverall_Black";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_NightRaider_M16: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_NightRaiderAssaultLeader";
+		scope=2;
+		displayName="Aggressor Guerilla (Night Raider, M16)";
+		weapons[]=
+		{
+			"ABTM_Guerilla_NR_M16A1E1",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_Guerilla_NR_M16A1E1",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"ACE_30Rnd_556x45_Stanag_Mk262_mag",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"G_Balaclava_blk",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"G_Balaclava_blk",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_Coverall_Black";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_NightRaider_M3A1: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_NightRaiderAssaultLeader";
+		scope=2;
+		displayName="Aggressor Guerilla (Night Raider, M3A1)";
+		weapons[]=
+		{
+			"ABTM_Guerilla_NR_M3A1",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_Guerilla_NR_M3A1",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_30Rnd_45ACP_M3A1_BLK_M",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"G_Balaclava_blk",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"G_Balaclava_blk",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_Coverall_Black";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_NightRaider_Romat: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_NightRaiderAssaultLeader";
+		scope=2;
+		displayName="Aggressor Guerilla (Night Raider, Romat)";
+		weapons[]=
+		{
+			"ABTM_Guerilla_NR_Romat",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_Guerilla_NR_Romat",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_20Rnd_762x51_FNFAL_M",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"VSM_balaclava2_Black",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"VSM_balaclava2_Black",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_Coverall_Black";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_NightRaider_Type56: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_NightRaider_Type56";
+		scope=2;
+		displayName="Aggressor Guerilla (Night Raider, Type 56-2)";
+		weapons[]=
+		{
+			"ABTM_Guerilla_NR_Type56",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"ABTM_Guerilla_NR_Type56",
+			"ABTM_Guerilla_NR_BrowningHP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"ffp_30Rnd_762x39",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"ACE_HandFlare_Red",
+			"ACE_HandFlare_White",
+			"ACE_HandFlare_White",
+			"ACE_M84",
+			"ACE_M84",
+			"Chemlight_red",
+			"Chemlight_green",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"VSM_balaclava2_Black",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"SP_PlateCarrier1_Black",
+			"SP_Hood_Black",
+			"VSM_balaclava2_Black",
+			"CUP_NVG_HMNVS",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="SP_0000_Standard_Coverall_Black";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_Officer: I_Officer_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_Officer";
+		scope=2;
+		displayName="Aggressor Guerilla (Officer)";
+		weapons[]=
+		{
+			"CUP_hgun_Browning_HP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_hgun_Browning_HP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"V_BandollierB_oli",
+			"cwr3_o_headgear_sidecap_m1973",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"V_BandollierB_oli",
+			"cwr3_o_headgear_sidecap_m1973",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="U_I_C_Soldier_Camo_F";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_OfficerBodyguard: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_Officer";
+		scope=2;
+		displayName="Aggressor Guerilla (Officer's Bodyguard)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS74_Early",
+			"hgun_Pistol_01_F",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS74_Early",
+			"hgun_Pistol_01_F",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"ACE_M84",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_30Rnd_545x39_AK74M_M",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_HandGrenade_RGD5",
+			"CUP_HandGrenade_RGD5",
+			"ACE_M84",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"ADFU_V_TBAS_Assaulter_AMC",
+			"cwr3_o_headgear_ssh68_net",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"ADFU_V_TBAS_Assaulter_AMC",
+			"cwr3_o_headgear_ssh68_net",
+			"G_Bandanna_oli",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="U_I_C_Soldier_Camo_F";
+		camouflage=1.6;
+	};
+	class ABTMGuerilla_OfficerForeign: I_Officer_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_Officer";
+		scope=2;
+		displayName="Aggressor Guerilla (Officer, Foreign)";
+		weapons[]=
+		{
+			"arifle_AKS_F",
+			"CUP_hgun_Browning_HP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"arifle_AKS_F",
+			"CUP_hgun_Browning_HP",
+			"Laserdesignator_03",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"30Rnd_545x39_Mag_F",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"CUP_13Rnd_9x19_Browning_HP",
+			"Laserbatteries",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_Modular1_Woodland",
+			"SP_Beret2_Brown",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_Modular1_Woodland",
+			"SP_Beret2_Brown",
+			"G_Aviator",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="CUP_U_O_SLA_Green";
 		camouflage=1.6;
 	};
 	class ABTM_VehicleAir_JAS39Gripen: I_Plane_Fighter_04_F
@@ -22193,7 +22938,7 @@ class CfgGroups
 					class Unit3
 					{
 						side=2;
-						vehicle="MachinegunnerAssist";
+						vehicle="ABTM_MachinegunnerAssist";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -22262,7 +23007,7 @@ class CfgGroups
 					class Unit3
 					{
 						side=2;
-						vehicle="MachinegunnerAssist";
+						vehicle="ABTM_MachinegunnerAssist";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -22290,7 +23035,7 @@ class CfgGroups
 					class Unit7
 					{
 						side=2;
-						vehicle="MachinegunnerAssist";
+						vehicle="ABTM_MachinegunnerAssist";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -22869,7 +23614,7 @@ class CfgGroups
 					class Unit3
 					{
 						side=2;
-						vehicle="MachinegunnerAssistWDL";
+						vehicle="ABTM_MachinegunnerAssistWDL";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -22938,7 +23683,7 @@ class CfgGroups
 					class Unit3
 					{
 						side=2;
-						vehicle="MachinegunnerAssistWDL";
+						vehicle="ABTM_MachinegunnerAssistWDL";
 						rank="PRIVATE";
 						position[]={7,0,0};
 					};
@@ -22966,7 +23711,7 @@ class CfgGroups
 					class Unit7
 					{
 						side=2;
-						vehicle="MachinegunnerAssistWDL";
+						vehicle="ABTM_MachinegunnerAssistWDL";
 						rank="PRIVATE";
 						position[]={15,0,0};
 					};
@@ -23282,31 +24027,106 @@ class CfgGroups
 			class ABTM_RA_Guerillas
 			{
 				name="Guerillas";
-				class ABTM_RA_Guerillas
+				class ABTM_RA_Guerillas_AdvisorTeam
 				{
-					name="Pistol Team (3x)";
+					name="Advisor Team";
 					faction="ABTM_Redland_Aggressors";
 					side=2;
 					class Unit0
 					{
 						side=2;
-						vehicle="ABTMGarrison_Pistol1";
-						rank="CORPORAL";
+						vehicle="ABTMGuerilla_Advisor1";
+						rank="LIEUTENANT";
 						position[]={0,5,0};
 					};
 					class Unit1
 					{
 						side=2;
-						vehicle="ABTMGarrison_Pistol2";
-						rank="CORPORAL";
+						vehicle="ABTMGuerilla_Advisor2";
+						rank="SERGEANT";
 						position[]={3,0,0};
 					};
 					class Unit2
 					{
 						side=2;
-						vehicle="ABTMGarrison_Pistol3";
+						vehicle="ABTMGuerilla_Advisor3";
 						rank="PRIVATE";
 						position[]={5,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_AdvisorTeamFireSupport
+				{
+					name="Advisor Team (Fire Support)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Advisor1";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_AdvisorTeamNightRaid
+				{
+					name="Advisor Team (Fire Support)";
+					faction="ABTM_Redland_Aggressors";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Advisor3";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="CORPORAL";
+						position[]={9,0,0};
 					};
 				};
 			};

@@ -1134,7 +1134,7 @@ class CfgVehicles
 	class CUP_B_AlicePack_Bedroll;
 	class CUP_B_CivPack_WDL;
 	class CUP_B_SLA_Medicbag;
-	class B_assaultPack_rgr;
+	class B_AssaultPack_rgr;
 	class B_FieldPack_khk;
 	class B_FieldPack_oli;
 	class B_Kitbag_rgr;
@@ -1429,7 +1429,7 @@ class CfgVehicles
             };
 		};
 	};
-	class Bomber_Bag: B_assaultPack_rgr	
+	class Bomber_Bag: B_AssaultPack_rgr	
 	{
 		scope=1;
 		displayName="Bomb Bag";
@@ -13651,6 +13651,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors";
+		backpack="ABTM_Main_ATAmmoBagWDL";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -17502,9 +17503,9 @@ class CfgGroups
 						position[]={11,0,0};
 					};
 				};
-				class assault_Team
+				class Assault_Team
 				{
-					name="assault Team";
+					name="Assault Team";
 					faction="Buhriz_Movement";
 					side=2;
 					class Unit0

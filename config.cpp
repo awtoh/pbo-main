@@ -14875,7 +14875,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_T90F3: CFP_B_UGARMY_T90_01
+	class ABTM_Vehicle_T90F3: CUP_O_T90_RU
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
@@ -17090,7 +17090,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_LandRoverArmed_ATWDL: CFP_B_NAARMY_Land_Rover_MG_01
+	class ABTM_Vehicle_LandRoverArmed_HMGWDL: CFP_B_NAARMY_Land_Rover_MG_01
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;
@@ -17390,7 +17390,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_T90F3WDL: CFP_B_UGARMY_T90_01
+	class ABTM_Vehicle_T90F3WDL: CUP_O_T90_RU
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;

@@ -203,6 +203,45 @@ class CfgPatches
 			"ABTM_Sentry2",
 			"ABTM_SquadLeader",
 			"ABTM_TeamLeader",
+			"ABTM_Static_AARadar",
+			"ABTM_Static_AALauncher",
+			"ABTM_Static_AGS17",
+			"ABTM_Static_AT_Gun",
+			"ABTM_Static_DShKM_High",
+			"ABTM_Static_DShKM_Low",
+			"ABTM_Static_Kornet",
+			"ABTM_Static_M2ShieldHigh",
+			"ABTM_Static_M2ShieldLow",
+			"ABTM_Static_Metis",
+			"ABTM_Static_Mortar",
+			"ABTM_Static_Radar",
+			"ABTM_Static_SAM",
+			"ATBM_Static_SpottingScope",
+			"ABTM_Static_TOW",
+			"ABTM_Static_ZU23",
+			"ABTM_Vehicle_BRDM2G",
+			"ABTM_Vehicle_BM21",
+			"ABTM_Vehicle_BTR40",
+			"ABTM_Vehicle_BTR60",
+			"ABTM_Vehicle_M113",
+			"ABTM_Vehicle_M113PIVADS",
+			"ABTM_Vehicle_M151",
+			"ABTM_Vehicle_M1A1",
+			"ABTM_Vehicle_Offroad",
+			"ABTM_Vehicle_Offroad_Covered",
+			"ABTM_Vehicle_OffroadArmed_AT",
+			"ABTM_Vehicle_OffroadArmed_HMG",
+			"ABTM_Vehicle_T3485M2",
+			"ABTM_Vehicle_T55A",
+			"ABTM_Vehicle_T64F1",
+			"ABTM_Vehicle_T72F2A1",
+			"ABTM_Vehicle_T90F3",
+			"ABTM_Vehicle_ZSU232",
+			"ABTM_Vehicle_ZSU234",
+			"ABTM_Vehicle_ZSU234Afghanski",
+			
+			/// SECTIONED OFF INTO REDLAND AGGRESSORS WOODLAND ///
+			
 			"ABTM_AntiAirWDL",
 			"ABTM_AntiTankWDL",
 			"ABTM_ATGMWDL",
@@ -223,6 +262,45 @@ class CfgPatches
 			"ABTM_Sentry2WDL",
 			"ABTM_SquadLeaderWDL",
 			"ABTM_TeamLeaderWDL",
+			"ABTM_Static_AARadarWDL",
+			"ABTM_Static_AALauncherWDL",
+			"ABTM_Static_AGS17WDL",
+			"ABTM_Static_AT_GunWDL",
+			"ABTM_Static_DShKM_HighWDL",
+			"ABTM_Static_DShKM_LowWDL",
+			"ABTM_Static_KornetWDL",
+			"ABTM_Static_M2ShieldHighWDL",
+			"ABTM_Static_M2ShieldLowWDL",
+			"ABTM_Static_MetisWDL",
+			"ABTM_Static_MortarWDL",
+			"ABTM_Static_RadarWDL",
+			"ABTM_Static_SAMWDL",
+			"ATBM_Static_SpottingScopeWDL",
+			"ABTM_Static_TOWWDL",
+			"ABTM_Static_ZU23WDL",
+			"ABTM_Vehicle_BRDM2GWDL",
+			"ABTM_Vehicle_BM21WDL",
+			"ABTM_Vehicle_BTR40WDL",
+			"ABTM_Vehicle_BTR60WDL",
+			"ABTM_Vehicle_M113WDL",
+			"ABTM_Vehicle_M113PIVADSWDL",
+			"ABTM_Vehicle_M151WDL",
+			"ABTM_Vehicle_M1A1WDL",
+			"ABTM_Vehicle_OffroadWDL",
+			"ABTM_Vehicle_Offroad_CoveredWDL",
+			"ABTM_Vehicle_OffroadArmed_ATWDL",
+			"ABTM_Vehicle_OffroadArmed_HMGWDL",
+			"ABTM_Vehicle_T3485M2WDL",
+			"ABTM_Vehicle_T55AWDL",
+			"ABTM_Vehicle_T64F1WDL",
+			"ABTM_Vehicle_T72F2A1WDL",
+			"ABTM_Vehicle_T90F3WDL",
+			"ABTM_Vehicle_ZSU232WDL",
+			"ABTM_Vehicle_ZSU234WDL",
+			"ABTM_Vehicle_ZSU234AfghanskiWDL",
+			
+			/// SECTIONED OFF INTO REDLAND AGGRESSORS COMMAND ///
+			
 			"ABTMCommand_FieldCommander1",
 			"ABTMCommand_FieldCommander2",
 			"ABTMCommand_FieldCommander3",
@@ -262,6 +340,7 @@ class CfgPatches
 			"ABTMGuerilla_Conscript5",
 			"ABTMGuerilla_Conscript6",
 			"ABTMGuerilla_Coordinator",
+			"ABTMGuerilla_Crewman",
 			"ABTMGuerilla_Driver",
 			"ABTMGuerilla_FighterAntiTank",
 			"ABTMGuerilla_FighterGunCrew",
@@ -294,6 +373,9 @@ class CfgPatches
 			"ABTMGuerilla_SMG3",
 			"ABTMGuerilla_SuicideBomber",
 			"ABTMGuerilla_SuicideGrenadier",
+			
+			/// SECTIONED OFF INTO REDLAND AGGRESSORS SF ///
+			
 			"ABTMLight_AntiTank",
 			"ABTMLight_Machinegunner",
 			"ABTMLight_Rifleman",
@@ -307,42 +389,9 @@ class CfgPatches
 			"ABTMSF_Operator",
 			"ABTMSF_Razvedka",
 			"ABTMSF_RTO",
-			"ABTM_Static_AARadar",
-			"ABTM_Static_AALauncher",
-			"ABTM_Static_AGS17",
-			"ABTM_Static_AT_Gun",
-			"ABTM_Static_DShKM_High",
-			"ABTM_Static_DShKM_Low",
-			"ABTM_Static_Kornet",
-			"ABTM_Static_M2ShieldHigh",
-			"ABTM_Static_M2ShieldLow",
-			"ABTM_Static_Metis",
-			"ABTM_Static_Mortar",
-			"ABTM_Static_Radar",
-			"ABTM_Static_SAM",
-			"ATBM_Static_SpottingScope",
-			"ABTM_Static_TOW",
-			"ABTM_Static_ZU23",
-			"ABTM_Vehicle_BRDM2G",
-			"ABTM_Vehicle_BM21",
-			"ABTM_Vehicle_BTR40",
-			"ABTM_Vehicle_BTR60",
-			"ABTM_Vehicle_M113",
-			"ABTM_Vehicle_M113PIVADS",
-			"ABTM_Vehicle_M151",
-			"ABTM_Vehicle_M1A1",
-			"ABTM_Vehicle_Offroad",
-			"ABTM_Vehicle_Offroad_Covered",
-			"ABTM_Vehicle_OffroadArmed_AT",
-			"ABTM_Vehicle_OffroadArmed_HMG",
-			"ABTM_Vehicle_T3485M2",
-			"ABTM_Vehicle_T55A",
-			"ABTM_Vehicle_T64F1",
-			"ABTM_Vehicle_T72F2A1",
-			"ABTM_Vehicle_T90F3",
-			"ABTM_Vehicle_ZSU232",
-			"ABTM_Vehicle_ZSU234",
-			"ABTM_Vehicle_ZSU234Afghanski",
+			
+			/// SECTIONED OFF INTO REDLAND AGGRESSORS Airforce ///
+			
 			"ABTM_VehicleAir_A7Corsair",
 			"ABTM_VehicleAir_AH1",
 			"ABTM_VehicleAir_AH64",
@@ -644,6 +693,36 @@ class CfgFactionClasses
 		priority=2;
 		side=2;
 	};
+	class ABTM_Redland_Aggressors_Airforce
+	{
+		displayName="Redland Aggressors (Airforce)";
+		priority=2;
+		side=2;
+	};
+	class ABTM_Redland_Aggressors_Command
+	{
+		displayName="Redland Aggressors (Command)";
+		priority=2;
+		side=2;
+	};
+	class ABTM_Redland_Aggressors_Garrison
+	{
+		displayName="Redland Aggressors (Garrison)";
+		priority=2;
+		side=2;
+	};
+	class ABTM_Redland_Aggressors_Guerillas
+	{
+		displayName="Redland Aggressors (Guerillas)";
+		priority=2;
+		side=2;
+	};
+	class ABTM_Redland_Aggressors_Woodland
+	{
+		displayName="Redland Aggressors (Woodland)";
+		priority=2;
+		side=2;
+	};
 	class Fulguda_Army
 	{
 		displayName="Fulguda Army";
@@ -721,6 +800,16 @@ class CfgVehicleClasses
 	class ABTM_Infantry
 	{
 		displayName="Infantry";
+		priority=1;
+	};
+	class ABTM_Guerillas
+	{
+		displayName="Guerillas";
+		priority=1;
+	};
+	class ABTM_Garrison
+	{
+		displayName="Garrison";
 		priority=1;
 	};
 	class ABTM_Cars
@@ -13791,7 +13880,7 @@ class CfgVehicles
 	class ABTM_AntiAirWDL: I_Soldier_AA_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -13867,7 +13956,7 @@ class CfgVehicles
 	class ABTM_AntiTankWDL: I_Soldier_LAT_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		backpack="ABTM_Main_ATAmmoBagWDL";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -13944,7 +14033,7 @@ class CfgVehicles
 	class ABTM_ATGMWDL: I_Soldier_LAT_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		backpack="ABTM_Misc_Kit";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -14023,7 +14112,7 @@ class CfgVehicles
 	class ABTM_ATGMAssistWDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		backpack="ABTM_Main_ATGMAmmoBagWDL";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -14098,7 +14187,7 @@ class CfgVehicles
 	class ABTM_AutoriflemanWDL: I_Soldier_AR_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14168,7 +14257,7 @@ class CfgVehicles
 	class ABTM_CrewmanWDL: I_crew_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14236,7 +14325,7 @@ class CfgVehicles
 	class ABTM_DMRWDL: I_Soldier_M_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14312,7 +14401,7 @@ class CfgVehicles
 	class ABTM_DMRAssistWDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14388,7 +14477,7 @@ class CfgVehicles
 	class ABTM_DriverWDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14454,7 +14543,7 @@ class CfgVehicles
 	class ABTM_EngineerWDL: I_engineer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14532,7 +14621,7 @@ class CfgVehicles
 	class ABTM_MachinegunnerWDL: I_Soldier_AR_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14596,7 +14685,7 @@ class CfgVehicles
 	class ABTM_MachinegunnerAssistWDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14672,7 +14761,7 @@ class CfgVehicles
 	class ABTM_RadiomanWDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		backpack="ABTM_Main_RadiopackWDL";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -14749,7 +14838,7 @@ class CfgVehicles
 	class ABTM_RiflemanWDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -14823,7 +14912,7 @@ class CfgVehicles
 	class ABTM_RiflemanRPG1WDL: I_Soldier_LAT_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		backpack="ABTM_Misc_RPGs1";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -14900,7 +14989,7 @@ class CfgVehicles
 	class ABTM_RiflemanRPG2WDL: I_Soldier_LAT_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		backpack="ABTM_Misc_RPGs2";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -14977,7 +15066,7 @@ class CfgVehicles
 	class ABTM_Sentry1WDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15039,7 +15128,7 @@ class CfgVehicles
 	class ABTM_Sentry2WDL: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15101,7 +15190,7 @@ class CfgVehicles
 	class ABTM_SquadLeaderWDL: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15203,7 +15292,7 @@ class CfgVehicles
 	class ABTM_TeamLeaderWDL: I_Soldier_TL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Woodland";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15281,7 +15370,7 @@ class CfgVehicles
 	class ABTMCommand_FieldCommander1: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15367,7 +15456,7 @@ class CfgVehicles
 	class ABTMCommand_FieldCommander2: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15441,7 +15530,7 @@ class CfgVehicles
 	class ABTMCommand_FieldCommander3: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15519,7 +15608,7 @@ class CfgVehicles
 	class ABTMCommand_FieldCommander4: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15597,7 +15686,7 @@ class CfgVehicles
 	class ABTMCommand_RTOInterceptor: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		backpack="ABTM_Command_Interceptor";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -15678,7 +15767,7 @@ class CfgVehicles
 	class ABTMCommand_RTOJammer: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		backpack="ABTM_Command_Jammer";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -15759,7 +15848,7 @@ class CfgVehicles
 	class ABTMCommand_RTORadio: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		backpack="ABTM_Command_RTO";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
@@ -15838,7 +15927,7 @@ class CfgVehicles
 	class ABTMCommand_SecurityBodyguardMachinegunner: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15850,23 +15939,22 @@ class CfgVehicles
 		displayName="Aggressor COMMANDSEC (Bodyguard, Machinegunner)";
 		weapons[]=
 		{
-			"CUP_arifle_Colt727",
+			"ABTM_Security_Mk48",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
-			"CUP_arifle_Colt727",
+			"ABTM_Security_Mk48",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
 			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShellPurple",
 			"SmokeShellRed",
@@ -15875,11 +15963,10 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",		
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",
+			"CUP_100Rnd_TE4_LRT4_White_Tracer_762x51_Belt_M",		
 			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShellPurple",
 			"SmokeShellRed",
@@ -15914,7 +16001,7 @@ class CfgVehicles
 	class ABTMCommand_SecurityBodyguardRifle: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -15992,7 +16079,7 @@ class CfgVehicles
 	class ABTMCommand_SecurityBodyguardSMG: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16011,18 +16098,18 @@ class CfgVehicles
 		};
 		respawnWeapons[]=
 		{
-			"CUP_arifle_Colt727",
+			"ABTM_Security_P90",
 			"CUP_hgun_Glock17_blk",
 			"Throw",
 			"Put"
 		};
 		magazines[]=
 		{
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
 			"CUP_17Rnd_9x19_glock17",
 			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShellPurple",
@@ -16032,11 +16119,11 @@ class CfgVehicles
 		};
 		respawnMagazines[]=
 		{
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
-			"CUP_30Rnd_556x45_Stanag",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
+			"50Rnd_570x28_SMG_03",
 			"CUP_17Rnd_9x19_glock17",
 			"CUP_HandGrenade_L109A1_HE",
 			"SmokeShellPurple",
@@ -16072,7 +16159,7 @@ class CfgVehicles
 	class ABTMCommand_SecurityGuard: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16146,7 +16233,7 @@ class CfgVehicles
 	class ABTMCommand_SecurityPatrolman: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16218,7 +16305,7 @@ class CfgVehicles
 	class ABTMCommand_SecuritySentry: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Command";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16296,8 +16383,8 @@ class CfgVehicles
 	class ABTMGarrison_Pistol1: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
-		vehicleclass="ABTM_Infantry";
+		faction="ABTM_Redland_Aggressors_Garrison";
+		vehicleclass="ABTM_Garrison";
 		identityTypes[]=
 		{
 			"NoGlasses",
@@ -16360,7 +16447,7 @@ class CfgVehicles
 	class ABTMGarrison_Pistol2: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Garrison";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16424,7 +16511,7 @@ class CfgVehicles
 	class ABTMGarrison_Pistol3: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Garrison";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16488,7 +16575,7 @@ class CfgVehicles
 	class ABTMGarrison_SMG1: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Garrison";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16556,7 +16643,7 @@ class CfgVehicles
 	class ABTMGarrison_SMG2: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Garrison";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16624,7 +16711,7 @@ class CfgVehicles
 	class ABTMGarrison_SMG3: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Garrison";
 		vehicleclass="ABTM_Infantry";
 		identityTypes[]=
 		{
@@ -16692,7 +16779,7 @@ class CfgVehicles
 	class ABTMGuerilla_Advisor1: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -16776,7 +16863,7 @@ class CfgVehicles
 	class ABTMGuerilla_Advisor2: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -16860,7 +16947,7 @@ class CfgVehicles
 	class ABTMGuerilla_Advisor3: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -16950,7 +17037,7 @@ class CfgVehicles
 	class ABTMGuerilla_BasePersonnel: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17016,7 +17103,7 @@ class CfgVehicles
 	class ABTMGuerilla_BasePersonnelArmed: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17084,7 +17171,7 @@ class CfgVehicles
 	class ABTMGuerilla_BasePersonnelSentry: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17152,7 +17239,7 @@ class CfgVehicles
 	class ABTMGuerilla_Commissar: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17164,13 +17251,15 @@ class CfgVehicles
 		displayName="Aggressor Guerilla (Commissar)";
 		weapons[]=
 		{
-			"CUP_hgun_Browning_HP",			
+			"CUP_hgun_Browning_HP",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
 		respawnWeapons[]=
 		{
 			"CUP_hgun_Browning_HP",
+			"Binocular",
 			"Throw",
 			"Put"
 		};
@@ -17218,7 +17307,7 @@ class CfgVehicles
 	class ABTMGuerilla_Conscript1: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17278,7 +17367,7 @@ class CfgVehicles
 	class ABTMGuerilla_Conscript2: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17338,7 +17427,7 @@ class CfgVehicles
 	class ABTMGuerilla_Conscript3: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17428,7 +17517,7 @@ class CfgVehicles
 	class ABTMGuerilla_Conscript4: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17488,7 +17577,7 @@ class CfgVehicles
 	class ABTMGuerilla_Conscript5: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17548,7 +17637,7 @@ class CfgVehicles
 	class ABTMGuerilla_Conscript6: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17618,7 +17707,7 @@ class CfgVehicles
 	class ABTMGuerilla_Coordinator: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17689,10 +17778,86 @@ class CfgVehicles
 		uniformClass="U_I_C_Soldier_Para_4_F";
 		camouflage=1.6;
 	};
+	class ABTMGuerilla_Crewman: I_Soldier_F
+	{
+		side=2;
+		faction="ABTM_Redland_Aggressors_Guerillas";
+		vehicleclass="ABTM_Guerillas";
+		identityTypes[]=
+		{
+			"NoGlasses",
+		};
+		author="Ashton";
+		_generalMacro="ABTMGuerilla_Crewman";
+		scope=2;
+		displayName="Aggressor Guerilla (Crewman)";
+		weapons[]=
+		{
+			"CUP_arifle_AKS",
+			"hgun_Pistol_01_F",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		respawnWeapons[]=
+		{
+			"CUP_arifle_AKS",
+			"hgun_Pistol_01_F",
+			"Binocular",
+			"Throw",
+			"Put"
+		};
+		magazines[]=
+		{
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"10Rnd_9x21_Mag",
+			"10Rnd_9x21_Mag",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		respawnMagazines[]=
+		{
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"CUP_30Rnd_762x39_AK47_M",
+			"10Rnd_9x21_Mag",
+			"10Rnd_9x21_Mag",
+			"CUP_HandGrenade_RGD5",
+			"SmokeShell"
+		};
+		linkedItems[]=
+		{
+			"CFP_AK_VEST_M81",
+			"H_HeadSet_black_F",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		respawnLinkedItems[]=
+		{
+			"CFP_AK_VEST_M81",
+			"H_HeadSet_black_F",
+			"VSM_balaclava2_Black",
+			"ItemMap",
+			"ItemCompass",
+			"ItemWatch",
+			"ItemRadio"
+		};
+		uniformClass="U_I_C_Soldier_Para_2_F";
+		camouflage=1.6;
+	};
 	class ABTMGuerilla_Driver: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17758,7 +17923,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterAntiTank: I_Soldier_LAT_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17834,7 +17999,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterGunCrew: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17898,7 +18063,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterMachineGunner: I_Soldier_AR_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -17964,7 +18129,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterParamilitaryAKMS: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18038,7 +18203,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterParamilitaryBren: I_Soldier_AR_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18110,7 +18275,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterParamilitaryM14: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18184,7 +18349,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterParamilitarySKS: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18256,7 +18421,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterParamilitarySterling: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18330,7 +18495,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterSniper: I_Soldier_M_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18398,7 +18563,7 @@ class CfgVehicles
 	class ABTMGuerilla_FighterSquadLeader: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18472,7 +18637,7 @@ class CfgVehicles
 	class ABTMGuerilla_Militia1: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18546,7 +18711,7 @@ class CfgVehicles
 	class ABTMGuerilla_Militia2: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18620,7 +18785,7 @@ class CfgVehicles
 	class ABTMGuerilla_Militia3: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18693,7 +18858,7 @@ class CfgVehicles
 	class ABTMGuerilla_NightRaiderAssaultLeader: I_Soldier_SL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18793,7 +18958,7 @@ class CfgVehicles
 	class ABTMGuerilla_NightRaider_M16: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18893,7 +19058,7 @@ class CfgVehicles
 	class ABTMGuerilla_NightRaider_M3A1: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -18993,7 +19158,7 @@ class CfgVehicles
 	class ABTMGuerilla_NightRaider_Romat: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19093,7 +19258,7 @@ class CfgVehicles
 	class ABTMGuerilla_NightRaider_Type56: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19193,7 +19358,7 @@ class CfgVehicles
 	class ABTMGuerilla_Officer: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19263,7 +19428,7 @@ class CfgVehicles
 	class ABTMGuerilla_OfficerBodyguard: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19345,7 +19510,7 @@ class CfgVehicles
 	class ABTMGuerilla_OfficerForeign: I_Officer_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19419,13 +19584,13 @@ class CfgVehicles
 			"ItemWatch",
 			"ItemRadio"
 		};
-		uniformClass="CUP_U_O_SLA_Green";
+		uniformClass="CFP_U_WorkUniform_DPM";
 		camouflage=1.6;
 	};
 	class ABTMGuerilla_ReconM79: I_Soldier_GL_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		backpack="ABTM_Guerilla_ReconM79Bag";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
@@ -19506,7 +19671,7 @@ class CfgVehicles
 	class ABTMGuerilla_ReconRadio: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		backpack="ABTM_Command_RTO";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
@@ -19583,7 +19748,7 @@ class CfgVehicles
 	class ABTMGuerilla_ReconRunner: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		backpack="ABTM_Misc_Kit";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
@@ -19656,7 +19821,7 @@ class CfgVehicles
 	class ABTMGuerilla_ReconSniper: I_Soldier_M_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		backpack="ABTM_Guerilla_ReconSniperBag";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
@@ -19731,7 +19896,7 @@ class CfgVehicles
 	class ABTMGuerilla_ReconSpotter: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19813,7 +19978,7 @@ class CfgVehicles
 	class ABTMGuerilla_SMG1: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19883,7 +20048,7 @@ class CfgVehicles
 	class ABTMGuerilla_SMG2: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -19953,7 +20118,7 @@ class CfgVehicles
 	class ABTMGuerilla_SMG3: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -20023,7 +20188,7 @@ class CfgVehicles
 	class ABTMGuerilla_SuicideBomber: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -20097,7 +20262,7 @@ class CfgVehicles
 	class ABTMGuerilla_SuicideGrenadier: I_Soldier_F
 	{
 		side=2;
-		faction="ABTM_Redland_Aggressors";
+		faction="ABTM_Redland_Aggressors_Guerillas";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -20174,7 +20339,7 @@ class CfgVehicles
 	};
 	class ABTM_VehicleAir_JAS39Gripen: I_Plane_Fighter_04_F
 	{
-        faction = "ABTM_Redland_Aggressors"; //Faction
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
         displayName = "JAS 39 'Gripen'"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -20185,7 +20350,7 @@ class CfgVehicles
 	};
 	class ABTM_VehicleAir_JAS39GripenACE: I_Plane_Fighter_04_F
 	{
-        faction = "ABTM_Redland_Aggressors"; //Faction
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
         displayName = "JAS 39 'Gripen' ACE"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -20196,7 +20361,7 @@ class CfgVehicles
 	};
 	class ABTM_VehicleAir_Mirage2000: M2000C_BLU
 	{
-        faction = "ABTM_Redland_Aggressors"; //Faction
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
         displayName = "M2000 'Mirage'"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -20207,7 +20372,7 @@ class CfgVehicles
 	};
 	class ABTM_VehicleAir_Mirage2000ACE: M2000C_BLU
 	{
-        faction = "ABTM_Redland_Aggressors"; //Faction
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
         displayName = "M2000 'Mirage' ACE"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -23986,11 +24151,11 @@ class CfgGroups
 			name2="Aggressors Woodland";
 			class ABTM_RAWDL
 			{
-				name="Aggressors Woodland";
+				name="Aggressors (Woodland)";
 				class ABTM_RA_Crewteam3x
 				{
 					name="Crew Team Woodland (3x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24017,7 +24182,7 @@ class CfgGroups
 				class ABTM_RA_Crewteam4x
 				{
 					name="Crew Team Woodland (4x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24051,7 +24216,7 @@ class CfgGroups
 				class ABTM_RA_FireteamWDL
 				{
 					name="Fireteam Woodland";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24085,7 +24250,7 @@ class CfgGroups
 				class ABTM_RA_Fireteam_AAWDL
 				{
 					name="Fireteam Woodland (AA)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24119,7 +24284,7 @@ class CfgGroups
 				class ABTM_RA_Fireteam_DMRWDL
 				{
 					name="Fireteam Woodland (DMR)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24153,7 +24318,7 @@ class CfgGroups
 				class ABTM_RA_Fireteam_MGWDL
 				{
 					name="Fireteam Woodland (MG)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24187,7 +24352,7 @@ class CfgGroups
 				class ABTM_RA_Sentry2xWDL
 				{
 					name="Sentry Woodland (2x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24207,7 +24372,7 @@ class CfgGroups
 				class ABTM_RA_Sentry4xWDL
 				{
 					name="Sentry Woodland (4x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24241,7 +24406,7 @@ class CfgGroups
 				class ABTM_RA_SquadWDL
 				{
 					name="Squad Woodland";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24310,7 +24475,7 @@ class CfgGroups
 				class ABTM_RA_Squad_Weapons_AAWDL
 				{
 					name="Squad Woodland (Weapons, AA 2x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24379,7 +24544,7 @@ class CfgGroups
 				class ABTM_RA_Squad_Weapons_DMR_MGWDL
 				{
 					name="Squad Woodland (Weapons, DMR + MG)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24448,7 +24613,7 @@ class CfgGroups
 				class ABTM_RA_Squad_Weapons_MGWDL
 				{
 					name="Squad Woodland (Weapons, MG 2x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24517,7 +24682,7 @@ class CfgGroups
 				class ABTM_RA_Team_ATGMWDL
 				{
 					name="Team Woodland (ATGM)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24558,7 +24723,7 @@ class CfgGroups
 				class ABTM_RA_Team_AssaultEngineersWDL
 				{
 					name="Team Woodland (Assault Engineers)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24613,7 +24778,7 @@ class CfgGroups
 				class ABTM_RA_Team_RadioWDL
 				{
 					name="Team Woodland (Radio)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Woodland";
 					side=2;
 					class Unit0
 					{
@@ -24666,7 +24831,7 @@ class CfgGroups
 				class ABTM_RA_Garrison_Pistols3x
 				{
 					name="Pistol Team (3x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Garrison";
 					side=2;
 					class Unit0
 					{
@@ -24693,7 +24858,7 @@ class CfgGroups
 				class ABTM_RA_Garrison_Pistols6x
 				{
 					name="Pistol Team (6x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Garrison";
 					side=2;
 					class Unit0
 					{
@@ -24741,7 +24906,7 @@ class CfgGroups
 				class ABTM_RA_Garrison_SMG3x
 				{
 					name="SMG Team (3x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Garrison";
 					side=2;
 					class Unit0
 					{
@@ -24768,7 +24933,7 @@ class CfgGroups
 				class ABTM_RA_Garrison_SMG6x
 				{
 					name="SMG Team (6x)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Garrison";
 					side=2;
 					class Unit0
 					{
@@ -24821,7 +24986,7 @@ class CfgGroups
 				class ABTM_RA_Guerillas_AdvisorTeam
 				{
 					name="Advisor Team";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Guerillas";
 					side=2;
 					class Unit0
 					{
@@ -24848,7 +25013,7 @@ class CfgGroups
 				class ABTM_RA_Guerillas_AdvisorTeamFireSupport
 				{
 					name="Advisor Team (Fire Support)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Guerillas";
 					side=2;
 					class Unit0
 					{
@@ -24882,7 +25047,7 @@ class CfgGroups
 				class ABTM_RA_Guerillas_AdvisorTeamNightRaid
 				{
 					name="Advisor Team (Fire Support)";
-					faction="ABTM_Redland_Aggressors";
+					faction="ABTM_Redland_Aggressors_Guerillas";
 					side=2;
 					class Unit0
 					{

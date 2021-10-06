@@ -14554,6 +14554,31 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
+        displayName = "Land Rover Armed (AT)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_LandRoverArmed_HMG: CFP_B_NAARMY_Land_Rover_MG_01
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
         displayName = "Land Rover Armed (HMG)"; //Ingame name
         crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Rifleman"};
@@ -14650,7 +14675,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_M151: cwr3_b_m151_m2
+	class ABTM_Vehicle_M151HMG: cwr3_b_m151_m2
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
@@ -17044,6 +17069,31 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;
+        displayName = "Land Rover Armed (AT)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_LandRoverArmed_ATWDL: CFP_B_NAARMY_Land_Rover_MG_01
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
         displayName = "Land Rover Armed (HMG)"; //Ingame name
         crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_RiflemanWDL"};
@@ -17140,7 +17190,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_M151WDL: cwr3_b_m151_m2
+	class ABTM_Vehicle_M151HMGWDL: cwr3_b_m151_m2
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;

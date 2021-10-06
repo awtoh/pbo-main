@@ -14650,7 +14650,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_M151: cwr3_b_m151_m2
+	class ABTM_Vehicle_M151HMG: cwr3_b_m151_m2
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
@@ -17140,7 +17140,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_M151WDL: cwr3_b_m151_m2
+	class ABTM_Vehicle_M151HMGWDL: cwr3_b_m151_m2
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;

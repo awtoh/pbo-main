@@ -18450,7 +18450,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_BRDM2G2C: CUP_I_BRDM2_HQ_NAPA
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "BRDM-2G-C2"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18475,7 +18475,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M151: cwr3_b_m151
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M151A3"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18500,7 +18500,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M939: cwr3_b_m939_open
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M939"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18525,7 +18525,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M939Ammo: cwr3_b_m939_reammo
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M939 (Ammo)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18550,7 +18550,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M939Cargo: cwr3_b_m939_empty
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M939"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18575,7 +18575,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M939Covered: cwr3_b_m939
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M939 (Covered)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18600,7 +18600,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M939Fuel: cwr3_b_m939_refuel
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M939 (Fuel)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18625,7 +18625,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_M939Repair: cwr3_b_m939_repair
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "M939 (Repair)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18650,7 +18650,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_OffroadComms: C_Offroad_01_comms_F
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "Offroad (Comms)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18675,7 +18675,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_OffroadCovered: C_Offroad_01_covered_F
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "Offroad (Covered)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18700,7 +18700,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_UAZ: CUP_O_UAZ_Open_RU
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "UAZ-469"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
@@ -18725,7 +18725,7 @@ class CfgVehicles
 	};
 	class ABTMCommand_Vehicle_UAZCovered: CUP_O_UAZ_Unarmed_RU
 	{
-		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+		faction = "ABTM_Redland_Aggressors_Command"; //Faction
         side = 2;
         displayName = "UAZ-469 (Covered)"; //Ingame name
         crew = "ABTMCommand_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";

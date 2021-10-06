@@ -203,10 +203,10 @@ class CfgPatches
 			"ABTM_Sentry2",
 			"ABTM_SquadLeader",
 			"ABTM_TeamLeader",
-			"ABTM_Static_AARadar",
 			"ABTM_Static_AALauncher",
+			"ABTM_Static_AARadar",
 			"ABTM_Static_AGS17",
-			"ABTM_Static_AT_Gun",
+			"ABTM_Static_D30ATGun",
 			"ABTM_Static_DShKM_High",
 			"ABTM_Static_DShKM_Low",
 			"ABTM_Static_Kornet",
@@ -216,26 +216,34 @@ class CfgPatches
 			"ABTM_Static_Mortar",
 			"ABTM_Static_Radar",
 			"ABTM_Static_SAM",
+			"ABTM_Static_Searchlight",
 			"ATBM_Static_SpottingScope",
 			"ABTM_Static_TOW",
 			"ABTM_Static_ZU23",
+			"ABTM_Vehicle_AMX13",
+			"ABTM_Vehicle_AMX13AA",
 			"ABTM_Vehicle_BRDM2G",
 			"ABTM_Vehicle_BM21",
 			"ABTM_Vehicle_BTR40",
+			"ABTM_Vehicle_BTR40DShKM",
 			"ABTM_Vehicle_BTR60",
+			"ABTM_Vehicle_LandRover_Covered",
+			"ABTM_Vehicle_LandRoverArmed_AT",
+			"ABTM_Vehicle_LandRoverArmed_HMG",
 			"ABTM_Vehicle_M113",
-			"ABTM_Vehicle_M113PIVADS",
 			"ABTM_Vehicle_M151",
+			"ABTM_Vehicle_M151HMG",
+			"ABTM_Vehicle_M163PIVADS",
 			"ABTM_Vehicle_M1A1",
-			"ABTM_Vehicle_Offroad",
-			"ABTM_Vehicle_Offroad_Covered",
-			"ABTM_Vehicle_OffroadArmed_AT",
-			"ABTM_Vehicle_OffroadArmed_HMG",
+			"ABTM_Vehicle_M1A3",
+			"ABTM_Vehicle_M939",
+			"ABTM_Vehicle_M939Covered",
 			"ABTM_Vehicle_T3485M2",
 			"ABTM_Vehicle_T55A",
 			"ABTM_Vehicle_T64F1",
 			"ABTM_Vehicle_T72F2A1",
 			"ABTM_Vehicle_T90F3",
+			"ABTM_Vehicle_UAZ452",
 			"ABTM_Vehicle_ZSU232",
 			"ABTM_Vehicle_ZSU234",
 			"ABTM_Vehicle_ZSU234Afghanski",
@@ -262,10 +270,10 @@ class CfgPatches
 			"ABTM_Sentry2WDL",
 			"ABTM_SquadLeaderWDL",
 			"ABTM_TeamLeaderWDL",
-			"ABTM_Static_AARadarWDL",
 			"ABTM_Static_AALauncherWDL",
+			"ABTM_Static_AARadarWDL",
 			"ABTM_Static_AGS17WDL",
-			"ABTM_Static_AT_GunWDL",
+			"ABTM_Static_D30ATGunWDL",
 			"ABTM_Static_DShKM_HighWDL",
 			"ABTM_Static_DShKM_LowWDL",
 			"ABTM_Static_KornetWDL",
@@ -275,26 +283,34 @@ class CfgPatches
 			"ABTM_Static_MortarWDL",
 			"ABTM_Static_RadarWDL",
 			"ABTM_Static_SAMWDL",
+			"ABTM_Static_SearchlightWDL",
 			"ATBM_Static_SpottingScopeWDL",
 			"ABTM_Static_TOWWDL",
 			"ABTM_Static_ZU23WDL",
+			"ABTM_Vehicle_AMX13WDL",
+			"ABTM_Vehicle_AMX13AAWDL",
 			"ABTM_Vehicle_BRDM2GWDL",
 			"ABTM_Vehicle_BM21WDL",
 			"ABTM_Vehicle_BTR40WDL",
+			"ABTM_Vehicle_BTR40DShKMWDL",
 			"ABTM_Vehicle_BTR60WDL",
+			"ABTM_Vehicle_LandRoverArmed_ATWDL",
+			"ABTM_Vehicle_LandRoverArmed_HMGWDL",
+			"ABTM_Vehicle_LandRover_CoveredWDL",
 			"ABTM_Vehicle_M113WDL",
-			"ABTM_Vehicle_M113PIVADSWDL",
 			"ABTM_Vehicle_M151WDL",
+			"ABTM_Vehicle_M151HMGWDL",
+			"ABTM_Vehicle_M163PIVADSWDL",
 			"ABTM_Vehicle_M1A1WDL",
-			"ABTM_Vehicle_OffroadWDL",
-			"ABTM_Vehicle_Offroad_CoveredWDL",
-			"ABTM_Vehicle_OffroadArmed_ATWDL",
-			"ABTM_Vehicle_OffroadArmed_HMGWDL",
+			"ABTM_Vehicle_M1A3WDL",
+			"ABTM_Vehicle_M939WDL",
+			"ABTM_Vehicle_M939CoveredWDL",
 			"ABTM_Vehicle_T3485M2WDL",
 			"ABTM_Vehicle_T55AWDL",
 			"ABTM_Vehicle_T64F1WDL",
 			"ABTM_Vehicle_T72F2A1WDL",
 			"ABTM_Vehicle_T90F3WDL",
+			"ABTM_Vehicle_UAZ452WDL",
 			"ABTM_Vehicle_ZSU232WDL",
 			"ABTM_Vehicle_ZSU234WDL",
 			"ABTM_Vehicle_ZSU234AfghanskiWDL",
@@ -314,6 +330,18 @@ class CfgPatches
 			"ABTMCommand_SecurityGuard",
 			"ABTMCommand_SecurityPatrolman",
 			"ABTMCommand_SecuritySentry",
+			"ABTMCommand_Vehicle_BRDM2G-2C",
+			"ABTMCommand_Vehicle_M151",
+			"ABTMCommand_Vehicle_M939",
+			"ABTMCommand_Vehicle_M939Ammo",
+			"ABTMCommand_Vehicle_M939Cargo",
+			"ABTMCommand_Vehicle_M939Covered",
+			"ABTMCommand_Vehicle_M939Fuel",
+			"ABTMCommand_Vehicle_M939Repair",
+			"ABTMCommand_Vehicle_OffroadComms",
+			"ABTMCommand_Vehicle_OffroadCovered",
+			"ABTMCommand_Vehicle_UAZ",
+			"ABTMCommand_Vehicle_UAZCovered",
 			
 			/// SECTIONED OFF INTO REDLAND AGGRESSORS REAR LINES ///
 			
@@ -323,6 +351,12 @@ class CfgPatches
 			"ABTMGarrison_SMG1",
 			"ABTMGarrison_SMG2",
 			"ABTMGarrison_SMG3",
+			"ABTMGarrison_Static_Searchlight",
+			"ABTMGarrison_Vehicle_OffroadComms",
+			"ABTMGarrison_Vehicle_OffroadCovered",
+			"ABTMGarrison_Vehicle_UAZ",
+			"ABTMGarrison_Vehicle_UAZCovered",
+			"ABTMGarrison_Vehicle_UAZ452",
 			
 			/// SECTIONED OFF INTO REDLAND AGGRESSORS GUERILLAS ///
 			
@@ -373,6 +407,23 @@ class CfgPatches
 			"ABTMGuerilla_SMG3",
 			"ABTMGuerilla_SuicideBomber",
 			"ABTMGuerilla_SuicideGrenadier",
+			"ABTMGuerilla_Static_D30ATGun",
+			"ABTMGuerilla_Static_M2ShieldHigh",
+			"ABTMGuerilla_Static_M2ShieldHigh",
+			"ABTMGuerilla_Static_M2ShieldLow",
+			"ABTMGuerilla_Vehicle_AMX13",
+			"ABTMGuerilla_Vehicle_BTR40",
+			"ABTMGuerilla_Vehicle_Hilux",
+			"ABTMGuerilla_Vehicle_HiluxAGS17",
+			"ABTMGuerilla_Vehicle_HiluxAT",
+			"ABTMGuerilla_Vehicle_HiluxATGM",
+			"ABTMGuerilla_Vehicle_HiluxHMG",
+			"ABTMGuerilla_Vehicle_HiluxUB32",
+			"ABTMGuerilla_Vehicle_HiluxZSU232",
+			"ABTMGuerilla_Vehicle_Pickup",
+			"ABTMGuerilla_Vehicle_PickupHMG",
+			"ABTMGuerilla_Vehicle_T3485M",
+			"ABTMGuerilla_Vehicle_T55A",
 			
 			/// SECTIONED OFF INTO REDLAND AGGRESSORS SF ///
 			
@@ -392,6 +443,7 @@ class CfgPatches
 			
 			/// SECTIONED OFF INTO REDLAND AGGRESSORS Airforce ///
 			
+			"ABTM_VehicleAir_A10",
 			"ABTM_VehicleAir_A7Corsair",
 			"ABTM_VehicleAir_AH1",
 			"ABTM_VehicleAir_AH64",
@@ -405,7 +457,9 @@ class CfgPatches
 			"ABTM_VehicleAir_Mi_24",
 			"ABTM_VehicleAir_UH_1",
 			"ABTM_VehicleAir_UH_60",
+			
 			//ABTM OPFOR Non-units
+						
 			"ABTM_Command_Jammer",
 			"ABTM_Command_RTO",
 			"ABTM_Command_RTOInterceptor",
@@ -1431,10 +1485,18 @@ class CfgVehicles
 	class CUP_B_MK19_TriPod_US;
 	class CUP_B_AGS_ACR;
 	class CUP_B_Igla_AA_pod_CDF;
+	class CUP_B_TOW2_TriPod_USMC;
 	class CUP_O_Kornet_RU;
 	class CUP_O_Metis_RU;
 	class CUP_O_ZU23_RU;
+	class CUP_O_D30_AT_RU;
+	class I_HMG_02_F;
+	class I_HMG_02_high_F;
 	class B_SAM_System_02_F;
+	class I_E_SAM_System_03_F;
+	class I_E_Radar_System_01_F;
+	class CUP_B_SearchLight_static_ACR;
+	class ffaa_mk22;
 	
 	// Vehicles
 	
@@ -1480,21 +1542,57 @@ class CfgVehicles
 	class CUP_B_USARMY_HMMWV_Unarmed_USA;
 	class CUP_I_V3S_Open_TKG;
 	class CUP_I_V3S_Covered_TKG;
+	class cwr3_b_m939;
+	class cwr3_b_m939_reammo;
+	class cwr3_b_m939_empty;
+	class cwr3_b_m939_refuel;
+	class cwr3_b_m939_open;
+	class cwr3_b_m939_repair;
+	class cwr3_o_mtlb_sa13;
 	class cwr3_o_uaz452;
+	class CFP_B_NAARMY_Land_Rover_MG_01;
+	class CFP_O_SSREBELS_Land_Rover_SPG_01;
+	class CFP_O_SSREBELS_Land_Rover_01;
+	class CUP_O_Hilux_unarmed_OPF_G_F;
+	class CUP_O_Hilux_AGS30_OPF_G_F;
+	class CUP_O_Hilux_M2_OPF_G_F;
+	class CUP_O_Hilux_metis_OPF_G_F;
+	class CUP_O_Hilux_SPG9_OPF_G_F;
+	class CUP_O_Hilux_UB32_OPF_G_F;
+	class CUP_O_Hilux_zu23_OPF_G_F;
+	class ACM_ARM_V_BTR40;
+	class ACM_ARM_V_BTR40_Unarmed;
+	class clv_Amx13;
+	class clv_Dragon;
+	class CUP_I_BRDM2_NAPA;
+	class CUP_I_BRDM2_ATGM_NAPA;
+	class CUP_I_BRDM2_HQ_NAPA;
+	class CUP_B_M113A1_olive_USA;
+	class CUP_B_M163_Vulcan_USA;
+	class cwr3_b_m151_m2;
+	class cwr3_b_m151;
 
 	//// Tracked
 	class CFP_O_TBAN_BMP_1_01;
 	class CFP_O_TBAN_BMP_2_01;
+	class CUP_I_BMP1_TK_GUE;
+	class CUP_I_BMP2_NAPA;
+	class CUP_I_T34_NAPA;
 	class CFP_O_TBAN_T55_01;
 	class CFP_O_HEZBOLLAH_T72_01;
 	class CUP_B_ZSU23_Afghan_CDF;
+	class CUP_B_M1A1FEP_OD_USMC;
+	class CUP_B_M1A2C_TUSK_II_OD_US_Army;
 	class CUP_B_M1A1_NATO_T;
 	class CUP_B_M1A_TUSK_NATO_T;
 	class CUP_B_M2Bradley_NATO_T;
 	class CUP_B_M2A3Bradley_NATO_T;
 	class CUP_O_BMP3_RU;
 	class CUP_O_ZSU23_SLA;
+	class CUP_O_ZSU23_Afghan_SLA;
+	class CUP_O_T55_SLA;
 	class CUP_O_T90_RU;
+	class CFP_B_UGARMY_T90_01;
 	class cwr3_o_t64b;
 	class cwr3_o_t64bv;
 	//// Boats
@@ -5628,7 +5726,7 @@ class CfgVehicles
             };
         };
     };
-	class BM_BMP_1: CFP_O_TBAN_BMP_1_01
+	class BM_BMP_1: CUP_I_BMP1_TK_GUE
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -5653,7 +5751,7 @@ class CfgVehicles
             };
         };
     };
-	class BM_BMP_2: CFP_O_TBAN_BMP_2_01
+	class BM_BMP_2: CUP_I_BMP2_NAPA
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -11939,7 +12037,7 @@ class CfgVehicles
             };
         };
     };
-	class LCP_Vehicle_BMP_1: CFP_O_TBAN_BMP_1_01
+	class LCP_Vehicle_BMP_1: CUP_I_BMP1_TK_GUE
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
@@ -11964,7 +12062,7 @@ class CfgVehicles
             };
         };
     };
-	class LCP_Vehicle_BMP_2: CFP_O_TBAN_BMP_2_01
+	class LCP_Vehicle_BMP_2: CUP_I_BMP2_NAPA
 	{
         faction = "Leskovets_Communist_Party"; //Faction
         side = 2;
@@ -13877,6 +13975,1006 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_BattleDressUniform_NodUrban";
 		camouflage=1.6;
 	};
+	class ABTM_Static_AALauncher: I_E_SAM_System_03_F // ADDL = Air Defence, Data Linked
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "ADDL System (Launcher)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_AARadar: I_E_Radar_System_01_F // ADDL = Air Defence, Data Linked
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "ADDL System (AN/MPQ-217 Radar)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_AGS17: CUP_B_AGS_ACR
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "AGS-17"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_D30ATGun: CUP_O_D30_AT_RU
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "D-30 (AT)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_DShKM_High: CUP_O_DSHKM_ChDKZ
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "DShKM (High)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_DShKM_Low: CUP_O_DSHkM_MiniTriPod_ChDKZ
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "DShKM (Low)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_Kornet: CUP_O_Kornet_RU
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Kornet AT-14"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_M2ShieldHigh: I_HMG_02_high_F
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M2 HMG .50 (High)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_M2ShieldLow: I_HMG_02_F
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M2 HMG .50 (Low)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_Metis: CUP_O_Metis_RU
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Metis AT-13"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_Mortar: CUP_O_2b14_82mm_ChDKZ
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Mortar (Type 84)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_Radar: I_E_Radar_System_01_F // G3C = Ground Command, Control, Coordination
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Radar (G3C System)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_SAM: B_SAM_System_02_F // SST = Standalone, Self Tracking
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "SAM (SST System)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_Searchlight: CUP_B_SearchLight_static_ACR
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Searchlight (Type 112)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_TOW: CUP_B_TOW2_TriPod_USMC
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "TOW-2"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_ZU23: CUP_O_ZU23_RU
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "ZU-23-2A"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_AMX13: clv_Amx13
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "AMX-14A"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_AMX13AA: clv_Dragon
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "AMX-14A (20GC)"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BM21: CUP_O_BM21_SLA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "BM-21G"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BRDM2G: CUP_B_BRDM2_CDF
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "BRDM-2G"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BTR40: ACM_ARM_V_BTR40
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "BTR-40"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BTR40DShKM: ACM_ARM_V_BTR40
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "BTR-40 (DShKM)"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BTR60: CFP_O_NKARMY_BTR_60_01
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "BTR-60"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_LandRoverArmed_AT: CFP_O_SSREBELS_Land_Rover_SPG_01
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Land Rover Armed (HMG)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_LandRover_Covered: CFP_O_SSREBELS_Land_Rover_01
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "Land Rover (Covered)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M113: CUP_B_M113A1_olive_USA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M113G2"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M151: cwr3_b_m151
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M151A3"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M151: cwr3_b_m151_m2
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M151A3 (HMG)"; //Ingame name
+        crew = "ABTM_Rifleman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Rifleman"};
+		gunnerType="ABTM_Rifleman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M163PIVADS: CUP_B_M163_Vulcan_USA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M163G2 VADS"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M1A1: CUP_B_M1A1FEP_OD_USMC
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M1A1G1"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M1A3: CUP_B_M1A2C_TUSK_II_OD_US_Army
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M1A3"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M939: cwr3_b_m939_open
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M939"; //Ingame name
+        crew = "ABTM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Driver"};
+		gunnerType="ABTM_Driver";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M939Covered: cwr3_b_m939
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "M939 (Covered)"; //Ingame name
+        crew = "ABTM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Driver"};
+		gunnerType="ABTM_Driver";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_T3485M2: CUP_I_T34_NAPA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "T-34-85M2"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_T55A: CUP_O_T55_SLA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "T-55A"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_T90F3: CFP_B_UGARMY_T90_01
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "T-90F3"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_UAZ452: cwr3_o_uaz452
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "UAZ-452"; //Ingame name
+        crew = "ABTM_Driver"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Driver"};
+		gunnerType="ABTM_Driver";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_ZSU232: CUP_O_Ural_ZU23_RU
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "ZSU-23-2G"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_ZSU234: CUP_O_ZSU23_SLA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "ZSU-23-2G"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_ZSU234Afghanski: CUP_O_ZSU23_Afghan_SLA
+	{
+		faction = "ABTM_Redland_Aggressors"; //Faction
+        side = 2;
+        displayName = "ZSU-23-2G"; //Ingame name
+        crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Crewman"};
+		gunnerType="ABTM_Crewman";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
 	class ABTM_AntiAirWDL: I_Soldier_AA_F
 	{
 		side=2;
@@ -15366,6 +16464,1006 @@ class CfgVehicles
 		};
 		uniformClass="CFP_U_BattleDressUniform_woodlanddark";
 		camouflage=1.6;
+	};	
+	class ABTM_Static_AALauncherWDL: I_E_SAM_System_03_F // ADDL = Air Defence, Data Linked
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "ADDL System (Launcher)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_AARadarWDL: I_E_Radar_System_01_F // ADDL = Air Defence, Data Linked
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "ADDL System (AN/MPQ-217 Radar)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_AGS17WDL: CUP_B_AGS_ACR
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "AGS-17"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_D30ATGunWDL: CUP_O_D30_AT_RU
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "D-30 (AT)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_DShKM_HighWDL: CUP_O_DSHKM_ChDKZ
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "DShKM (High)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_DShKM_LowWDL: CUP_O_DSHkM_MiniTriPod_ChDKZ
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "DShKM (Low)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_KornetWDL: CUP_O_Kornet_RU
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Kornet AT-14"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_M2ShieldHighWDL: I_HMG_02_high_F
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M2 HMG .50 (High)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_M2ShieldLowWDL: I_HMG_02_F
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M2 HMG .50 (Low)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_MetisWDL: CUP_O_Metis_RU
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Metis AT-13"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_MortarWDL: CUP_O_2b14_82mm_ChDKZ
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Mortar (Type 84)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_RadarWDL: I_E_Radar_System_01_F // G3C = Ground Command, Control, Coordination
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Radar (G3C System)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_SAMWDL: B_SAM_System_02_F // SST = Standalone, Self Tracking
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "SAM (SST System)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_SearchlightWDL: CUP_B_SearchLight_static_ACR
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Searchlight (Type 112)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_TOWWDL: CUP_B_TOW2_TriPod_USMC
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "TOW-2"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Static_ZU23WDL: CUP_O_ZU23_RU
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "ZU-23-2A"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_AMX13WDL: clv_Amx13
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "AMX-14A"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_AMX13AAWDL: clv_Dragon
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "AMX-14A (20GC)"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BM21WDL: CUP_O_BM21_SLA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "BM-21G"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BRDM2GWDL: CUP_B_BRDM2_CDF
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "BRDM-2G"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BTR40WDL: ACM_ARM_V_BTR40
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "BTR-40"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BTR40DShKMWDL: ACM_ARM_V_BTR40
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "BTR-40 (DShKM)"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_BTR60WDL: CFP_O_NKARMY_BTR_60_01
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "BTR-60"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_LandRoverArmed_ATWDL: CFP_O_SSREBELS_Land_Rover_SPG_01
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Land Rover Armed (HMG)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_LandRover_CoveredWDL: CFP_O_SSREBELS_Land_Rover_01
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "Land Rover (Covered)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M113WDL: CUP_B_M113A1_olive_USA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M113G2"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M151WDL: cwr3_b_m151
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M151A3"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M151WDL: cwr3_b_m151_m2
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M151A3 (HMG)"; //Ingame name
+        crew = "ABTM_RiflemanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_RiflemanWDL"};
+		gunnerType="ABTM_RiflemanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M163PIVADSWDL: CUP_B_M163_Vulcan_USA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M163G2 VADS"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M1A1WDL: CUP_B_M1A1FEP_OD_USMC
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M1A1G1"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M1A3WDL: CUP_B_M1A2C_TUSK_II_OD_US_Army
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M1A3"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M939WDL: cwr3_b_m939_open
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M939"; //Ingame name
+        crew = "ABTM_DriverWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_DriverWDL"};
+		gunnerType="ABTM_DriverWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_M939CoveredWDL: cwr3_b_m939
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "M939 (Covered)"; //Ingame name
+        crew = "ABTM_DriverWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_DriverWDL"};
+		gunnerType="ABTM_DriverWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_T3485M2WDL: CUP_I_T34_NAPA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "T-34-85M2"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_T55AWDL: CUP_O_T55_SLA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "T-55A"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_T90F3WDL: CFP_B_UGARMY_T90_01
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "T-90F3"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_UAZ452WDL: cwr3_o_uaz452
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "UAZ-452"; //Ingame name
+        crew = "ABTM_DriverWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_DriverWDL"};
+		gunnerType="ABTM_DriverWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_ZSU232WDL: CUP_O_Ural_ZU23_RU
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "ZSU-23-2G"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_ZSU234WDL: CUP_O_ZSU23_SLA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "ZSU-23-2G"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
+	};
+	class ABTM_Vehicle_ZSU234AfghanskiWDL: CUP_O_ZSU23_Afghan_SLA
+	{
+		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
+        side = 2;
+        displayName = "ZSU-23-2G"; //Ingame name
+        crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_CrewmanWDL"};
+		gunnerType="ABTM_CrewmanWDL";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+        class TransportItems //Cargo Items
+        {
+            class _xx_Medikit //Item Classname
+            {
+                name = "Medikit";
+                count = 1; //amount
+            };
+
+            class _xx_FirstAidKit //Item Classname
+            {
+                name = "FirstAidKit";
+                count = 5; //amount
+            };
+        };
 	};
 	class ABTMCommand_FieldCommander1: I_Officer_F
 	{

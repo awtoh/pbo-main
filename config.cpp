@@ -216,6 +216,7 @@ class CfgPatches
 			"ABTM_Static_Mortar",
 			"ABTM_Static_Radar",
 			"ABTM_Static_SAM",
+			"ABTM_Static_SAMIR",
 			"ABTM_Static_Searchlight",
 			"ATBM_Static_SpottingScope",
 			"ABTM_Static_TOW",
@@ -280,6 +281,7 @@ class CfgPatches
 			"ABTM_Static_MortarWDL",
 			"ABTM_Static_RadarWDL",
 			"ABTM_Static_SAMWDL",
+			"ABTM_Static_SAMIRWDL",
 			"ABTM_Static_SearchlightWDL",
 			"ATBM_Static_SpottingScopeWDL",
 			"ABTM_Static_TOWWDL",
@@ -440,17 +442,22 @@ class CfgPatches
 			/// SECTIONED OFF INTO REDLAND AGGRESSORS Airforce ///
 			
 			"ABTM_VehicleAir_A10",
+			"ABTM_VehicleAir_A10ACE",
 			"ABTM_VehicleAir_A7Corsair",
+			"ABTM_VehicleAir_A7CorsairACE",
 			"ABTM_VehicleAir_AH1",
 			"ABTM_VehicleAir_AH64",
+			"ABTM_VehicleAir_C47",
+			"ABTM_VehicleAir_CH47",
 			"ABTM_VehicleAir_F4Phantom",
+			"ABTM_VehicleAir_F4PhantomACE",
 			"ABTM_VehicleAir_JAS39Gripen",
 			"ABTM_VehicleAir_JAS39GripenACE",
-			"ABTM_VehicleAir_Mirage2000",
-			"ABTM_VehicleAir_Mirage2000ACE",
+			"ABTM_VehicleAir_Mi_24",
 			"ABTM_VehicleAir_Mi_8",
 			"ABTM_VehicleAir_Mi_8MTV",
-			"ABTM_VehicleAir_Mi_24",
+			"ABTM_VehicleAir_Mirage2000",
+			"ABTM_VehicleAir_Mirage2000ACE",
 			"ABTM_VehicleAir_UH_1",
 			"ABTM_VehicleAir_UH_60",
 			
@@ -1452,6 +1459,7 @@ class CfgVehicles
 	class I_helipilot_F;
 	class I_pilot_F;
 	class I_Fighter_Pilot_F;
+	class I_UAV_AI_F;
 	
 	// Backpacks
 	class CFP_AssaultPack_M81;
@@ -1502,6 +1510,8 @@ class CfgVehicles
 	class CUP_O_D30_AT_RU;
 	class I_HMG_02_F;
 	class I_HMG_02_high_F;
+	class B_AAA_System_01_F;
+	class B_SAM_System_01_F;
 	class B_SAM_System_02_F;
 	class I_E_SAM_System_03_F;
 	class I_E_Radar_System_01_F;
@@ -1572,26 +1582,23 @@ class CfgVehicles
 	class CUP_O_Hilux_zu23_OPF_G_F;
 	class ACM_ARM_V_BTR40;
 	class ACM_ARM_V_BTR40_Unarmed;
-	class clv_Amx13;
-	class clv_Dragon;
 	class CUP_I_BRDM2_NAPA;
 	class CUP_I_BRDM2_ATGM_NAPA;
 	class CUP_I_BRDM2_HQ_NAPA;
-	class CUP_B_M113A1_olive_USA;
-	class CUP_B_M163_Vulcan_USA;
 	class cwr3_b_m151_m2;
 	class cwr3_b_m151;
 	class C_Offroad_01_covered_F;
 	class C_Offroad_01_comms_F;
 
 	//// Tracked
+	class clv_Amx13;
+	class clv_Dragon;
+	class CUP_B_M113A1_olive_USA;
+	class CUP_B_M163_Vulcan_USA;
 	class CFP_O_TBAN_BMP_1_01;
 	class CFP_O_TBAN_BMP_2_01;
 	class CUP_I_BMP1_TK_GUE;
 	class CUP_I_BMP2_NAPA;
-	class CUP_I_T34_NAPA;
-	class CFP_O_TBAN_T55_01;
-	class CFP_O_HEZBOLLAH_T72_01;
 	class CUP_B_ZSU23_Afghan_CDF;
 	class CUP_B_M1A1FEP_OD_USMC;
 	class CUP_B_M1A2C_TUSK_II_OD_US_Army;
@@ -1602,7 +1609,11 @@ class CfgVehicles
 	class CUP_O_BMP3_RU;
 	class CUP_O_ZSU23_SLA;
 	class CUP_O_ZSU23_Afghan_SLA;
+	class CUP_I_T34_NAPA;
 	class CUP_O_T55_SLA;
+	class CFP_O_TBAN_T55_01;
+	class CUP_I_T72_NAPA;
+	class CFP_O_HEZBOLLAH_T72_01;
 	class CUP_O_T90_RU;
 	class CFP_B_UGARMY_T90_01;
 	class cwr3_o_t64b;
@@ -1625,7 +1636,10 @@ class CfgVehicles
 	class CUP_B_C130J_USMC;
 	class CUP_O_Ka52_RU;
 	class CUP_O_Ka50_DL_RU;
+	class CUP_B_C47_USA;
 	class CUP_B_CH47F_USA;
+	class CUP_B_AH1Z_Dynamic_USMC;
+	class CUP_B_AH64_DL_USA;
 	class CUP_B_AH64D_DL_USA;
 	class CUP_O_Mi8_RU;
 	class CUP_O_Mi8AMT_RU;
@@ -5831,7 +5845,7 @@ class CfgVehicles
             };
         };
     };
-	class BM_T_55A: CFP_O_TBAN_T55_01
+	class BM_T_55A: CUP_O_T55_SLA
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -5856,7 +5870,7 @@ class CfgVehicles
             };
         };
     };
-	class BM_T_72: CFP_O_HEZBOLLAH_T72_01
+	class BM_T_72: CUP_I_T72_NAPA
 	{
         faction = "Buhriz_Movement"; //Faction
         side = 2;
@@ -9262,7 +9276,7 @@ class CfgVehicles
             };
         };
     };
-	class JAMMED_T72: CFP_O_HEZBOLLAH_T72_01
+	class JAMMED_T72: CUP_I_T72_NAPA
 	{
         faction = "Ashton_Misc"; //Faction
         side = 2;
@@ -14434,7 +14448,7 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
-        displayName = "AMX-14A (20GC)"; //Ingame name
+        displayName = "AMX-20A (20GC)"; //Ingame name
         crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Crewman"};
 		gunnerType="ABTM_Crewman";
@@ -14480,7 +14494,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_BRDM2G: CUP_B_BRDM2_CDF
+	class ABTM_Vehicle_BRDM2G: CUP_I_BRDM2_NAPA
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
@@ -14909,7 +14923,7 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
-        displayName = "ZSU-23-2G"; //Ingame name
+        displayName = "ZSU-23-4GR"; //Ingame name
         crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Crewman"};
 		gunnerType="ABTM_Crewman";
@@ -14934,7 +14948,7 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors"; //Faction
         side = 2;
-        displayName = "ZSU-23-2G"; //Ingame name
+        displayName = "ZSU-23-4G"; //Ingame name
         crew = "ABTM_Crewman"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Crewman"};
 		gunnerType="ABTM_Crewman";
@@ -16874,7 +16888,7 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;
-        displayName = "AMX-14A (20GC)"; //Ingame name
+        displayName = "AMX-20A (20GC)"; //Ingame name
         crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_CrewmanWDL"};
 		gunnerType="ABTM_CrewmanWDL";
@@ -16920,7 +16934,7 @@ class CfgVehicles
             };
         };
 	};
-	class ABTM_Vehicle_BRDM2GWDL: CUP_B_BRDM2_CDF
+	class ABTM_Vehicle_BRDM2GWDL: CUP_I_BRDM2_NAPA
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;
@@ -17348,7 +17362,7 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;
-        displayName = "ZSU-23-2G"; //Ingame name
+        displayName = "ZSU-23-4GR"; //Ingame name
         crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_CrewmanWDL"};
 		gunnerType="ABTM_CrewmanWDL";
@@ -17373,7 +17387,7 @@ class CfgVehicles
 	{
 		faction = "ABTM_Redland_Aggressors_Woodland"; //Faction
         side = 2;
-        displayName = "ZSU-23-2G"; //Ingame name
+        displayName = "ZSU-23-4G"; //Ingame name
         crew = "ABTM_CrewmanWDL"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_CrewmanWDL"};
 		gunnerType="ABTM_CrewmanWDL";
@@ -20325,6 +20339,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors_Guerillas";
+		backpack="ABTM_Guerilla_AT";
 		vehicleclass="ABTM_Guerillas";
 		identityTypes[]=
 		{
@@ -22742,6 +22757,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors_SF";
+		backpack="ABTM_Misc_Kit";
 		vehicleclass="ABTM_SF";
 		identityTypes[]=
 		{
@@ -23493,6 +23509,7 @@ class CfgVehicles
 	{
 		side=2;
 		faction="ABTM_Redland_Aggressors_SF";
+		backpack="ABTM_Misc_Kit";
 		vehicleclass="ABTM_SF";
 		identityTypes[]=
 		{
@@ -24244,22 +24261,165 @@ class CfgVehicles
 		uniformClass="SP_0000_Standard_FieldUniform_NodUrban";
 		camouflage=1.6;
 	};
-	class ABTM_VehicleAir_JAS39Gripen: I_Plane_Fighter_04_F
+	class ABTM_VehicleAir_A10: CUP_B_A10_DYN_USA
 	{
         faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
-        displayName = "JAS 39 'Gripen'"; //Ingame name
+        displayName = "A-10B2 Thunderbolt"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Pilot"};
 		gunnerType="ABTM_Pilot";
         //hiddenSelections[] = {"camo1","camo2","camo3"};
         //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
 	};
+	class ABTM_VehicleAir_A10ACE: CUP_B_A10_DYN_USA
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "A-10B2 Thunderbolt ACE"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_A7Corsair: A7BLU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "A-7B1 Corsair"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_A7CorsairACE: A7BLU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "A-7B1 Corsair ACE"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_AH1: CUP_B_AH1Z_Dynamic_USMC
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "AH-1R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_AH64: CUP_B_AH64_DL_USA
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "AH-64R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_C47: CUP_B_C47_USA
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "C-47R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_CH47: CUP_B_CH47F_USA
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "CH-47R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_F4Phantom: F4E_BLU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "F-4R Phantom"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_F4PhantomACE: F4E_BLU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "F-4R Phantom ACE"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_JAS39Gripen: I_Plane_Fighter_04_F
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "JAS 39 R Gripen"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo02"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
 	class ABTM_VehicleAir_JAS39GripenACE: I_Plane_Fighter_04_F
 	{
         faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
-        displayName = "JAS 39 'Gripen' ACE"; //Ingame name
+        displayName = "JAS 39 R Gripen ACE"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo02"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_Mi_24: CUP_O_Mi24_P_Dynamic_RU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "Mi-24R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_Mi_8: CUP_O_Mi8_RU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "Mi-8R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_Mi_8MTV: CUP_O_Mi8AMT_RU
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "Mi-8MTR"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Pilot"};
 		gunnerType="ABTM_Pilot";
@@ -24270,7 +24430,7 @@ class CfgVehicles
 	{
         faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
-        displayName = "M2000 'Mirage'"; //Ingame name
+        displayName = "M2000R Mirage"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Pilot"};
 		gunnerType="ABTM_Pilot";
@@ -24281,7 +24441,29 @@ class CfgVehicles
 	{
         faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
         side = 2;
-        displayName = "M2000 'Mirage' ACE"; //Ingame name
+        displayName = "M2000R Mirage ACE"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_UH_1: 
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "UH-1R"; //Ingame name
+        crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
+		typicalCargo[] = {"ABTM_Pilot"};
+		gunnerType="ABTM_Pilot";
+        //hiddenSelections[] = {"camo1","camo2","camo3"};
+        //hiddenSelectionsTextures[] = {"TEST\Data\TEST_mh9_co.paa","TEST\Data\TEST_MH9_co.paa","TEST\Data\TEST_MH9_co.paa"};
+	};
+	class ABTM_VehicleAir_UH_60: 
+	{
+        faction = "ABTM_Redland_Aggressors_Airforce"; //Faction
+        side = 2;
+        displayName = "UH-60R"; //Ingame name
         crew = "ABTM_Pilot"; //or if you make your own crew... crew = "TEST_Heli_pilot";
 		typicalCargo[] = {"ABTM_Pilot"};
 		gunnerType="ABTM_Pilot";
@@ -28886,10 +29068,636 @@ class CfgGroups
 					};
 				};
 			};
-			name4="Guerillas";
-			class ABTM_RA_Guerillas
+			name4="Special Forces";
+			class ABTM_RA_SpecialForces
 			{
-				name="Guerillas";
+				name="Special Forces";
+				class ABTM_RA_SpecialForces_LightSF_Team_HK_AT
+				{
+					name="Light SF (Team, Hunter-Killer AT)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSFLight_TeamLeader";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSFLight_Recon";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_LightSF_Team_HK_Sniper
+				{
+					name="Light SF (Team, Hunter-Killer Sniper)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSFLight_TeamLeader";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSFLight_Specialist";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSFLight_Recon";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSFLight_Recon";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_LightSF_Team_Recon
+				{
+					name="Light SF (Team, Recon)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSFLight_TeamLeader";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSFLight_Recon";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSFLight_Radioman";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSFLight_Specialist";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_LightSF_Squad
+				{
+					name="Light SF (Squad)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSFLight_TeamLeader";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSFLight_Recon";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSFLight_Radioman";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSFLight_Specialist";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMSFLight_Machinegunner";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMSFLight_Rifleman";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMSFLight_Specialist";
+						rank="SERGEANT";
+						position[]={13,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMSFLight_Machinegunner";
+						rank="CORPORAL";
+						position[]={15,0,0};
+					};
+					class Unit9
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="CORPORAL";
+						position[]={17,0,0};
+					};
+					class Unit10
+					{
+						side=2;
+						vehicle="ABTMSFLight_Rifleman";
+						rank="CORPORAL";
+						position[]={19,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_LightSF_Squad_Ambush
+				{
+					name="Light SF (Squad, Ambush)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSFLight_TeamLeader";
+						rank="CAPTAIN";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSFLight_Specialist";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSFLight_Radioman";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSFLight_Rifleman";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMSFLight_Machinegunner";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMSFLight_Machinegunner";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMSFLight_Rifleman";
+						rank="SERGEANT";
+						position[]={13,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMSFLight_Machinegunner";
+						rank="CORPORAL";
+						position[]={15,0,0};
+					};
+					class Unit9
+					{
+						side=2;
+						vehicle="ABTMSFLight_Machinegunner";
+						rank="CORPORAL";
+						position[]={17,0,0};
+					};
+					class Unit10
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="CORPORAL";
+						position[]={19,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Team_AT
+				{
+					name="SF (Team, AT)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_AntiTank";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_AntiTank";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Team_AR
+				{
+					name="SF (Team, AR)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_Autorifleman";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_Autorifleman";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Team_Breach
+				{
+					name="SF (Team, Breach)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Breacher";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_Breacher";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Team_Operators
+				{
+					name="SF (Team, Operators)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Team_Spotters
+				{
+					name="SF (Team, Spotters)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Razvedka";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_RTO";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Squad
+				{
+					name="SF (Squad)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Razvedka";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_RTO";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_Autorifleman";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMSF_Autorifleman";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="CORPORAL";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMSFLight_AntiTank";
+						rank="CORPORAL";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={17,0,0};
+					};
+					class Unit9
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={19,0,0};
+					};
+					class Unit10
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={21,0,0};
+					};
+					class Unit11
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={23,0,0};
+					};
+				};
+				class ABTM_RA_SpecialForces_SF_Squad_CQC
+				{
+					name="SF (Squad, CQC)";
+					faction="ABTM_Redland_Aggressors_SF";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMSF_Razvedka";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMSF_RTO";
+						rank="CORPORAL";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMSF_AntiTank";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMSF_Breacher";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMSF_Autorifleman";
+						rank="CORPORAL";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMSF_GroupLeader";
+						rank="SERGEANT";
+						position[]={17,0,0};
+					};
+					class Unit9
+					{
+						side=2;
+						vehicle="ABTMSF_Breacher";
+						rank="CORPORAL";
+						position[]={19,0,0};
+					};
+					class Unit10
+					{
+						side=2;
+						vehicle="ABTMSF_Operator";
+						rank="CORPORAL";
+						position[]={21,0,0};
+					};
+					class Unit11
+					{
+						side=2;
+						vehicle="ABTMSF_Autorifleman";
+						rank="CORPORAL";
+						position[]={23,0,0};
+					};
+				};
+			};
+		};
+		class ABTM_Redland_Aggressors_Guerillas
+		{
+			name="Redland Aggressors (Guerillas)";
+			class ABTM_RA_Guerillas_Advisors
+			{
+				name="Advisors";
 				class ABTM_RA_Guerillas_AdvisorTeam
 				{
 					name="Advisor Team";
@@ -28915,6 +29723,40 @@ class CfgGroups
 						vehicle="ABTMGuerilla_Advisor3";
 						rank="PRIVATE";
 						position[]={5,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_AdvisorTeamCoordination
+				{
+					name="Advisor Team (Coordination)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Advisor2";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Coordinator";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="CORPORAL";
+						position[]={7,0,0};
 					};
 				};
 				class ABTM_RA_Guerillas_AdvisorTeamFireSupport
@@ -28953,7 +29795,7 @@ class CfgGroups
 				};
 				class ABTM_RA_Guerillas_AdvisorTeamNightRaid
 				{
-					name="Advisor Team (Fire Support)";
+					name="Advisor Team (Night Raid)";
 					faction="ABTM_Redland_Aggressors_Guerillas";
 					side=2;
 					class Unit0
@@ -28989,6 +29831,1462 @@ class CfgGroups
 						side=2;
 						vehicle="ABTMGuerilla_NightRaider_Romat";
 						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+				};
+			};
+			name2="Command";
+			class ABTM_RA_Guerillas_Command
+			{
+				name="Command";
+				class ABTM_RA_Guerillas_Bodyguards
+				{
+					name="Bodyguards";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={11,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Officers
+				{
+					name="Officer Team";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Officer";
+						rank="MAJOR";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerForeign";
+						rank="MAJOR";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Commissar";
+						rank="CAPTAIN";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Advisor1";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={11,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_RTO
+				{
+					name="RTO Team";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Officer";
+						rank="MAJOR";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Commissar";
+						rank="CAPTAIN";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRunner";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_OfficerBodyguard";
+						rank="SERGEANT";
+						position[]={11,0,0};
+					};
+				};
+			};
+			name3="Conscripts";
+			class ABTM_RA_Guerillas_Conscripts
+			{
+				name="Conscripts";
+				class ABTM_RA_Guerillas_Commissar_Team
+				{
+					name="Commissar Team";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Commissar";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Commissar";
+						rank="LIEUTENANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_ConscriptSquad
+				{
+					name="Conscript Squad";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript1";
+						rank="PRIVATE";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript2";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript3";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript4";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript5";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript6";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript1";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript2";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript3";
+						rank="CORPORAL";
+						position[]={17,0,0};
+					};
+					class Unit9
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript4";
+						rank="PRIVATE";
+						position[]={19,0,0};
+					};
+					class Unit10
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript5";
+						rank="PRIVATE";
+						position[]={21,0,0};
+					};
+					class Unit11
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Conscript6";
+						rank="PRIVATE";
+						position[]={23,0,0};
+					};
+				};
+			};
+			name4="Guerillas";
+			class ABTM_RA_Guerillas
+			{
+				name="Guerillas";
+				class ABTM_RA_Guerillas_Fighter_Fireteam
+				{
+					name="Fighter Fireteam";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Fighter_Fireteam_AT
+				{
+					name="Fighter Fireteam (AT)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Fighter_Fireteam_MG
+				{
+					name="Fighter Fireteam (MG)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Fighter_Guncrew2x
+				{
+					name="Fighter Guncrew (2x)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterGunCrew";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterGunCrew";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Fighter_Squad
+				{
+					name="Fighter Squad";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Fighter_Squad_AT
+				{
+					name="Fighter Squad (AT)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Fighter_Squad_MG
+				{
+					name="Fighter Squad (MG)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSquadLeader";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterSniper";
+						rank="CORPORAL";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterAntiTank";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+					class Unit7
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={15,0,0};
+					};
+					class Unit8
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterMachineGunner";
+						rank="PRIVATE";
+						position[]={17,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Militia_Squad
+				{
+					name="Militia Squad";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Militia1";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Militia2";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Militia3";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_SMG1";
+						rank="CORPORAL";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_SMG2";
+						rank="PRIVATE";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_SMG3";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Militia_Team_Rifles
+				{
+					name="Militia Team (Rifles)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Militia1";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Militia2";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_Militia3";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Militia_Team_SMG
+				{
+					name="Militia Team (SMG)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_SMG1";
+						rank="CORPORAL";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_SMG2";
+						rank="PRIVATE";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_SMG3";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Paramilitary_Cell
+				{
+					name="Paramilitary Cell";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySKS";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySterling";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySKS";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySterling";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Paramilitary_Cell_AKMS
+				{
+					name="Paramilitary Cell (AKMS)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySKS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Paramilitary_Cell_Bren
+				{
+					name="Paramilitary Cell (Bren)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryM14";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryM14";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Paramilitary_Cell_Rifles
+				{
+					name="Paramilitary Cell (Rifles)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryM14";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryM14";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryM14";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryM14";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryBren";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_Paramilitary_Cell_Sterling
+				{
+					name="Paramilitary Cell (Sterling)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="SERGEANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySterling";
+						rank="PRIVATE";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySterling";
+						rank="PRIVATE";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitaryAKMS";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+					class Unit5
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySterling";
+						rank="PRIVATE";
+						position[]={11,0,0};
+					};
+					class Unit6
+					{
+						side=2;
+						vehicle="ABTMGuerilla_FighterParamilitarySterling";
+						rank="PRIVATE";
+						position[]={13,0,0};
+					};
+			    };
+			};
+			name5="Night Raiders";
+			class ABTM_RA_Guerillas_NightRaiders
+			{
+				name="Night Raiders";
+				class ABTM_RA_Guerillas_NightRaiders_StrikeTeam
+				{
+					name="Strike Team";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaiderAssaultLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Type56";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_NightRaiders_StrikeTeam_CQC
+				{
+					name="Strike Team (CQC)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaiderAssaultLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Type56";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Type56";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_NightRaiders_StrikeTeam_M16
+				{
+					name="Strike Team (M16A1E1)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaiderAssaultLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M16";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_NightRaiders_StrikeTeam_Rifles
+				{
+					name="Strike Team (Rifles)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaiderAssaultLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_Romat";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+			    };
+				class ABTM_RA_Guerillas_NightRaiders_StrikeTeam_SMG
+				{
+					name="Strike Team (SMG)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaiderAssaultLeader";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_NightRaider_M3A1";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+			    };
+			};
+			name6="Recon";
+			class ABTM_RA_Guerillas_Recon
+			{
+				name="Recon";
+				class ABTM_RA_Guerillas_Recon_Pair_Radio
+				{
+					name="Pair (Radio)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRunner";
+						rank="CORPORAL";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Recon_Pair_Sniper
+				{
+					name="Pair (Sniper)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSniper";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Recon_Pair_Spotters
+				{
+					name="Pair (Spotters)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Recon_Team
+				{
+					name="Team";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconM79";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSniper";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRunner";
+						rank="CORPORAL";
+						position[]={9,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Recon_Team_Radio
+				{
+					name="Team (Radio)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconM79";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Recon_Team_Snipers
+				{
+					name="Team (Snipers)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconM79";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSniper";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSniper";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={9,0,0};
+					};
+				};
+				class ABTM_RA_Guerillas_Recon_Team_Spotters
+				{
+					name="Team (Spotters)";
+					faction="ABTM_Redland_Aggressors_Guerillas";
+					side=2;
+					class Unit0
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconM79";
+						rank="LIEUTENANT";
+						position[]={0,5,0};
+					};
+					class Unit1
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconRadio";
+						rank="SERGEANT";
+						position[]={3,0,0};
+					};
+					class Unit2
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={5,0,0};
+					};
+					class Unit3
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
+						position[]={7,0,0};
+					};
+					class Unit4
+					{
+						side=2;
+						vehicle="ABTMGuerilla_ReconSpotter";
+						rank="SERGEANT";
 						position[]={9,0,0};
 					};
 				};
